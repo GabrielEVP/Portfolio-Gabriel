@@ -1,8 +1,11 @@
 ---
 const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Sobre mí", href: "#about" },
+    { name: "Experiencia", href: "#experience" },
+    { name: "Educación", href: "#education" },
+    { name: "Habilidades", href: "#skills" },
+    { name: "Proyecto", href: "#projects" },
+    { name: "Contacto", href: "#contact" },
 ];
 ---
 
@@ -13,9 +16,9 @@ const navItems = [
         scrolled = window.scrollY > 10;
         const nav = document.getElementById('navbar');
         if (scrolled) {
-            nav.classList.add('shadow-md', 'bg-white/90', 'backdrop-blur');
+            nav.classList.add('shadow-md', 'bg-black/95', 'backdrop-blur');
         } else {
-            nav.classList.remove('shadow-md', 'bg-white/90', 'backdrop-blur');
+            nav.classList.remove('shadow-md', 'bg-black/95', 'backdrop-blur');
         }
     };
 
@@ -27,16 +30,70 @@ const navItems = [
 <nav id="navbar" class="bg-black fixed top-0 w-full z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
-            <div class="flex items-center space-x-4">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <div class="w-10 h-10 bg-white flex items-center justify-center">
+                    <span class="text-black font-bold text-xl">G</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
                 {navItems.map((item) => (
                         <a
                                 href={item.href}
-                                class="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                                class="text-white hover:text-gray-300 font-medium transition-colors duration-200 relative group"
                         >
                             {item.name}
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                         </a>
                 ))}
             </div>
+            <div class="md:hidden">
+                <button
+                        type="button"
+                        id="mobile-menu-btn"
+                        class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                >
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden" id="mobile-menu" style="display: none;">
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-black/95 backdrop-blur">
+            {navItems.map((item) => (
+                    <a
+                            href={item.href}
+                            class="text-white hover:text-gray-300 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                    >
+                        {item.name}
+                    </a>
+            ))}
         </div>
     </div>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.style.display === 'none';
+                mobileMenu.style.display = isHidden ? 'block' : 'none';
+                mobileMenuBtn.setAttribute('aria-expanded', isHidden.toString());
+            });
+        }
+        const mobileLinks = mobileMenu?.querySelectorAll('a');
+        mobileLinks?.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.display = 'none';
+                mobileMenuBtn?.setAttribute('aria-expanded', 'false');
+            });
+        });
+    });
+</script>
