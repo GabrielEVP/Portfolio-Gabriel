@@ -1,0 +1,7 @@
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Gideon Roman', cursive;
+    }
+}

@@ -1,5 +1,13 @@
 ---
-
+import "../css/main.css";
+import Navbar from "../components/navbar.astro";
+import Header from "../components/header.astro";
+import About from "../components/about.astro";
+import Education from "../components/education.astro";
+import Work from "../components/work.astro";
+import Project from "../components/proyect.astro";
+import Contact from "../components/contact.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <html lang="en">
@@ -8,9 +16,19 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+		<title>Portfolio</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-gray-100">
+		<Navbar />
+		<Header />
+		<About />
+		<Education />
+		<Work />
+		<Project />
+		<Contact />
+		<Footer />
 	</body>
 </html>

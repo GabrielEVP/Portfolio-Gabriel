@@ -1,0 +1,42 @@
+---
+const navItems = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Contact", href: "#contact" },
+];
+---
+
+<script>
+    let scrolled = false;
+
+    const handleScroll = () => {
+        scrolled = window.scrollY > 10;
+        const nav = document.getElementById('navbar');
+        if (scrolled) {
+            nav.classList.add('shadow-md', 'bg-white/90', 'backdrop-blur');
+        } else {
+            nav.classList.remove('shadow-md', 'bg-white/90', 'backdrop-blur');
+        }
+    };
+
+    if (typeof window !== "undefined") {
+        window.addEventListener("scroll", handleScroll);
+    }
+</script>
+
+<nav id="navbar" class="bg-black fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center space-x-4">
+                {navItems.map((item) => (
+                        <a
+                                href={item.href}
+                                class="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                        >
+                            {item.name}
+                        </a>
+                ))}
+            </div>
+        </div>
+    </div>
+</nav>
