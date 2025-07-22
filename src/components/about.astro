@@ -3,87 +3,87 @@ import aboutData from "../data/about.json";
 ---
 
 <section
-  id="about"
-  class="min-h-screen bg-neutral-50 py-16 lg:py-24 animate-fade-scroll"
+        id="about"
+        class="min-h-screen bg-neutral-50 py-16 lg:py-24 animate-fade-scroll"
 >
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2
-        class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide"
-      >
-        {aboutData.title}
-      </h2>
-      <div class="w-24 h-1 bg-black mx-auto"></div>
-    </div>
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="order-2 lg:order-1 flex justify-center lg:justify-start">
-        <div class="relative group">
-          <div
-            class="relative overflow-hidden bg-gray-200 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"
-          >
-            <img
-              src="/public/Gabriel.jpg"
-              alt="Gabriel Vargas - Desarrollador Full Stack"
-              class="object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2
+                    class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide"
             >
+                {aboutData.title}
+            </h2>
+            <div class="w-24 h-1 bg-black mx-auto"></div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="order-2 lg:order-1 flex justify-center lg:justify-start">
+                <div class="relative group">
+                    <div
+                            class="relative overflow-hidden bg-gray-200 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl"
+                    >
+                        <img
+                                src="/Gabriel.jpg"
+                                alt="Gabriel Vargas - Desarrollador Full Stack"
+                                class="object-cover transition-transform duration-300 group-hover:scale-110"
+                        />
+                        <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        >
+                        </div>
+                    </div>
+                    <div
+                            class="absolute -top-4 -left-4 w-20 h-20 border-2 border-gray-300 rounded-lg -z-10"
+                    >
+                    </div>
+                    <div
+                            class="absolute -bottom-4 -right-4 w-16 h-16 bg-black rounded-lg -z-10"
+                    >
+                    </div>
+                </div>
             </div>
-          </div>
-          <div
-            class="absolute -top-4 -left-4 w-20 h-20 border-2 border-gray-300 rounded-lg -z-10"
-          >
-          </div>
-          <div
-            class="absolute -bottom-4 -right-4 w-16 h-16 bg-black rounded-lg -z-10"
-          >
-          </div>
+            <div class="order-1 lg:order-2 space-y-6">
+                <div class="flex items-start space-x-3">
+                    <p class="text-lg text-gray-700 leading-relaxed">{aboutData.intro}</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        {aboutData.studies}
+                    </p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        {aboutData.experience}
+                    </p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        {aboutData.passion}
+                    </p>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <p class="text-lg text-gray-700 leading-relaxed">{aboutData.goal}</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="order-1 lg:order-2 space-y-6">
-        <div class="flex items-start space-x-3">
-          <p class="text-lg text-gray-700 leading-relaxed">{aboutData.intro}</p>
-        </div>
-        <div class="flex items-start space-x-3">
-          <p class="text-lg text-gray-700 leading-relaxed">
-            {aboutData.studies}
-          </p>
-        </div>
-        <div class="flex items-start space-x-3">
-          <p class="text-lg text-gray-700 leading-relaxed">
-            {aboutData.experience}
-          </p>
-        </div>
-        <div class="flex items-start space-x-3">
-          <p class="text-lg text-gray-700 leading-relaxed">
-            {aboutData.passion}
-          </p>
-        </div>
-        <div class="flex items-start space-x-3">
-          <p class="text-lg text-gray-700 leading-relaxed">{aboutData.goal}</p>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
-
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0px);
+    html {
+        scroll-behavior: smooth;
     }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
 
-  .group:hover .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .group:hover .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
 </style>
