@@ -1,165 +1,52 @@
 ---
+import workData from '../data/work.json';
 ---
 
-<section id="experience" class="min-h-screen bg-black py-16 lg:py-24">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+<section id="experience" class="min-h-screen bg-black py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-24">
             <h2 class="text-4xl lg:text-5xl font-light text-white mb-6">
                 Experiencia Laboral
             </h2>
             <div class="w-24 h-1 bg-white mx-auto"></div>
         </div>
-        <div class="relative">
-            <div class="space-y-12 lg:space-y-20">
-                <div class="relative">
-                    <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-                        <div class="lg:text-right lg:pr-8">
-                            <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                                <h3 class="text-2xl font-semibold text-gray-900 mb-2 border-b pb-2">
-                                    Full Stack Dev
-                                </h3>
-                                <div class="flex items-center justify-center lg:justify-end text-gray-600 mb-2">
-                                    <span class="text-sm">Remote</span>
-                                    <span class="mx-2">📍</span>
-                                    <span class="text-sm font-medium">Bilbao - Spain</span>
-                                </div>
-                                <p class="text-gray-500 text-sm italic mb-4 text-center lg:text-right">
-                                    Diciembre - Actually
-                                </p>
-                                <p class="text-gray-700 text-sm leading-relaxed mb-6">
-                                    Como desarrollador Full Stack por cuenta propia, diseño y desarrollo un
-                                    sistema de gestión para una empresa de entregas, abarcando
-                                    funcionalidades como la gestión de repartos, control de deudas de
-                                    clientes, balance de caja y administración de pagos.
-                                </p>
-                                <div class="text-center lg:text-right">
-                                    <p class="text-gray-800 font-medium mb-4">Tecnologías utilizadas:</p>
-                                    <div class="grid grid-cols-3 gap-4">
+
+        <div class="flex flex-col items-center gap-8 max-w-4xl mx-auto">
+            {workData.map((job) => (
+                    <div class="bg-white rounded-lg p-8 sm:p-28 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full max-w-2xl">
+                        <h3 class="text-center text-2xl font-semibold text-gray-900 mb-2 border-b pb-2">
+                            {job.title}
+                        </h3>
+                        <div class="flex items-center justify-center text-gray-600 mb-2">
+                            <span class="text-sm font-medium">{job.company}</span>
+                            <span class="mx-2">📍</span>
+                            <span class="text-sm">{job.location}</span>
+                        </div>
+                        <p class="text-gray-500 text-sm italic mb-4 text-center">
+                            {job.period}
+                        </p>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-6 text-left">
+                            {job.description}
+                        </p>
+                        <div class="text-center">
+                            <p class="text-gray-800 font-medium mb-4">Tecnologías utilizadas:</p>
+                            <div class="grid grid-cols-4 gap-3">
+                                {job.technologies.map((tech) => (
                                         <div class="flex flex-col items-center group">
-                                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-green-200 transition-colors duration-200">
-                                                <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"/>
-                                                </svg>
+                                            <div class="w-10 h-10 flex items-center justify-center">
+                                                <img
+                                                        src={tech.icon}
+                                                        alt={tech.name}
+                                                        class="w-10 h-10"
+                                                />
                                             </div>
-                                            <span class="text-xs text-gray-600">Vue.js</span>
+                                            <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
                                         </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-red-200 transition-colors duration-200">
-                                                <svg class="w-8 h-8 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.030.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.030.034.044.008.012.018.02.024.033.01.02.017.038.024.058.003.01.01.021.013.032.009.032.013.065.013.098zm-4.885 8.506a.38.38 0 01-.188-.026l-4.323-2.49a.373.373 0 01-.189-.326v-4.934L9.93 8.327a.38.38 0 01-.188.026.38.38 0 01-.188-.026l-4.323-2.49a.373.373 0 01-.189-.326V.43l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.030.034.044.008.012.018.02.024.033.01.02.017.038.024.058.003.01.01.021.013.032.009.032.013.065.013.098v9.652l4.324-2.49V5.43c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.030.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598z"/>
-                                                </svg>
-                                            </div>
-                                            <span class="text-xs text-gray-600">Laravel</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-cyan-200 transition-colors duration-200">
-                                                <svg class="w-8 h-8 text-cyan-600" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C7.666,17.618,9.027,19,12.001,19c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.182,8.976,12,6.001,12z"/>
-                                                </svg>
-                                            </div>
-                                            <span class="text-xs text-gray-600">Tailwind</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-blue-200 transition-colors duration-200">
-                                                <span class="text-blue-600 font-bold text-lg">TS</span>
-                                            </div>
-                                            <span class="text-xs text-gray-600">TypeScript</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-blue-200 transition-colors duration-200">
-                                                <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186H5.136a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.186m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338 0-.676.03-1.01.09-.248-1.827-1.24-2.949-2.929-2.949-2.147 0-2.728 1.446-2.728 2.728v.405h-11.04v.405c0 1.282-.581 2.728-2.728 2.728H.676a.186.186 0 00-.186.185v1.888c0 .102.084.185.186.185h.698c2.147 0 2.728-1.446 2.728-2.728v-.405h11.04v-.405c0-1.282.581-2.728 2.728-2.728 1.689 0 2.681 1.122 2.929 2.949.334-.06.672-.09 1.01-.09 1.282 0 1.889.459 1.954.51a.185.185 0 00.123.045c.102 0 .185-.083.185-.185V10.04a.185.185 0 00-.062-.15"/>
-                                                </svg>
-                                            </div>
-                                            <span class="text-xs text-gray-600">Docker</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-gray-200 transition-colors duration-200">
-                                                <svg class="w-8 h-8 text-gray-800" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                                                </svg>
-                                            </div>
-                                            <span class="text-xs text-gray-600">GitHub</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="relative">
-                    <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-                        <div class="hidden lg:block lg:pr-8"></div>
-                        <div class="lg:pl-8">
-                            <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                                <h3 class="text-2xl font-semibold text-gray-900 mb-2 border-b pb-2">
-                                    Programmer - Supervisor
-                                </h3>
-                                <div class="flex items-center justify-center lg:justify-start text-gray-600 mb-2">
-                                    <span class="text-sm font-medium">RK Informatika</span>
-                                    <span class="mx-2">📍</span>
-                                    <span class="text-sm">Bilbao - Spain</span>
-                                </div>
-                                <p class="text-gray-500 text-sm italic mb-4 text-center lg:text-left">
-                                    Enero 2022 - Diciembre 2024
-                                </p>
-                                <p class="text-gray-700 text-sm leading-relaxed mb-6">
-                                    Como supervisor del departamento de programación y desarrollo, lideré
-                                    al equipo de programadores, gestioné proyectos y coordiné la
-                                    comunicación con clientes y otros departamentos clave. Fui responsable
-                                    del desarrollo de software interno y de proyectos estratégicos para la
-                                    empresa.
-                                </p>
-                                <div class="text-center lg:text-left">
-                                    <p class="text-gray-800 font-medium mb-4">Tecnologías utilizadas:</p>
-                                    <div class="grid grid-cols-4 gap-3">
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-indigo-200 transition-colors duration-200">
-                                                <span class="text-indigo-600 font-bold text-sm">PHP</span>
-                                            </div>
-                                            <span class="text-xs text-gray-600">PHP</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-yellow-200 transition-colors duration-200">
-                                                <span class="text-yellow-600 font-bold text-sm">JS</span>
-                                            </div>
-                                            <span class="text-xs text-gray-600">JavaScript</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-blue-200 transition-colors duration-200">
-                                                <span class="text-blue-600 font-bold text-sm">CSS</span>
-                                            </div>
-                                            <span class="text-xs text-gray-600">CSS3</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-orange-200 transition-colors duration-200">
-                                                <span class="text-orange-600 font-bold text-sm">HTML</span>
-                                            </div>
-                                            <span class="text-xs text-gray-600">HTML5</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-blue-200 transition-colors duration-200">
-                                                <svg class="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M21.5 2h-19C1.67 2 1 2.67 1 3.5v17c0 .83.67 1.5 1.5 1.5h19c.83 0 1.5-.67 1.5-1.5v-17c0-.83-.67-1.5-1.5-1.5zM21 20.5c0 .28-.22.5-.5.5h-17c-.28 0-.5-.22-.5-.5v-17c0-.28.22-.5.5-.5h17c.28 0 .5.22.5.5v17z"/>
-                                                </svg>
-                                            </div>
-                                            <span class="text-xs text-gray-600">Office</span>
-                                        </div>
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-2 group-hover:bg-red-200 transition-colors duration-200">
-                                                <svg class="w-6 h-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
-                                                </svg>
-                                            </div>
-                                            <span class="text-xs text-gray-600">Git</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ))}
         </div>
     </div>
 </section>

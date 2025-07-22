@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Desarrollo en Vue - Curso",
+    "company": "Platzi",
+    "location": "Online",
+    "period": "2025",
+    "description": "",
+    "technologies": [
+      {
+        "name": "Vue",
+        "icon": "/icon/vue.png"
+      }
+    ]
+  },
+  {
+    "title": "Desarrollo en Typescript - Curso",
+    "company": "Platzi",
+    "location": "Online",
+    "period": "2025",
+    "description": "",
+    "technologies": [
+      {
+        "name": "TypeScript",
+        "icon": "/icon/ts.png"
+      }
+    ]
+  },
+  {
+    "title": "Desarrollo en Laravel - Curso",
+    "company": "Mastermind",
+    "location": "Online",
+    "period": "2024",
+    "description": "",
+    "technologies": [
+      {
+        "name": "Laravel",
+        "icon": "/icon/laravel.png"
+      }
+    ]
+  },
+  {
+    "title": "Framework Backend - Curso",
+    "company": "Mastermind",
+    "location": "Online",
+    "period": "2024",
+    "description": "",
+    "technologies": [
+      {
+        "name": "Laravel",
+        "icon": "/icon/laravel.png"
+      },
+      {
+        "name": "PHP",
+        "icon": "/icon/php.png"
+      }
+    ]
+  },
+  {
+    "title": "Desarrollador Web",
+    "company": "CIFP Zornotza LHII",
+    "location": "Bilbao - Spain",
+    "period": "Septiembre 2021 - Junio 2023",
+    "description": "",
+    "technologies": [
+      {
+        "name": "HTML",
+        "icon": "/icon/html.png"
+      },
+      {
+        "name": "CSS",
+        "icon": "/icon/css.png"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "/icon/js.png"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/icon/ts.png"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/icon/tailwind.png"
+      },
+      {
+        "name": "Vue",
+        "icon": "/icon/vue.png"
+      },
+      {
+        "name": "PHP",
+        "icon": "/icon/php.png"
+      },
+      {
+        "name": "Laravel",
+        "icon": "/icon/laravel.png"
+      },
+      {
+        "name": "MySQL",
+        "icon": "/icon/mysql.png"
+      },
+      {
+        "name": "Figma",
+        "icon": "/icon/figma.png"
+      },
+      {
+        "name": "GitHub",
+        "icon": "/icon/github.png"
+      },
+      {
+        "name": "Git",
+        "icon": "/icon/git.png"
+      }
+    ]
+  }
+]

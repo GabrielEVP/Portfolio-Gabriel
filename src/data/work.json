@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Full Stack Dev",
+    "company": "Remote",
+    "location": "Bilbao - Spain",
+    "period": "Diciembre - Actually",
+    "description": "Como desarrollador Full Stack por cuenta propia, diseño y desarrollo un sistema de gestión para una empresa de entregas, abarcando funcionalidades como la gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.",
+    "technologies": [
+      {"name": "Vue", "icon": "/icon/vue.png"},
+      {"name": "Laravel", "icon": "/icon/laravel.png"},
+      {"name": "Chart.js", "icon": "/icon/chartjs.png"},
+      {"name": "MySQL", "icon": "/icon/mysql.png"},
+      {"name": "Tailwind", "icon": "/icon/tailwind.png"},
+      {"name": "TypeScript", "icon": "/icon/ts.png"},
+      {"name": "Trello", "icon": "/icon/trello.webp"},
+      {"name": "GitHub", "icon": "/icon/github.png"},
+      {"name": "Vercel", "icon": "/icon/vercel.png"},
+      {"name": "Railway", "icon": "/icon/railway.png"},
+      {"name": "Figma", "icon": "/icon/figma.png"}
+    ]
+  },
+  {
+    "title": "Programmer - Supervisor",
+    "company": "RK Informatika",
+    "location": "Bilbao - Spain",
+    "period": "Enero 2022 - Diciembre 2024",
+    "description": "Como supervisor del departamento de programación y desarrollo, lideré al equipo de programadores, gestioné proyectos y coordiné la comunicación con clientes y otros departamentos clave. Fui responsable del desarrollo de software interno y de proyectos estratégicos para la empresa.",
+    "technologies": [
+      {"name": "PHP", "icon": "/icon/php.png"},
+      {"name": "JavaScript", "icon": "/icon/js.png"},
+      {"name": "HTML", "icon": "/icon/html.png"},
+      {"name": "CSS", "icon": "/icon/css.png"},
+      {"name": "Trello", "icon": "/icon/trello.webp"},
+      {"name": "Figma", "icon": "/icon/figma.png"},
+      {"name": "MySQL", "icon": "/icon/mysql.png"},
+      {"name": "Git", "icon": "/icon/git.png"}
+    ]
+  }
+]
