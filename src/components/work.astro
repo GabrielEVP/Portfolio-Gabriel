@@ -1,52 +1,55 @@
 ---
-import workData from '../data/work.json';
+import workData from "../data/work.json";
 ---
 
-<section id="experience" class="min-h-screen bg-black py-16">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-24">
-            <h2 class="text-4xl lg:text-5xl font-light text-white mb-6">
-                Experiencia Laboral
-            </h2>
-            <div class="w-24 h-1 bg-white mx-auto"></div>
-        </div>
-
-        <div class="flex flex-col items-center gap-8 max-w-4xl mx-auto">
-            {workData.map((job) => (
-                    <div class="bg-white rounded-lg p-8 sm:p-28 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full max-w-2xl">
-                        <h3 class="text-center text-2xl font-semibold text-gray-900 mb-2 border-b pb-2">
-                            {job.title}
-                        </h3>
-                        <div class="flex items-center justify-center text-gray-600 mb-2">
-                            <span class="text-sm font-medium">{job.company}</span>
-                            <span class="mx-2">📍</span>
-                            <span class="text-sm">{job.location}</span>
-                        </div>
-                        <p class="text-gray-500 text-sm italic mb-4 text-center">
-                            {job.period}
-                        </p>
-                        <p class="text-gray-700 text-sm leading-relaxed mb-6 text-left">
-                            {job.description}
-                        </p>
-                        <div class="text-center">
-                            <p class="text-gray-800 font-medium mb-4">Tecnologías utilizadas:</p>
-                            <div class="grid grid-cols-4 gap-3">
-                                {job.technologies.map((tech) => (
-                                        <div class="flex flex-col items-center group">
-                                            <div class="w-10 h-10 flex items-center justify-center">
-                                                <img
-                                                        src={tech.icon}
-                                                        alt={tech.name}
-                                                        class="w-10 h-10"
-                                                />
-                                            </div>
-                                            <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
-                                        </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-            ))}
-        </div>
+<section
+  id="experience"
+  class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll"
+>
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-24">
+      <h2 class="text-4xl lg:text-5xl font-light text-black mb-6 tracking-wide">
+        Experiencia Laboral
+      </h2>
+      <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
     </div>
+
+    <div class="flex flex-col items-center gap-12 max-w-4xl mx-auto">
+      {
+        workData.map((job) => (
+          <div class="bg-white rounded-xl border border-gray-200 p-10 sm:p-16 transition-shadow duration-300 w-full max-w-2xl">
+            <h3 class="text-center text-2xl font-semibold text-gray-900 mb-2 border-b pb-2 tracking-wide">
+              {job.title}
+            </h3>
+            <div class="flex items-center justify-center text-gray-600 mb-2 gap-2">
+              <span class="text-sm font-medium">{job.company}</span>
+              <span class="mx-1">·</span>
+              <span class="text-sm">{job.location}</span>
+            </div>
+            <p class="text-gray-500 text-sm italic mb-4 text-center">
+              {job.period}
+            </p>
+            <p class="text-gray-700 text-base leading-relaxed mb-6 text-left">
+              {job.description}
+            </p>
+            <div class="text-center">
+              <p class="text-gray-800 font-medium mb-4">
+                Tecnologías utilizadas:
+              </p>
+              <div class="grid grid-cols-4 gap-4">
+                {job.technologies.map((tech) => (
+                  <div class="flex flex-col items-center group">
+                    <div class="w-10 h-10 flex items-center justify-center">
+                      <img src={tech.icon} alt={tech.name} class="w-10 h-10" />
+                    </div>
+                    <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
 </section>
