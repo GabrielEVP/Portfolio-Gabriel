@@ -1,0 +1,9 @@
+{
+  "title": "Contacto",
+  "subtitle": "¿Quieres ponerte en contacto conmigo? Completa el formulario y te responderé lo antes posible.",
+  "label_name": "Nombre",
+  "label_email": "Email",
+  "label_message": "Mensaje",
+  "button": "Enviar",
+  "success": "¡Mensaje enviado con éxito!"
+} 

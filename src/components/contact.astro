@@ -1,5 +1,5 @@
 ---
-
+import contactData from "../data/contact.json";
 ---
 
 <section
@@ -11,9 +11,10 @@
       <h2
         class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide"
       >
-        Contacto
+        {contactData.title}
       </h2>
       <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
+      <p class="text-gray-600 mt-4">{contactData.subtitle}</p>
     </div>
     <form
       id="contact-form"
@@ -23,7 +24,8 @@
       class="space-y-8 bg-white p-16 rounded-2xl border-2 border-gray-200 shadow-md min-h-[500px] w-full"
     >
       <div>
-        <label for="name" class="block text-gray-800 mb-2 text-lg">Nombre</label
+        <label for="name" class="block text-gray-800 mb-2 text-lg"
+          >{contactData.label_name}</label
         >
         <input
           type="text"
@@ -34,7 +36,8 @@
         />
       </div>
       <div>
-        <label for="email" class="block text-gray-800 mb-2 text-lg">Email</label
+        <label for="email" class="block text-gray-800 mb-2 text-lg"
+          >{contactData.label_email}</label
         >
         <input
           type="email"
@@ -46,7 +49,7 @@
       </div>
       <div>
         <label for="message" class="block text-gray-800 mb-2 text-lg"
-          >Mensaje</label
+          >{contactData.label_message}</label
         >
         <textarea
           id="message"
@@ -59,13 +62,13 @@
       <button
         type="submit"
         class="w-full bg-black text-white rounded px-6 py-3 font-semibold uppercase tracking-widest text-lg hover:bg-gray-900 transition"
-        >Enviar</button
+        >{contactData.button}</button
       >
       <div
         id="success-message"
         class="hidden text-green-600 text-center mt-4 font-medium"
       >
-        ¡Mensaje enviado con éxito!
+        {contactData.success}
       </div>
     </form>
   </div>

@@ -1,12 +1,12 @@
 ---
-
+import footerData from "../data/footer.json";
 ---
 
 <footer class="bg-neutral-50 py-8 animate-fade-scroll">
   <div class="flex flex-col items-center justify-center gap-2">
     <div class="flex gap-6 mb-2">
       <a
-        href="https://www.linkedin.com/in/gabrielvargasdev/"
+        href={footerData.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -19,7 +19,7 @@
         >
       </a>
       <a
-        href="https://github.com/gabrielvargasdev"
+        href={footerData.github}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
@@ -32,8 +32,6 @@
         >
       </a>
     </div>
-    <span class="text-xs text-gray-500"
-      >&copy; {new Date().getFullYear()} Gabriel Vargas</span
-    >
+    <span class="text-xs text-gray-500">{footerData.copyright}</span>
   </div>
 </footer>
