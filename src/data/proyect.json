@@ -13,7 +13,6 @@
       "technologies": [
         { "name": "Laravel", "icon": "/icon/laravel.png" },
         { "name": "Tailwind", "icon": "/icon/tailwind.png" },
-        { "name": "Vite", "icon": "/icon/vite.png" },
         { "name": "MySQL", "icon": "/icon/mysql.png" },
         { "name": "GitHub", "icon": "/icon/github.png" }
       ]
@@ -27,7 +26,8 @@
         "Imagenes"
       ],
       "technologies": [
-        { "name": "Java", "icon": "/icon/java.png" }
+        { "name": "Java", "icon": "/icon/java.png" },
+        { "name": "GitHub", "icon": "/icon/github.png" }
       ]
     }
   ]
