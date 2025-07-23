@@ -1,0 +1,7 @@
+[
+  { "name": "Sobre mí", "href": "#about" },
+  { "name": "Experiencia", "href": "#experience" },
+  { "name": "Educación", "href": "#education" },
+  { "name": "Proyecto", "href": "#projects" },
+  { "name": "Contacto", "href": "#contact" }
+]

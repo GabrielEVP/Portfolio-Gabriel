@@ -9,7 +9,7 @@ import educationData from "../data/education.json";
   <div class="container mx-auto px-4">
     <div class="text-center mb-24">
       <h2 class="text-4xl lg:text-5xl font-light text-black mb-6 tracking-wide">
-        Educación
+        {educationData.sectionTitle}
       </h2>
       <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
     </div>
@@ -19,7 +19,7 @@ import educationData from "../data/education.json";
         <h3
           class="text-center text-3xl font-semibold text-gray-800 mb-10 tracking-wide"
         >
-          Grados Superiores
+          {educationData.higherDegreesTitle}
         </h3>
         <div class="flex flex-col gap-10">
           {
@@ -36,13 +36,10 @@ import educationData from "../data/education.json";
                 <p class="text-gray-500 text-sm italic mb-4 text-center">
                   {item.period}
                 </p>
-                {item.description && (
-                  <p class="text-gray-700 text-base leading-relaxed mb-6 text-left">
-                    {item.description}
-                  </p>
-                )}
                 <div class="text-center">
-                  <p class="text-gray-800 font-medium mb-4">Tecnologías:</p>
+                  <p class="text-gray-800 font-medium mb-4">
+                    {item.technologiesTitle}
+                  </p>
                   <div class="grid grid-cols-4 gap-4 justify-center">
                     {item.technologies.map((tech) => (
                       <div class="flex flex-col items-center">
@@ -63,11 +60,12 @@ import educationData from "../data/education.json";
           }
         </div>
       </div>
+
       <div class="w-full flex flex-col items-center">
         <h3
           class="text-3xl font-semibold text-gray-800 mb-10 text-center tracking-wide"
         >
-          Cursos
+          {educationData.coursesTitle}
         </h3>
         <div class="flex flex-col gap-10 w-full max-w-xl">
           {
@@ -91,7 +89,9 @@ import educationData from "../data/education.json";
                     </span>
                   </div>
                   <div class="text-center mt-6">
-                    <p class="text-gray-800 font-medium mb-3">Tecnologías:</p>
+                    <p class="text-gray-800 font-medium mb-3">
+                      {item.technologiesTitle}
+                    </p>
                     <div class="flex justify-center gap-4 flex-wrap">
                       {item.technologies.map((tech) => (
                         <div class="flex flex-col items-center">
@@ -112,10 +112,10 @@ import educationData from "../data/education.json";
                   <div class="mt-8 text-center">
                     <a
                       target="_blank"
-                      href={item.certificate}
+                      href={item.certificateLink}
                       class="inline-flex items-center px-8 py-3 border border-gray-400 bg-white text-black hover:bg-gray-100 hover:text-black transition-all duration-300 group rounded-full shadow-none tracking-widest text-sm uppercase"
                     >
-                      <span>Ver Certificado</span>
+                      <span>{item.certificateText}</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-4 w-4 ml-3 group-hover:translate-x-1 transition-transform"

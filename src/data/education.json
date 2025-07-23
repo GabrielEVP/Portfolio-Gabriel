@@ -1,48 +1,24 @@
 {
+  "sectionTitle": "Educación",
+  "higherDegreesTitle": "Grados Superiores",
+  "coursesTitle": "Cursos",
   "higherDegrees": [
     {
       "title": "Web Developer",
       "company": "CIFP Zornotza LHII",
       "location": "Bilbao - Spain",
       "period": "September 2021 - June 2023",
-      "description": "",
+      "technologiesTitle": "Tecnologías:",
       "technologies": [
-        {
-          "name": "HTML",
-          "icon": "/icon/html.png"
-        },
-        {
-          "name": "CSS",
-          "icon": "/icon/css.png"
-        },
-        {
-          "name": "JavaScript",
-          "icon": "/icon/js.png"
-        },
-        {
-          "name": "Angular",
-          "icon": "/icon/angular.png"
-        },
-        {
-          "name": "PHP",
-          "icon": "/icon/php.png"
-        },
-        {
-          "name": "Bash",
-          "icon": "/icon/bash.jpg"
-        },
-        {
-          "name": "MySQL",
-          "icon": "/icon/mysql.png"
-        },
-        {
-          "name": "GitHub",
-          "icon": "/icon/github.png"
-        },
-        {
-          "name": "Git",
-          "icon": "/icon/git.png"
-        }
+        { "name": "HTML", "icon": "/icon/html.png" },
+        { "name": "CSS", "icon": "/icon/css.png" },
+        { "name": "JavaScript", "icon": "/icon/js.png" },
+        { "name": "Angular", "icon": "/icon/angular.png" },
+        { "name": "PHP", "icon": "/icon/php.png" },
+        { "name": "Bash", "icon": "/icon/bash.jpg" },
+        { "name": "MySQL", "icon": "/icon/mysql.png" },
+        { "name": "GitHub", "icon": "/icon/github.png" },
+        { "name": "Git", "icon": "/icon/git.png" }
       ]
     }
   ],
@@ -52,12 +28,11 @@
       "company": "Platzi",
       "location": "Online",
       "period": "2025",
-      "certificate": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateText": "Ver Certificado",
+      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "technologiesTitle": "Tecnologías:",
       "technologies": [
-        {
-          "name": "Vue",
-          "icon": "/icon/vue.png"
-        }
+        { "name": "Vue", "icon": "/icon/vue.png" }
       ]
     },
     {
@@ -65,12 +40,11 @@
       "company": "Platzi",
       "location": "Online",
       "period": "2025",
-      "certificate": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateText": "Ver Certificado",
+      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "technologiesTitle": "Tecnologías:",
       "technologies": [
-        {
-          "name": "TypeScript",
-          "icon": "/icon/ts.png"
-        }
+        { "name": "TypeScript", "icon": "/icon/ts.png" }
       ]
     },
     {
@@ -78,12 +52,11 @@
       "company": "Mastermind",
       "location": "Online",
       "period": "2024",
-      "certificate": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateText": "Ver Certificado",
+      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "technologiesTitle": "Tecnologías:",
       "technologies": [
-        {
-          "name": "Laravel",
-          "icon": "/icon/laravel.png"
-        }
+        { "name": "Laravel", "icon": "/icon/laravel.png" }
       ]
     },
     {
@@ -91,16 +64,12 @@
       "company": "Mastermind",
       "location": "Online",
       "period": "2024",
-      "certificate": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateText": "Ver Certificado",
+      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "technologiesTitle": "Tecnologías:",
       "technologies": [
-        {
-          "name": "Laravel",
-          "icon": "/icon/laravel.png"
-        },
-        {
-          "name": "PHP",
-          "icon": "/icon/php.png"
-        }
+        { "name": "Laravel", "icon": "/icon/laravel.png" },
+        { "name": "PHP", "icon": "/icon/php.png" }
       ]
     }
   ]

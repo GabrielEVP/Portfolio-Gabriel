@@ -1,5 +1,5 @@
 ---
-
+import headerData from "../data/header.json";
 ---
 
 <header
@@ -10,31 +10,39 @@
     <h1
       class="text-4xl sm:text-5xl lg:text-7xl font-light text-gray-900 mb-6 tracking-wide animate-header-shine relative overflow-hidden"
     >
-      <span class="relative z-10">Gabriel Vargas</span>
+      <span class="relative z-10">
+        {headerData.name}
+      </span>
       <span class="header-shine"></span>
     </h1>
     <div class="mb-8">
-      <h2 class="text-xl sm:text-2xl lg:text-4xl text-gray-700 font-light mb-2">
-        Desarrollador
-      </h2>
-      <h2 class="text-xl sm:text-2xl lg:text-4xl text-gray-700 font-light">
-        Full Stack
-      </h2>
+      {
+        headerData.titleLines.map((line) => (
+          <h2 class="text-xl sm:text-2xl lg:text-4xl text-gray-700 font-light mb-2">
+            {line}
+          </h2>
+        ))
+      }
     </div>
     <p
       class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed font-light"
     >
-      Especializado en crear Aplicaciones Web<br />
-      con código limpio y arquitecturas<br />
-      escalables.
+      {
+        headerData.description.map((line) => (
+          <>
+            {line}
+            <br />
+          </>
+        ))
+      }
     </p>
     <div class="mb-16">
       <a
         target="_blank"
-        href="Gabriel.pdf"
+        href={headerData.cvButton.url}
         class="inline-flex items-center px-6 py-3 border border-gray-300 bg-white text-black font-medium text-base rounded-full hover:bg-gray-100 transition-all duration-300 group shadow-none tracking-widest uppercase"
       >
-        Ver CV
+        {headerData.cvButton.label}
         <svg
           class="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1"
           fill="none"

@@ -1,31 +1,6 @@
 ---
-const navItems = [
-  { name: "Sobre mí", href: "#about" },
-  { name: "Experiencia", href: "#experience" },
-  { name: "Educación", href: "#education" },
-  { name: "Proyecto", href: "#projects" },
-  { name: "Contacto", href: "#contact" },
-];
+import navItems from "../data/navbar.json";
 ---
-
-<script>
-  let scrolled = false;
-
-  const handleScroll = () => {
-    scrolled = window.scrollY > 10;
-    const nav = document.getElementById("navbar");
-    if (!nav) return;
-    if (scrolled) {
-      nav.classList.add("shadow-md", "bg-black/95", "backdrop-blur");
-    } else {
-      nav.classList.remove("shadow-md", "bg-black/95", "backdrop-blur");
-    }
-  };
-
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", handleScroll);
-  }
-</script>
 
 <nav
   id="navbar"
@@ -33,10 +8,8 @@ const navItems = [
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
-      <div class="flex-shrink-0">
-        <div class="w-10 h-10">
-          <img src="/Logo.png" alt="logo" class="w-10 h-10" />
-        </div>
+      <div class="flex-shrink-0 w-10 h-10">
+        <img src="/Logo.png" alt="logo" class="w-10 h-10" />
       </div>
       <div class="hidden md:flex items-center space-x-8">
         {
@@ -75,6 +48,7 @@ const navItems = [
       </div>
     </div>
   </div>
+
   <div
     class="md:hidden fixed top-0 left-0 w-full h-screen bg-white/80 backdrop-blur-sm z-40 transition-all duration-300 opacity-0 pointer-events-none"
     id="mobile-menu"
@@ -83,8 +57,9 @@ const navItems = [
       id="close-mobile-menu"
       aria-label="Cerrar menú"
       class="absolute top-6 right-6 text-gray-700 hover:text-black text-4xl p-2 focus:outline-none"
-      >&times;</button
     >
+      &times;
+    </button>
     <div
       class="flex flex-col items-center justify-center h-full gap-8 animate-fade-slide"
     >
@@ -104,46 +79,45 @@ const navItems = [
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.getElementById("navbar");
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
     const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
 
-    if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener("click", () => {
-        const isOpen = mobileMenu.classList.contains("opacity-100");
-        if (!isOpen) {
-          mobileMenu.classList.add("opacity-100");
-          mobileMenu.classList.remove("opacity-0", "pointer-events-none");
-          mobileMenuBtn.setAttribute("aria-expanded", "true");
-          document.body.style.overflow = "hidden";
-        } else {
-          mobileMenu.classList.remove("opacity-100");
-          mobileMenu.classList.add("opacity-0", "pointer-events-none");
-          mobileMenuBtn.setAttribute("aria-expanded", "false");
-          document.body.style.overflow = "";
-        }
-      });
+    const toggleMobileMenu = (open: any) => {
+      if (!mobileMenu) return;
+      mobileMenu.classList.toggle("opacity-100", open);
+      mobileMenu.classList.toggle("opacity-0", !open);
+      mobileMenu.classList.toggle("pointer-events-none", !open);
+      mobileMenuBtn?.setAttribute("aria-expanded", String(open));
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 10;
+      if (!nav) return;
+      nav.classList.toggle("shadow-md", scrolled);
+      nav.classList.toggle("bg-black/95", scrolled);
+      nav.classList.toggle("backdrop-blur", scrolled);
+    };
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener("click", () => toggleMobileMenu(true));
     }
-    if (closeMobileMenuBtn && mobileMenu) {
-      closeMobileMenuBtn.addEventListener("click", () => {
-        mobileMenu.classList.remove("opacity-100");
-        mobileMenu.classList.add("opacity-0", "pointer-events-none");
-        if (mobileMenuBtn) mobileMenuBtn.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
-      });
+
+    if (closeMobileMenuBtn) {
+      closeMobileMenuBtn.addEventListener("click", () =>
+        toggleMobileMenu(false)
+      );
     }
+
     if (mobileMenu) {
-      const mobileLinks = mobileMenu.querySelectorAll("a");
-      mobileLinks?.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.remove("opacity-100");
-          mobileMenu.classList.add("opacity-0", "pointer-events-none");
-          if (mobileMenuBtn)
-            mobileMenuBtn.setAttribute("aria-expanded", "false");
-          document.body.style.overflow = "";
-        });
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => toggleMobileMenu(false));
       });
     }
+
+    window.addEventListener("scroll", handleScroll);
   });
 </script>
 
