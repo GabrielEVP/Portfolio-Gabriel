@@ -1,5 +1,5 @@
 {
-  "image": "/Gabriel.jpg",
+  "image": "/src/assets/Gabriel.jpg",
   "alt": "Gabriel Vargas - Desarrollador Full Stack",
   "title": "Sobre Mí",
   "intro": "Hola! Soy Gabriel Vargas, Desarrollador Full Stack. He completado un grado en Desarrollo Web en CIFP ZORNOTZA LHII y he trabajado como Desarrollador Web y Supervisor del Departamento de Desarrollo.",
@@ -7,4 +7,4 @@
   "experience": "En mi última experiencia laboral, tras dos años de desempeño, avancé de Desarrollador Web a Supervisor del Departamento de Desarrollo. Contribuí en el desarrollo de un programa de gestión y facturación, además de gestionar equipos y mantener la comunicación con los clientes sobre nuevos proyectos. Esta experiencia me ha permitido consolidar mi habilidad para liderar y coordinar proyectos de desarrollo de manera eficiente.",
   "passion": "La programación es mi pasión, y creo firmemente que es una habilidad esencial en el mundo actual. La tecnología está en constante evolución, y disfruto de la oportunidad de aprender y adaptarme continuamente. Además, pienso que los conocimientos en programación nos permiten transformar ideas en realidad y automatizar procesos para mejorar la vida de todos.",
   "goal": "Mi objetivo es seguir creciendo profesionalmente en el ámbito del desarrollo, formando parte de una empresa en la que pueda aplicar lo aprendido y aprender aún más, con un compromiso de crecimiento continuo tanto a nivel personal como profesional."
-} 
+}

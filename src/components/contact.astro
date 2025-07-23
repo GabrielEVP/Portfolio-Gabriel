@@ -2,88 +2,51 @@
 import contactData from "../data/contact.json";
 ---
 
-<section
-  id="contact"
-  class="min-h-screen bg-neutral-50 py-16 flex items-center animate-fade-scroll"
->
-  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-    <div class="text-center mb-12">
-      <h2
-        class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide"
-      >
-        {contactData.title}
-      </h2>
-      <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
-    </div>
-    <form
-      id="contact-form"
-      action="#"
-      method="POST"
-      enctype="text/plain"
-      class="space-y-8 bg-white p-16 rounded-2xl border-2 border-gray-200 shadow-md min-h-[500px] w-full"
-    >
-      <div>
-        <label for="name" class="block text-gray-800 mb-2 text-lg"
-          >{contactData.label_name}</label
-        >
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition"
-        />
+<section id="contact" class="min-h-screen bg-neutral-50 py-16 flex items-center animate-fade-scroll">
+   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="text-center mb-12">
+         <h2 class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide">
+            {contactData.title}
+         </h2>
+         <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
       </div>
-      <div>
-        <label for="email" class="block text-gray-800 mb-2 text-lg">
-          {contactData.label_email}
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition"
-        />
-      </div>
-      <div>
-        <label for="message" class="block text-gray-800 mb-2 text-lg">
-          {contactData.label_message}
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          required
-          class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition"
-        ></textarea>
-      </div>
-      <button
-        type="submit"
-        class="w-full bg-black text-white rounded px-6 py-3 font-semibold uppercase tracking-widest text-lg hover:bg-gray-900 transition"
-      >
-        {contactData.button}
-      </button>
-      <div
-        id="success-message"
-        class="hidden text-green-600 text-center mt-4 font-medium"
-      >
-        {contactData.success}
-      </div>
-    </form>
-  </div>
+      <form id="contact-form" action="#" method="POST" enctype="text/plain" class="space-y-8 bg-white p-16 rounded-2xl border-2 border-gray-200 shadow-md min-h-[500px] w-full">
+         <div>
+            <label for="name" class="block text-gray-800 mb-2 text-lg">{contactData.label_name}</label>
+            <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition" />
+         </div>
+         <div>
+            <label for="email" class="block text-gray-800 mb-2 text-lg">
+               {contactData.label_email}
+            </label>
+            <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition" />
+         </div>
+         <div>
+            <label for="message" class="block text-gray-800 mb-2 text-lg">
+               {contactData.label_message}
+            </label>
+            <textarea id="message" name="message" rows="6" required class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition"></textarea>
+         </div>
+         <button type="submit" class="w-full bg-black text-white rounded px-6 py-3 font-semibold uppercase tracking-widest text-lg hover:bg-gray-900 transition">
+            {contactData.button}
+         </button>
+         <div id="success-message" class="hidden text-green-600 text-center mt-4 font-medium">
+            {contactData.success}
+         </div>
+      </form>
+   </div>
 </section>
 <script>
-  if (typeof window !== "undefined") {
-    const form = document.getElementById("contact-form");
-    const successMsg = document.getElementById("success-message");
-    if (form && successMsg) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        (form as HTMLFormElement).reset();
-        successMsg.classList.remove("hidden");
-        setTimeout(() => successMsg.classList.add("hidden"), 3000);
-      });
-    }
-  }
+   if (typeof window !== "undefined") {
+      const form = document.getElementById("contact-form");
+      const successMsg = document.getElementById("success-message");
+      if (form && successMsg) {
+         form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            (form as HTMLFormElement).reset();
+            successMsg.classList.remove("hidden");
+            setTimeout(() => successMsg.classList.add("hidden"), 3000);
+         });
+      }
+   }
 </script>

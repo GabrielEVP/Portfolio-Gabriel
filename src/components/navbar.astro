@@ -1,138 +1,103 @@
 ---
 import navItems from "../data/navbar.json";
+const logoSrc = navItems[0].logo;
+const menuItems = navItems.slice(1);
 ---
 
-<nav
-  id="navbar"
-  class="bg-neutral-50 fixed top-0 w-full z-50 transition-all duration-300"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <div class="flex-shrink-0 w-10 h-10">
-        <img src="/Logo.png" alt="logo" class="w-10 h-10" />
+<nav id="navbar" class="bg-neutral-50 fixed top-0 w-full z-50 transition-all duration-300">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+         <div class="flex-shrink-0 w-10 h-10">
+            <img src={logoSrc} alt="logo" class="w-10 h-10" />
+         </div>
+         <div class="hidden md:flex items-center space-x-8">
+            {
+               menuItems.map((item) => (
+                  <a href={item.href} class="text-gray-800 hover:text-black font-medium transition-colors duration-200 px-2 py-1 rounded-md relative group tracking-wide">
+                     {item.name}
+                     <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full" />
+                  </a>
+               ))
+            }
+         </div>
+         <div class="md:hidden">
+            <button type="button" id="mobile-menu-btn" class="text-gray-800 hover:text-black focus:outline-none focus:text-black" aria-controls="mobile-menu" aria-expanded="false">
+               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+               </svg>
+            </button>
+         </div>
       </div>
-      <div class="hidden md:flex items-center space-x-8">
-        {
-          navItems.map((item) => (
-            <a
-              href={item.href}
-              class="text-gray-800 hover:text-black font-medium transition-colors duration-200 px-2 py-1 rounded-md relative group tracking-wide"
-            >
-              {item.name}
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full" />
-            </a>
-          ))
-        }
-      </div>
-      <div class="md:hidden">
-        <button
-          type="button"
-          id="mobile-menu-btn"
-          class="text-gray-800 hover:text-black focus:outline-none focus:text-black"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
-          <svg
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
+   </div>
 
-  <div
-    class="md:hidden fixed top-0 left-0 w-full h-screen bg-white/80 backdrop-blur-sm z-40 transition-all duration-300 opacity-0 pointer-events-none"
-    id="mobile-menu"
-  >
-    <button
-      id="close-mobile-menu"
-      aria-label="Cerrar menú"
-      class="absolute top-6 right-6 text-gray-700 hover:text-black text-4xl p-2 focus:outline-none"
-    >
-      &times;
-    </button>
-    <div
-      class="flex flex-col items-center justify-center h-full gap-8 animate-fade-slide"
-    >
-      {
-        navItems.map((item) => (
-          <a
-            href={item.href}
-            class="text-gray-900 text-2xl font-semibold px-6 py-3 rounded-md transition-all duration-200 hover:bg-gray-100 hover:scale-105"
-          >
-            {item.name}
-          </a>
-        ))
-      }
-    </div>
-  </div>
+   <div class="md:hidden fixed top-0 left-0 w-full h-screen bg-white/80 backdrop-blur-sm z-40 transition-all duration-300 opacity-0 pointer-events-none" id="mobile-menu">
+      <button id="close-mobile-menu" aria-label="Cerrar menú" class="absolute top-6 right-6 text-gray-700 hover:text-black text-4xl p-2 focus:outline-none"> &times; </button>
+      <div class="flex flex-col items-center justify-center h-full gap-8 animate-fade-slide">
+         {
+            menuItems.map((item) => (
+               <a href={item.href} class="text-gray-900 text-2xl font-semibold px-6 py-3 rounded-md transition-all duration-200 hover:bg-gray-100 hover:scale-105">
+                  {item.name}
+               </a>
+            ))
+         }
+      </div>
+   </div>
 </nav>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.getElementById("navbar");
-    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
+   document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.getElementById("navbar");
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
 
-    const toggleMobileMenu = (open: any) => {
-      if (!mobileMenu) return;
-      mobileMenu.classList.toggle("opacity-100", open);
-      mobileMenu.classList.toggle("opacity-0", !open);
-      mobileMenu.classList.toggle("pointer-events-none", !open);
-      mobileMenuBtn?.setAttribute("aria-expanded", String(open));
-      document.body.style.overflow = open ? "hidden" : "";
-    };
+      const toggleMobileMenu = (open: any) => {
+         if (!mobileMenu) return;
+         mobileMenu.classList.toggle("opacity-100", open);
+         mobileMenu.classList.toggle("opacity-0", !open);
+         mobileMenu.classList.toggle("pointer-events-none", !open);
+         mobileMenuBtn?.setAttribute("aria-expanded", String(open));
+         document.body.style.overflow = open ? "hidden" : "";
+      };
 
-    const handleScroll = () => {
-      const scrolled = window.scrollY > 10;
-      if (!nav) return;
-      nav.classList.toggle("shadow-md", scrolled);
-      nav.classList.toggle("bg-black/95", scrolled);
-      nav.classList.toggle("backdrop-blur", scrolled);
-    };
+      const handleScroll = () => {
+         const scrolled = window.scrollY > 10;
+         if (!nav) return;
+         nav.classList.toggle("shadow-md", scrolled);
+         nav.classList.toggle("bg-black/95", scrolled);
+         nav.classList.toggle("backdrop-blur", scrolled);
+      };
 
-    if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener("click", () => toggleMobileMenu(true));
-    }
+      if (mobileMenuBtn) {
+         mobileMenuBtn.addEventListener("click", () => toggleMobileMenu(true));
+      }
 
-    if (closeMobileMenuBtn) {
-      closeMobileMenuBtn.addEventListener("click", () =>
-        toggleMobileMenu(false)
-      );
-    }
+      if (closeMobileMenuBtn) {
+         closeMobileMenuBtn.addEventListener("click", () => toggleMobileMenu(false));
+      }
 
-    if (mobileMenu) {
-      mobileMenu.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => toggleMobileMenu(false));
-      });
-    }
+      if (mobileMenu) {
+         mobileMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => toggleMobileMenu(false));
+         });
+      }
 
-    window.addEventListener("scroll", handleScroll);
-  });
+      window.addEventListener("scroll", handleScroll);
+   });
 </script>
 
 <style>
-  @keyframes fade-slide {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .animate-fade-slide {
-    animation: fade-slide 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  }
+   @keyframes fade-slide {
+      from {
+         opacity: 0;
+         transform: translateY(-30px);
+      }
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+   .animate-fade-slide {
+      animation: fade-slide 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+   }
 </style>

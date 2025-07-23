@@ -1,4 +1,5 @@
 [
+  { "logo": "/src/assets/Logo.png" },
   { "name": "Sobre mí", "href": "#about" },
   { "name": "Experiencia", "href": "#experience" },
   { "name": "Educación", "href": "#education" },
