@@ -1,0 +1,56 @@
+{
+  "sectionTitle": "Programas",
+  "technologiesLabel": "Tecnologías:",
+  "programs": [
+    {
+      "title": "Yeti Express",
+      "period": "Mayo 2025 - Junio 2025",
+      "description": "Yeti Express es un programa para la gestión de entregas, diseñado para optimizar la logística y mejorar la eficiencia en la distribución de productos. Incluye funcionalidades como seguimiento de envíos, gestión de rutas y control de inventario.",
+      "demoLink": "https://yeti-express-app.vercel.app/",
+      "imagesText": "Images",
+      "images": [
+        "/assets/images/codegen-1.png",
+        "/assets/images/codegen-2.png"
+      ],
+      "status": "completed",
+      "technologies": [
+        { "name": "Vue", "icon": "/assets/icon/vue.png" },
+        { "name": "Laravel", "icon": "/assets/icon/laravel.png" },
+        { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" },
+        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" },
+        { "name": "TypeScript", "icon": "/assets/icon/ts.png" },
+        { "name": "Trello", "icon": "/assets/icon/trello.webp" },
+        { "name": "GitHub", "icon": "/assets/icon/github.png" },
+        { "name": "Vercel", "icon": "/assets/icon/vercel.png" },
+        { "name": "Railway", "icon": "/assets/icon/railway.png" },
+        { "name": "Figma", "icon": "/assets/icon/figma.png" }
+      ]
+    },
+    {
+      "title": "Gava",
+      "period": "Agosto 2025 - Actualmente",
+      "description": "A background service to synchronize data between multiple APIs, supporting scheduling and error handling. Designed for reliability and extensibility.",
+      "demoLink": "",
+      "imagesText": "Images",
+      "images": [
+        "/assets/images/codegen-1.png",
+        "/assets/images/codegen-2.png"
+      ],
+      "status": "in-progress",
+      "technologies": [
+        { "name": "Angular", "icon": "/assets/icon/angular.png" },
+        { "name": "Spring", "icon": "/assets/icon/spring.svg" },
+        { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" },
+        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" },
+        { "name": "TypeScript", "icon": "/assets/icon/ts.png" },
+        { "name": "Trello", "icon": "/assets/icon/trello.webp" },
+        { "name": "GitHub", "icon": "/assets/icon/github.png" },
+        { "name": "Vercel", "icon": "/assets/icon/vercel.png" },
+        { "name": "Railway", "icon": "/assets/icon/railway.png" },
+        { "name": "Figma", "icon": "/assets/icon/figma.png" }
+      ]
+    }
+  ]
+}
