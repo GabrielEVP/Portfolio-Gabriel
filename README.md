@@ -1,47 +1,85 @@
-# Astro Starter Kit: Minimal
+# Mi Portfolio Personal
 
-```sh
-npm create astro@latest -- --template minimal
+Este es mi portfolio personal, desarrollado con Astro y diseñado para mostrar mis proyectos y habilidades en desarrollo web. El sitio está construido siguiendo los principios de Clean Architecture y las mejores prácticas de desarrollo moderno.
+
+## 🚀 Tecnologías Utilizadas
+
+- [Astro](https://astro.build/) - Framework web moderno
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitario
+- [TypeScript](https://www.typescriptlang.org/) - Superconjunto tipado de JavaScript
+- [Bun](https://bun.sh/) - Runtime JavaScript y gestor de paquetes
+
+## 🛠️ Instalación Local
+
+Sigue estos pasos para ejecutar el proyecto localmente:
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/GabrielEVP/Portfolio-Gabriel.git
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+2. Navega al directorio del proyecto:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```bash
+cd Portfolio-Gabriel
+```
 
-## 🚀 Project Structure
+3. Instala las dependencias con Bun:
 
-Inside of your Astro project, you'll see the following folders and files:
+```bash
+bun install
+```
+
+4. Inicia el servidor de desarrollo:
+
+```bash
+bun run dev
+```
+
+5. Abre tu navegador y visita:
+
+```bash
+http://localhost:4321
+```
+
+## 🏗️ Comandos Disponibles
+
+| Comando        | Acción                                              |
+| :------------- | :-------------------------------------------------- |
+| `bun install`  | Instala las dependencias del proyecto               |
+| `bun run dev`  | Inicia el servidor de desarrollo en localhost:4321  |
+| `bun run build`| Construye el sitio para producción                  |
+| `bun preview`  | Previsualiza la build de producción localmente      |
+
+## 📁 Estructura del Proyecto
 
 ```text
 /
-├── public/
+├── public/          # Archivos estáticos (imágenes, iconos)
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/  # Componentes Astro reutilizables
+│   ├── css/        # Estilos globales
+│   ├── data/       # Datos JSON para el contenido
+│   └── pages/      # Páginas de la aplicación
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🎨 Características
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Diseño moderno y responsive
+- Optimización de imágenes
+- Carga rápida y eficiente
+- SEO optimizado
+- Componentes reutilizables
+- Datos gestionados mediante JSON
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 👤 Autor
 
-## 🧞 Commands
+### Gabriel Enrique Vargas Perez
 
-All commands are run from the root of the project, from a terminal:
+- GitHub: [@GabrielEVP](https://github.com/GabrielEVP)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📄 Licencia
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
