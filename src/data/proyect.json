@@ -17,22 +17,9 @@
       ]
     },
     {
-      "title": "Knight",
-      "period": "Septiembre 2024",
-      "description": "Knight es un proyecto educativo que desarrollo para comprender cómo funciona un framework como Laravel desde sus fundamentos. Estoy construyendo mi propio framework en PHP, lo que me permite profundizar en conceptos clave como enrutamiento, controladores, middleware y manejo de bases de datos, aplicando principios de diseño limpio y arquitectura sólida.",
-      "githubLink": "https://github.com/GabrielEVP/Knight",
-      "demoLink": "",
-      "imagesText": "",
-      "images": [],
-      "technologies": [
-        { "name": "PHP", "icon": "/assets/icon/php.png" },
-        { "name": "GitHub", "icon": "/assets/icon/github.png" }
-      ]
-    },
-    {
-      "title": "Project Finance",
+      "title": "Finance",
       "period": "Enero 2024 - Febrero 2024",
-      "description": "“Project-Finance” es un proyecto personal que desarrollé para aprender los fundamentos de Laravel, complementado con Tailwind CSS para el diseño del frontend. La aplicación permite gestionar finanzas personales de forma sencilla y eficiente.",
+      "description": "Finance es un proyecto personal que desarrollé para aprender los fundamentos de Laravel, complementado con Tailwind CSS para el diseño del frontend. La aplicación permite gestionar finanzas personales de forma sencilla y eficiente.",
       "githubLink": "https://github.com/GabrielEVP/Proyect-Finance",
       "demoLink": "",
       "imagesText": "imagenes",

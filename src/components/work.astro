@@ -28,8 +28,8 @@ const { sectionTitle, jobs } = workData;
                      <div class="grid grid-cols-4 gap-4">
                         {job.technologies.map((tech) => (
                            <div class="flex flex-col items-center group">
-                              <div class="w-10 h-10 flex items-center justify-center">
-                                 <img src={tech.icon} alt={tech.name} class="w-10 h-10" />
+                              <div class="flex items-center justify-center">
+                                 <img src={tech.icon} alt={tech.name} class="w-8 h-8 object-contain" />
                               </div>
                               <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
                            </div>
