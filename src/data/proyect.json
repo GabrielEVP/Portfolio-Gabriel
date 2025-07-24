@@ -17,25 +17,6 @@
       ]
     },
     {
-      "title": "Finance",
-      "period": "Enero 2024 - Febrero 2024",
-      "description": "Finance es un proyecto personal que desarrollé para aprender los fundamentos de Laravel, complementado con Tailwind CSS para el diseño del frontend. La aplicación permite gestionar finanzas personales de forma sencilla y eficiente.",
-      "githubLink": "https://github.com/GabrielEVP/Proyect-Finance",
-      "demoLink": "",
-      "imagesText": "imagenes",
-      "images": [
-        "/assets/images/naves-game1.png",
-        "/assets/images/naves-game2.png"
-      ],
-      "technologies": [
-        { "name": "Laravel", "icon": "/assets/icon/laravel.png" },
-        { "name": "Chart Js", "icon": "/assets/icon/chartjs.png" },
-        { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" },
-        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
-        { "name": "GitHub", "icon": "/assets/icon/github.png" }
-      ]
-    },
-    {
       "title": "Automatización de Código",
       "period": "Abril 2022",
       "description": "Desarrollé esta herramienta para ahorrar tiempo durante un examen, automatizando tareas repetitivas como la creación de clases con sus getters y setters, todo directamente desde la terminal. Fue tan útil que el profesor nos pidió compartirla con toda la clase para que todos pudieran aprovecharla. Esta experiencia me enseñó la importancia de crear soluciones prácticas que optimicen el trabajo y ahorren tiempo.",
@@ -56,8 +37,8 @@
       "demoLink": "",
       "imagesText": "imagenes",
       "images": [
-        "/assets/images/naves-game1.png",
-        "/assets/images/naves-game2.png"
+        "/assets/images/nave-game/nave1.jpg",
+        "/assets/images/nave-game/nave2.jpg"
       ],
       "technologies": [
         { "name": "Java", "icon": "/assets/icon/java.png" },

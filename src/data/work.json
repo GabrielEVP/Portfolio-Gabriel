@@ -19,7 +19,9 @@
         { "name": "GitHub", "icon": "/assets/icon/github.png" },
         { "name": "Vercel", "icon": "/assets/icon/vercel.png" },
         { "name": "Railway", "icon": "/assets/icon/railway.png" },
-        { "name": "Figma", "icon": "/assets/icon/figma.png" }
+        { "name": "Figma", "icon": "/assets/icon/figma.png" },
+        { "name": "Docker", "icon": "/assets/icon/docker.png" },
+        { "name": "Postman", "icon": "/assets/icon/postman.svg" }
       ]
     },
     {
@@ -37,7 +39,8 @@
         { "name": "Trello", "icon": "/assets/icon/trello.webp" },
         { "name": "Figma", "icon": "/assets/icon/figma.png" },
         { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
-        { "name": "Git", "icon": "/assets/icon/git.png" }
+        { "name": "Git", "icon": "/assets/icon/git.png" },
+        { "name": "Postman", "icon": "/assets/icon/postman.svg" }
       ]
     }
   ]
