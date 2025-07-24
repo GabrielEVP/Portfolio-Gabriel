@@ -14,13 +14,13 @@ import programsData from "../data/programs.json";
          {
             programsData.programs.map((program, idx) => (
                <div class="bg-white border border-gray-200 rounded-2xl p-16 flex flex-col h-full max-full">
-                  <div class="flex gap-4 mb-6">
+                  <div class="flex flex-wrap gap-4 mb-6">
                      {program.demoLink && (
                         <a
                            href={program.demoLink}
                            target="_blank"
                            rel="noopener noreferrer"
-                           class="inline-flex items-center gap-2 px-5 py-2 border border-blue-600 text-blue-600 rounded-full font-medium text-sm hover:bg-blue-50 transition"
+                           class="inline-flex items-center gap-2 px-5 py-2 border border-blue-600 text-blue-600 rounded-full font-medium text-sm hover:bg-blue-50 transition w-full sm:w-auto justify-center"
                         >
                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -32,7 +32,7 @@ import programsData from "../data/programs.json";
                         <button
                            type="button"
                            id={`open-modal-img-${idx}`}
-                           class="inline-flex items-center gap-2 px-5 py-2 border border-black text-black rounded-full font-medium text-sm hover:bg-gray-100 transition"
+                           class="inline-flex items-center gap-2 px-5 py-2 border border-black text-black rounded-full font-medium text-sm hover:bg-gray-100 transition w-full sm:w-auto justify-center"
                         >
                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4-4a3 3 0 0 1 4.24 0l4 4M2 20h20M12 4v16" />
