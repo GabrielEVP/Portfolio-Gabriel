@@ -1,19 +1,18 @@
 ---
 import programsData from "../data/programs.json";
-const { sectionTitle, technologiesLabel, programs } = programsData;
 ---
 
 <section id="programs" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
          <h2 class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide">
-            {sectionTitle}
+            {programsData.sectionTitle}
          </h2>
          <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
       </div>
       <div class="grid gap-16 grid-cols-1 lg:grid-cols-2">
          {
-            programs.map((program, idx) => (
+            programsData.programs.map((program, idx) => (
                <div class="bg-white border border-gray-200 rounded-2xl p-16 flex flex-col h-full max-full">
                   <div class="flex gap-4 mb-6">
                      {program.demoLink && (
@@ -43,15 +42,15 @@ const { sectionTitle, technologiesLabel, programs } = programsData;
                      )}
                   </div>
                   <div class="flex items-center gap-2 mb-2">
-                     {program.status === "completed" && <span class="inline-flex items-center px-2 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full">✔ Finished</span>}
-                     {program.status === "in-progress" && <span class="inline-flex items-center px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full">⏳ In Progress</span>}
+                     {program.status === "completed" && <span class="inline-flex items-center px-2 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full">Terminado</span>}
+                     {program.status === "in-progress" && <span class="inline-flex items-center px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full">En progreso</span>}
                   </div>
                   <h3 class="text-2xl font-semibold text-gray-900 mb-2 border-b pb-2 tracking-wide">{program.title}</h3>
                   <p class="text-gray-500 text-sm italic mb-4 text-center">{program.period}</p>
                   <p class="text-gray-700 text-base mb-6 flex-1">{program.description}</p>
                   {program.technologies && (
                      <div class="mb-6">
-                        <p class="text-gray-800 font-medium mb-2 text-sm">{technologiesLabel}</p>
+                        <p class="text-gray-800 font-medium mb-2 text-sm">{programsData.technologiesLabel}</p>
                         <div class="grid grid-cols-4 gap-3">
                            {program.technologies.map((tech) => (
                               <div class="flex flex-col items-center">
