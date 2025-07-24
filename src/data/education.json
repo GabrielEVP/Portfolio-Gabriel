@@ -19,7 +19,9 @@
         { "name": "MySQL", "icon": "/src/assets/icon/mysql.png" },
         { "name": "GitHub", "icon": "/src/assets/icon/github.png" },
         { "name": "Git", "icon": "/src/assets/icon/git.png" }
-      ]
+      ],
+      "certificateText": "Ver Certificado",
+      "certificateLink": "src/assets/pdf/certificate/desarrollo-web.pdf"
     }
   ],
   "courses": [
@@ -29,7 +31,7 @@
       "location": "Online",
       "period": "2025",
       "certificateText": "Ver Certificado",
-      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateLink": "src/assets/pdf/certificate/vue.pdf",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
         { "name": "Vue", "icon": "/src/assets/icon/vue.png" }
@@ -41,7 +43,7 @@
       "location": "Online",
       "period": "2025",
       "certificateText": "Ver Certificado",
-      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateLink": "src/assets/pdf/certificate/typescript.pdf",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
         { "name": "TypeScript", "icon": "/src/assets/icon/ts.png" }
@@ -52,8 +54,8 @@
       "company": "Mastermind",
       "location": "Online",
       "period": "2024",
-      "certificateText": "Ver Certificado",
-      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateText": "",
+      "certificateLink": "",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
         { "name": "Laravel", "icon": "/src/assets/icon/laravel.png" }
@@ -64,8 +66,8 @@
       "company": "Mastermind",
       "location": "Online",
       "period": "2024",
-      "certificateText": "Ver Certificado",
-      "certificateLink": "https://platzi.com/p/gabrielenriquevargas2001/curso/11950-course/diploma/detalle/",
+      "certificateText": "",
+      "certificateLink": "",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
         { "name": "Laravel", "icon": "/src/assets/icon/laravel.png" },

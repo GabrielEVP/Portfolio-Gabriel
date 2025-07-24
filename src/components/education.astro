@@ -37,6 +37,20 @@ import educationData from "../data/education.json";
                                  </div>
                               ))}
                            </div>
+                           {item.certificateLink && (
+                              <div class="mt-8 text-center">
+                                 <a
+                                    target="_blank"
+                                    href={item.certificateLink}
+                                    class="inline-flex items-center px-8 py-3 border border-gray-400 bg-white text-black hover:bg-gray-100 hover:text-black transition-all duration-300 group rounded-full shadow-none tracking-widest text-sm uppercase"
+                                 >
+                                    <span>{item.certificateText}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                 </a>
+                              </div>
+                           )}
                         </div>
                      </div>
                   ))
@@ -75,18 +89,20 @@ import educationData from "../data/education.json";
                                  ))}
                               </div>
                            </div>
-                           <div class="mt-8 text-center">
-                              <a
-                                 target="_blank"
-                                 href={item.certificateLink}
-                                 class="inline-flex items-center px-8 py-3 border border-gray-400 bg-white text-black hover:bg-gray-100 hover:text-black transition-all duration-300 group rounded-full shadow-none tracking-widest text-sm uppercase"
-                              >
-                                 <span>{item.certificateText}</span>
-                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                 </svg>
-                              </a>
-                           </div>
+                           {item.certificateLink && (
+                              <div class="mt-8 text-center">
+                                 <a
+                                    target="_blank"
+                                    href={item.certificateLink}
+                                    class="inline-flex items-center px-8 py-3 border border-gray-400 bg-white text-black hover:bg-gray-100 hover:text-black transition-all duration-300 group rounded-full shadow-none tracking-widest text-sm uppercase"
+                                 >
+                                    <span>{item.certificateText}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                 </a>
+                              </div>
+                           )}
                         </div>
                      </div>
                   ))

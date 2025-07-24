@@ -11,6 +11,6 @@
   ],
   "cvButton": {
     "label": "Ver CV",
-    "url": "Gabriel.pdf"
+    "url": "src/assets/pdf/Gabriel.pdf"
   }
 }
