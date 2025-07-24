@@ -5,7 +5,7 @@
     {
       "title": "Yeti Express",
       "period": "Mayo 2025 - Junio 2025",
-      "description": "Yeti Express es un programa para la gestión de entregas, diseñado para optimizar la logística y mejorar la eficiencia en la distribución de productos. Incluye funcionalidades como seguimiento de envíos, gestión de rutas y control de inventario.",
+      "description": "Yeti Express es un sistema de gestión de entregas desarrollado para optimizar la logística y mejorar la eficiencia en la distribución de pedidos. La plataforma incluye funcionalidades como entregas a crédito o contado, registro de pagos y un módulo detallado para el conteo de caja, lo que permite un control integral del proceso logístico.",
       "demoLink": "https://yeti-express-app.vercel.app/",
       "imagesText": "Imagenes",
       "images": [
@@ -40,7 +40,7 @@
     {
       "title": "Gava",
       "period": "Agosto 2025 - Actualmente",
-      "description": "Gava es un programa de facturación y gestión de clientes, diseñado para simplificar la administración de pequeñas empresas. Permite crear y enviar facturas, gestionar clientes y realizar un seguimiento de los pagos.",
+      "description": "Gava será un sistema de facturación y gestión de clientes diseñado para simplificar la administración de pequeñas empresas. Permitirá crear y enviar facturas, gestionar clientes y realizar un seguimiento detallado de los pagos. Además, incorporará un módulo para la distribución precisa de pedidos por almacenes, brindando un control más eficiente del inventario y la logística.",
       "demoLink": "",
       "imagesText": "",
       "images": [
