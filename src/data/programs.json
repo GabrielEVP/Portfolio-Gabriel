@@ -9,8 +9,16 @@
       "demoLink": "https://yeti-express-app.vercel.app/",
       "imagesText": "Imagenes",
       "images": [
-        "/assets/images/codegen-1.png",
-        "/assets/images/codegen-2.png"
+        "/assets/images/yeti-express/yeti1.png",
+        "/assets/images/yeti-express/yeti2.png",
+        "/assets/images/yeti-express/yeti3.png",
+        "/assets/images/yeti-express/yeti4.png",
+        "/assets/images/yeti-express/yeti5.png",
+        "/assets/images/yeti-express/yeti6.png",
+        "/assets/images/yeti-express/yeti7.png",
+        "/assets/images/yeti-express/yeti8.png",
+        "/assets/images/yeti-express/yeti9.png",
+        "/assets/images/yeti-express/yeti10.png"
       ],
       "status": "completed",
       "technologies": [
@@ -34,10 +42,9 @@
       "period": "Agosto 2025 - Actualmente",
       "description": "Gava es un programa de facturación y gestión de clientes, diseñado para simplificar la administración de pequeñas empresas. Permite crear y enviar facturas, gestionar clientes y realizar un seguimiento de los pagos.",
       "demoLink": "",
-      "imagesText": "Imagenes",
+      "imagesText": "",
       "images": [
-        "/assets/images/codegen-1.png",
-        "/assets/images/codegen-2.png"
+        
       ],
       "status": "in-progress",
       "technologies": [
