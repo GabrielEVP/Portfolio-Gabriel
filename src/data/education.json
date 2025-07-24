@@ -1,15 +1,16 @@
 {
   "sectionTitle": "Educación",
-  "higherDegreesTitle": "Grados Superiores",
+  "higherDegreesTitle": "Grados",
   "coursesTitle": "Cursos",
   "higherDegrees": [
     {
-      "title": "Web Developer",
+      "title": "Desarrollo de Aplicaciones Web",
       "company": "CIFP Zornotza LHII",
       "location": "Bilbao - Spain",
       "period": "September 2021 - June 2023",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
+        { "name": "Java", "icon": "/assets/icon/java.png" },
         { "name": "HTML", "icon": "/assets/icon/html.png" },
         { "name": "CSS", "icon": "/assets/icon/css.png" },
         { "name": "JavaScript", "icon": "/assets/icon/js.png" },
@@ -26,7 +27,7 @@
   ],
   "courses": [
     {
-      "title": "Vue Development",
+      "title": "Vue",
       "company": "Platzi",
       "location": "Online",
       "period": "2025",
@@ -38,7 +39,7 @@
       ]
     },
     {
-      "title": "TypeScript Development",
+      "title": "TypeScript",
       "company": "Platzi",
       "location": "Online",
       "period": "2025",
