@@ -6,9 +6,12 @@
       "title": "Project Finance",
       "period": "Enero 2024 - Febrero 2024",
       "description": "“Project-Finance” es un proyecto personal que me permitió aprender los fundamentos de Laravel junto con Tailwind CSS para el diseño del frontend. La aplicación ofrece:",
-      "links": [
-        "https://github.com/GabrielEVP/Proyect-Finance",
-        "Imagenes"
+      "githubLink": "https://github.com/GabrielEVP/Proyect-Finance",
+      "demoLink": "",
+      "imagesText": "imagenes",
+      "images": [
+        "/src/assets/images/naves-game1.png",
+        "/src/assets/images/naves-game2.png"
       ],
       "technologies": [
         { "name": "Laravel", "icon": "/src/assets/icon/laravel.png" },
@@ -21,9 +24,12 @@
       "title": "Naves Game",
       "period": "Marzo 2022",
       "description": "Como parte de un proyecto académico, decidí ir más allá de las expectativas iniciales. Mientras que la mayoría optó por crear juegos simples en consola, investigué cómo desarrollar un juego desde cero utilizando solo Java y JFrame, gestionando manualmente el pintado de gráficos y las colisiones.",
-      "links": [
-        "https://github.com/GabrielEVP/Naves-Game",
-        "Imagenes"
+      "githubLink": "https://github.com/GabrielEVP/Naves-Game",
+      "demoLink": "",
+      "imagesText": "imagenes",
+      "images": [
+        "/src/assets/images/naves-game1.png",
+        "/src/assets/images/naves-game2.png"
       ],
       "technologies": [
         { "name": "Java", "icon": "/src/assets/icon/java.png" },

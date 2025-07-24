@@ -15,14 +15,12 @@ const { sectionTitle, technologiesLabel, projects } = projectData;
       <div class="grid gap-16 grid-cols-1 lg:grid-cols-2">
          {
             projects.map((project, idx) => {
-               const githubLink = project.links.find((link) => typeof link === "string" && link.toLowerCase().includes("github"));
-               const imagesLink = project.links.find((link) => typeof link === "string" && link.toLowerCase().includes("imagen"));
                return (
                   <div class="bg-white border border-gray-200 rounded-2xl p-16 flex flex-col h-full max-full">
                      <div class="flex gap-4 mb-6">
-                        {githubLink && (
+                        {project.githubLink && (
                            <a
-                              href={githubLink}
+                              href={project.githubLink}
                               target="_blank"
                               rel="noopener noreferrer"
                               class="inline-flex items-center gap-2 px-5 py-2 bg-black text-white rounded-full font-medium text-sm hover:bg-gray-900 transition"
@@ -33,7 +31,7 @@ const { sectionTitle, technologiesLabel, projects } = projectData;
                               GitHub
                            </a>
                         )}
-                        {imagesLink && (
+                        {project.images.length > 0 && (
                            <button
                               type="button"
                               id={`open-modal-img-${idx}`}
@@ -42,12 +40,14 @@ const { sectionTitle, technologiesLabel, projects } = projectData;
                               <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
                                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4-4a3 3 0 0 1 4.24 0l4 4M2 20h20M12 4v16" />
                               </svg>
-                              Imágenes
+                              {project.imagesText}
                            </button>
                         )}
                      </div>
+
                      <h3 class="text-2xl font-semibold text-gray-900 mb-2 border-b pb-2 tracking-wide">{project.title}</h3>
                      <p class="text-gray-700 text-base mb-6 flex-1">{project.description}</p>
+
                      {project.technologies && (
                         <div class="mb-6">
                            <p class="text-gray-800 font-medium mb-2 text-sm">{technologiesLabel}</p>
@@ -61,14 +61,21 @@ const { sectionTitle, technologiesLabel, projects } = projectData;
                            </div>
                         </div>
                      )}
-                     <div id={`modal-img-${idx}`} class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-                        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative animate-modal-in">
-                           <button type="button" id={`close-modal-img-${idx}`} class="absolute top-3 right-3 text-gray-700 hover:text-black text-4xl p-2">
-                              &times;
-                           </button>
-                           <div class="text-center text-gray-700">Aquí irán las imágenes</div>
+
+                     {project.images.length > 0 && (
+                        <div id={`modal-img-${idx}`} class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+                           <div class="bg-white rounded-xl p-8 max-w-lg w-full relative animate-modal-in">
+                              <button type="button" id={`close-modal-img-${idx}`} class="absolute top-3 right-3 text-gray-700 hover:text-black text-4xl p-2">
+                                 &times;
+                              </button>
+                              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                 {project.images.map((src) => (
+                                    <img src={src} alt="preview" class="rounded-lg w-full object-contain" />
+                                 ))}
+                              </div>
+                           </div>
                         </div>
-                     </div>
+                     )}
                   </div>
                );
             })
@@ -86,6 +93,7 @@ const { sectionTitle, technologiesLabel, projects } = projectData;
             if (modal) modal.classList.remove("hidden");
          });
       });
+
       document.querySelectorAll('[id^="close-modal-img-"]').forEach((btn) => {
          btn.addEventListener("click", () => {
             const idx = btn.id.replace("close-modal-img-", "");
