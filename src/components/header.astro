@@ -11,10 +11,15 @@ import headerData from "../data/header.json";
          <span class="header-shine"></span>
       </h1>
       <div class="mb-8">
-         {headerData.titleLines.map((line) => <h2 class="text-xl sm:text-2xl lg:text-4xl text-gray-700 font-light mb-2">{line}</h2>)}
+         <h2 class="text-xl sm:text-2xl lg:text-4xl text-gray-700 font-light mb-2">
+            {headerData.title}
+         </h2>
+         <h2 class="text-xl sm:text-2xl lg:text-4xl text-gray-600 font-light mb-2">
+            {headerData.subtitle}
+         </h2>
       </div>
-      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-         {headerData.description.map((line) => <>{line}</>)}
+      <p class="text-base sm:text-lg text-gray-600 max-w-96 mx-auto mb-10 leading-relaxed font-light">
+         {headerData.description}
       </p>
       <div class="mb-16">
          <a
