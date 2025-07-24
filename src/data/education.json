@@ -10,18 +10,18 @@
       "period": "September 2021 - June 2023",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
-        { "name": "HTML", "icon": "/src/assets/icon/html.png" },
-        { "name": "CSS", "icon": "/src/assets/icon/css.png" },
-        { "name": "JavaScript", "icon": "/src/assets/icon/js.png" },
-        { "name": "Angular", "icon": "/src/assets/icon/angular.png" },
-        { "name": "PHP", "icon": "/src/assets/icon/php.png" },
-        { "name": "Bash", "icon": "/src/assets/icon/bash.png" },
-        { "name": "MySQL", "icon": "/src/assets/icon/mysql.png" },
-        { "name": "GitHub", "icon": "/src/assets/icon/github.png" },
-        { "name": "Git", "icon": "/src/assets/icon/git.png" }
+        { "name": "HTML", "icon": "/assets/icon/html.png" },
+        { "name": "CSS", "icon": "/assets/icon/css.png" },
+        { "name": "JavaScript", "icon": "/assets/icon/js.png" },
+        { "name": "Angular", "icon": "/assets/icon/angular.png" },
+        { "name": "PHP", "icon": "/assets/icon/php.png" },
+        { "name": "Bash", "icon": "/assets/icon/bash.png" },
+        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "GitHub", "icon": "/assets/icon/github.png" },
+        { "name": "Git", "icon": "/assets/icon/git.png" }
       ],
       "certificateText": "Ver Certificado",
-      "certificateLink": "src/assets/pdf/certificate/desarrollo-web.pdf"
+      "certificateLink": "/assets/pdf/certificate/desarrollo-web.pdf"
     }
   ],
   "courses": [
@@ -31,10 +31,10 @@
       "location": "Online",
       "period": "2025",
       "certificateText": "Ver Certificado",
-      "certificateLink": "src/assets/pdf/certificate/vue.pdf",
+      "certificateLink": "/assets/pdf/certificate/vue.pdf",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
-        { "name": "Vue", "icon": "/src/assets/icon/vue.png" }
+        { "name": "Vue", "icon": "/assets/icon/vue.png" }
       ]
     },
     {
@@ -43,10 +43,10 @@
       "location": "Online",
       "period": "2025",
       "certificateText": "Ver Certificado",
-      "certificateLink": "src/assets/pdf/certificate/typescript.pdf",
+      "certificateLink": "/assets/pdf/certificate/typescript.pdf",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
-        { "name": "TypeScript", "icon": "/src/assets/icon/ts.png" }
+        { "name": "TypeScript", "icon": "/assets/icon/ts.png" }
       ]
     },
     {
@@ -58,7 +58,7 @@
       "certificateLink": "",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
-        { "name": "Laravel", "icon": "/src/assets/icon/laravel.png" }
+        { "name": "Laravel", "icon": "/assets/icon/laravel.png" }
       ]
     },
     {
@@ -70,8 +70,8 @@
       "certificateLink": "",
       "technologiesTitle": "Tecnologías:",
       "technologies": [
-        { "name": "Laravel", "icon": "/src/assets/icon/laravel.png" },
-        { "name": "PHP", "icon": "/src/assets/icon/php.png" }
+        { "name": "Laravel", "icon": "/assets/icon/laravel.png" },
+        { "name": "PHP", "icon": "/assets/icon/php.png" }
       ]
     }
   ]

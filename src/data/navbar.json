@@ -1,5 +1,5 @@
 {
-  "logo": "/src/assets/Logo.png",
+  "logo": "Logo.png",
   "navLinks": [
     { "name": "Sobre mí", "href": "#about" },
     { "name": "Experiencia", "href": "#experience" },

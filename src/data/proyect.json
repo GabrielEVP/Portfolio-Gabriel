@@ -10,14 +10,14 @@
       "demoLink": "",
       "imagesText": "imagenes",
       "images": [
-        "/src/assets/images/naves-game1.png",
-        "/src/assets/images/naves-game2.png"
+        "/assets/images/naves-game1.png",
+        "/assets/images/naves-game2.png"
       ],
       "technologies": [
-        { "name": "Laravel", "icon": "/src/assets/icon/laravel.png" },
-        { "name": "Tailwind", "icon": "/src/assets/icon/tailwind.png" },
-        { "name": "MySQL", "icon": "/src/assets/icon/mysql.png" },
-        { "name": "GitHub", "icon": "/src/assets/icon/github.png" }
+        { "name": "Laravel", "icon": "/assets/icon/laravel.png" },
+        { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" },
+        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "GitHub", "icon": "/assets/icon/github.png" }
       ]
     },
     {
@@ -28,12 +28,12 @@
       "demoLink": "",
       "imagesText": "imagenes",
       "images": [
-        "/src/assets/images/naves-game1.png",
-        "/src/assets/images/naves-game2.png"
+        "/assets/images/naves-game1.png",
+        "/assets/images/naves-game2.png"
       ],
       "technologies": [
-        { "name": "Java", "icon": "/src/assets/icon/java.png" },
-        { "name": "GitHub", "icon": "/src/assets/icon/github.png" }
+        { "name": "Java", "icon": "/assets/icon/java.png" },
+        { "name": "GitHub", "icon": "/assets/icon/github.png" }
       ]
     }
   ]
