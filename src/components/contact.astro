@@ -10,21 +10,17 @@ import contactData from "../data/contact.json";
          </h2>
          <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
       </div>
-      <form id="contact-form" action="#" method="POST" enctype="text/plain" class="space-y-8 bg-white p-16 rounded-2xl border-2 border-gray-200 shadow-md min-h-[500px] w-full">
+      <form id="contact-form" action="https://formspree.io/f/xvgqapdk" method="POST" class="space-y-8 bg-white p-16 rounded-2xl border-2 border-gray-200 shadow-md min-h-[500px] w-full">
          <div>
             <label for="name" class="block text-gray-800 mb-2 text-lg">{contactData.label_name}</label>
             <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition" />
          </div>
          <div>
-            <label for="email" class="block text-gray-800 mb-2 text-lg">
-               {contactData.label_email}
-            </label>
+            <label for="email" class="block text-gray-800 mb-2 text-lg">{contactData.label_email}</label>
             <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition" />
          </div>
          <div>
-            <label for="message" class="block text-gray-800 mb-2 text-lg">
-               {contactData.label_message}
-            </label>
+            <label for="message" class="block text-gray-800 mb-2 text-lg">{contactData.label_message}</label>
             <textarea id="message" name="message" rows="6" required class="w-full border border-gray-300 rounded-lg px-5 py-3 text-base focus:outline-none focus:border-black transition"></textarea>
          </div>
          <button type="submit" class="w-full bg-black text-white rounded px-6 py-3 font-semibold uppercase tracking-widest text-lg hover:bg-gray-900 transition">
@@ -37,17 +33,26 @@ import contactData from "../data/contact.json";
    </div>
 </section>
 
-<script>
-   if (typeof window !== "undefined") {
-      const form = document.getElementById("contact-form");
-      const successMsg = document.getElementById("success-message");
-      if (form && successMsg) {
-         form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            (form as HTMLFormElement).reset();
+<script type="module">
+   const form = document.getElementById("contact-form");
+   const successMsg = document.getElementById("success-message");
+
+   if (form && successMsg) {
+      form.addEventListener("submit", async (e) => {
+         e.preventDefault();
+
+         const formData = new FormData(form);
+         const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+         });
+
+         if (response.ok) {
+            form.reset();
             successMsg.classList.remove("hidden");
             setTimeout(() => successMsg.classList.add("hidden"), 3000);
-         });
-      }
+         }
+      });
    }
 </script>

@@ -19,7 +19,10 @@
         { "name": "Bash", "icon": "/assets/icon/bash.png" },
         { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
         { "name": "GitHub", "icon": "/assets/icon/github.png" },
-        { "name": "Git", "icon": "/assets/icon/git.png" }
+        { "name": "Git", "icon": "/assets/icon/git.png" },
+        { "name": "Sass", "icon": "/assets/icon/sass.png" },
+        { "name": "JQyery", "icon": "/assets/icon/jquery.webp" }
+
       ],
       "certificateText": "Ver Certificado",
       "certificateLink": "/assets/pdf/certificate/desarrollo-web.pdf"

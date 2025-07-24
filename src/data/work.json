@@ -39,6 +39,7 @@
         { "name": "Trello", "icon": "/assets/icon/trello.webp" },
         { "name": "Figma", "icon": "/assets/icon/figma.png" },
         { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "JQyery", "icon": "/assets/icon/jquery.webp" },
         { "name": "Git", "icon": "/assets/icon/git.png" },
         { "name": "Postman", "icon": "/assets/icon/postman.svg" }
       ]
