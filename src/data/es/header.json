@@ -1,1 +1,10 @@
-{ "name": "Gabriel Vargas", "title": "Desarrollador", "subtitle": "Full Stack", "description": "Especializado en crear Aplicaciones Web con código limpio y arquitecturas escalables", "cvButton": { "label": "Ver CV", "url": "/assets/pdf/Gabriel.pdf" } }
+{
+  "name": "Gabriel Vargas",
+  "title": "Desarrollador",
+  "subtitle": "Full Stack",
+  "description": "Especializado en crear Aplicaciones Web con código limpio y arquitecturas escalables",
+  "cvButton": {
+    "label": "Ver CV",
+    "url": "/assets/pdf/Gabriel.pdf"
+  }
+}

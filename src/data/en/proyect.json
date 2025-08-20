@@ -1,1 +1,71 @@
-{ "sectionTitle": "Projects", "technologiesLabel": "Technologies:", "githubLabel": "GitHub", "projects": [ { "title": "Web Portfolio", "period": "July 2025", "description": "This project is my personal web portfolio, created in July 2025. I aimed for a minimalist design to deliver a clear and pleasant experience, focusing on showcasing my work directly and efficiently. I used Astro to optimize performance and Tailwind CSS to build a clean, modern interface.", "githubLink": "https://github.com/GabrielEVP/Portfolio-Gabriel", "demoLink": "", "imagesText": "", "images": [], "technologies": [ { "name": "Astro", "icon": "/assets/icon/astro.png" }, { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" }, { "name": "GitHub", "icon": "/assets/icon/github.png" } ] }, { "title": "Code Automation", "period": "April 2022", "description": "I developed this tool to save time during an exam by automating repetitive tasks such as creating classes with their getters and setters directly from the terminal. It was so useful that the teacher asked us to share it with the entire class. This experience taught me the importance of building practical solutions that optimize work and save time.", "githubLink": "https://github.com/GabrielEVP/Automatizacion-de-Codigo", "demoLink": "", "imagesText": "", "images": [], "technologies": [ { "name": "Java", "icon": "/assets/icon/java.png" }, { "name": "GitHub", "icon": "/assets/icon/github.png" } ] }, { "title": "Spaceships Game", "period": "March 2022", "description": "This is my favorite project and one I’m very proud of. Thanks to it, I went from being a struggling student to one of the best in the class. Even the teachers were surprised and didn’t know how I had built it. It was a turning point in my learning journey, developing everything from scratch with Java and JFrame, manually handling graphics and collisions.", "githubLink": "https://github.com/GabrielEVP/Naves-Game", "demoLink": "", "imagesText": "Images", "images": [ "/assets/images/nave-game/nave1.jpg", "/assets/images/nave-game/nave2.jpg" ], "technologies": [ { "name": "Java", "icon": "/assets/icon/java.png" }, { "name": "GitHub", "icon": "/assets/icon/github.png" } ] } ] }
+{
+  "sectionTitle": "Projects",
+  "technologiesLabel": "Technologies:",
+  "githubLabel": "GitHub",
+  "projects": [
+    {
+      "title": "Web Portfolio",
+      "period": "July 2025",
+      "description": "This project is my personal web portfolio, created in July 2025. I aimed for a minimalist design to deliver a clear and pleasant experience, focusing on showcasing my work directly and efficiently. I used Astro to optimize performance and Tailwind CSS to build a clean, modern interface.",
+      "githubLink": "https://github.com/GabrielEVP/Portfolio-Gabriel",
+      "demoLink": "",
+      "imagesText": "",
+      "images": [],
+      "technologies": [
+        {
+          "name": "Astro",
+          "icon": "/assets/icon/astro.png"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "/assets/icon/tailwind.png"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        }
+      ]
+    },
+    {
+      "title": "Code Automation",
+      "period": "April 2022",
+      "description": "I developed this tool to save time during an exam by automating repetitive tasks such as creating classes with their getters and setters directly from the terminal. It was so useful that the teacher asked us to share it with the entire class. This experience taught me the importance of building practical solutions that optimize work and save time.",
+      "githubLink": "https://github.com/GabrielEVP/Automatizacion-de-Codigo",
+      "demoLink": "",
+      "imagesText": "",
+      "images": [],
+      "technologies": [
+        {
+          "name": "Java",
+          "icon": "/assets/icon/java.png"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        }
+      ]
+    },
+    {
+      "title": "Spaceships Game",
+      "period": "March 2022",
+      "description": "This is my favorite project and one I’m very proud of. Thanks to it, I went from being a struggling student to one of the best in the class. Even the teachers were surprised and didn’t know how I had built it. It was a turning point in my learning journey, developing everything from scratch with Java and JFrame, manually handling graphics and collisions.",
+      "githubLink": "https://github.com/GabrielEVP/Naves-Game",
+      "demoLink": "",
+      "imagesText": "Images",
+      "images": [
+        "/assets/images/nave-game/nave1.jpg",
+        "/assets/images/nave-game/nave2.jpg"
+      ],
+      "technologies": [
+        {
+          "name": "Java",
+          "icon": "/assets/icon/java.png"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        }
+      ]
+    }
+  ]
+}

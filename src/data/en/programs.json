@@ -1,1 +1,148 @@
-{ "sectionTitle": "Programs", "technologiesLabel": "Technologies:", "demoLabel": "Demo", "statusLabels": { "completed": "Completed", "in-progress": "In progress" }, "programs": [ { "title": "Yeti Express", "period": "May 2025 - June 2025", "description": "Yeti Express is a delivery management system developed to optimize logistics and improve efficiency in order distribution. The platform includes features such as credit or cash deliveries, payment logging, and a detailed cash balance module, enabling full control of the logistics process.", "demoLink": "https://yeti-express-app.vercel.app/", "imagesText": "Images", "images": [ "/assets/images/yeti-express/yeti1.png", "/assets/images/yeti-express/yeti2.png", "/assets/images/yeti-express/yeti3.png", "/assets/images/yeti-express/yeti4.png", "/assets/images/yeti-express/yeti5.png", "/assets/images/yeti-express/yeti6.png", "/assets/images/yeti-express/yeti7.png", "/assets/images/yeti-express/yeti8.png", "/assets/images/yeti-express/yeti9.png", "/assets/images/yeti-express/yeti10.png" ], "status": "completed", "technologies": [ { "name": "Vue", "icon": "/assets/icon/vue.png" }, { "name": "Laravel", "icon": "/assets/icon/laravel.png" }, { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" }, { "name": "MySQL", "icon": "/assets/icon/mysql.png" }, { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" }, { "name": "TypeScript", "icon": "/assets/icon/ts.png" }, { "name": "Trello", "icon": "/assets/icon/trello.webp" }, { "name": "GitHub", "icon": "/assets/icon/github.png" }, { "name": "Vercel", "icon": "/assets/icon/vercel.png" }, { "name": "Railway", "icon": "/assets/icon/railway.png" }, { "name": "Figma", "icon": "/assets/icon/figma.png" }, { "name": "Docker", "icon": "/assets/icon/docker.png" }, { "name": "Postman", "icon": "/assets/icon/postman.svg" } ] }, { "title": "Gava", "period": "August 2025 - Present", "description": "Gava will be an invoicing and client management system designed to simplify small business administration. It will allow users to create and send invoices, manage clients, and track payments in detail. It will also include a module for accurate distribution of orders across warehouses, providing more efficient inventory and logistics control.", "demoLink": "", "imagesText": "", "images": [], "status": "in-progress", "technologies": [ { "name": "Angular", "icon": "/assets/icon/angular.png" }, { "name": "Spring", "icon": "/assets/icon/spring.svg" }, { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" }, { "name": "MySQL", "icon": "/assets/icon/mysql.png" }, { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" }, { "name": "TypeScript", "icon": "/assets/icon/ts.png" }, { "name": "Trello", "icon": "/assets/icon/trello.webp" }, { "name": "GitHub", "icon": "/assets/icon/github.png" }, { "name": "Vercel", "icon": "/assets/icon/vercel.png" }, { "name": "Railway", "icon": "/assets/icon/railway.png" }, { "name": "Figma", "icon": "/assets/icon/figma.png" }, { "name": "Docker", "icon": "/assets/icon/docker.png" }, { "name": "Postman", "icon": "/assets/icon/postman.svg" } ] } ] }
+{
+  "sectionTitle": "Programs",
+  "technologiesLabel": "Technologies:",
+  "demoLabel": "Demo",
+  "statusLabels": {
+    "completed": "Completed",
+    "in-progress": "In progress"
+  },
+  "programs": [
+    {
+      "title": "Yeti Express",
+      "period": "May 2025 - June 2025",
+      "description": "Yeti Express is a delivery management system developed to optimize logistics and improve efficiency in order distribution. The platform includes features such as credit or cash deliveries, payment logging, and a detailed cash balance module, enabling full control of the logistics process.",
+      "demoLink": "https://yeti-express-app.vercel.app/",
+      "imagesText": "Images",
+      "images": [
+        "/assets/images/yeti-express/yeti1.png",
+        "/assets/images/yeti-express/yeti2.png",
+        "/assets/images/yeti-express/yeti3.png",
+        "/assets/images/yeti-express/yeti4.png",
+        "/assets/images/yeti-express/yeti5.png",
+        "/assets/images/yeti-express/yeti6.png",
+        "/assets/images/yeti-express/yeti7.png",
+        "/assets/images/yeti-express/yeti8.png",
+        "/assets/images/yeti-express/yeti9.png",
+        "/assets/images/yeti-express/yeti10.png"
+      ],
+      "status": "completed",
+      "technologies": [
+        {
+          "name": "Vue",
+          "icon": "/assets/icon/vue.png"
+        },
+        {
+          "name": "Laravel",
+          "icon": "/assets/icon/laravel.png"
+        },
+        {
+          "name": "Chart.js",
+          "icon": "/assets/icon/chartjs.png"
+        },
+        {
+          "name": "MySQL",
+          "icon": "/assets/icon/mysql.png"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "/assets/icon/tailwind.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/assets/icon/ts.png"
+        },
+        {
+          "name": "Trello",
+          "icon": "/assets/icon/trello.webp"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        },
+        {
+          "name": "Vercel",
+          "icon": "/assets/icon/vercel.png"
+        },
+        {
+          "name": "Railway",
+          "icon": "/assets/icon/railway.png"
+        },
+        {
+          "name": "Figma",
+          "icon": "/assets/icon/figma.png"
+        },
+        {
+          "name": "Docker",
+          "icon": "/assets/icon/docker.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "/assets/icon/postman.svg"
+        }
+      ]
+    },
+    {
+      "title": "Gava",
+      "period": "August 2025 - Present",
+      "description": "Gava will be an invoicing and client management system designed to simplify small business administration. It will allow users to create and send invoices, manage clients, and track payments in detail. It will also include a module for accurate distribution of orders across warehouses, providing more efficient inventory and logistics control.",
+      "demoLink": "",
+      "imagesText": "",
+      "images": [],
+      "status": "in-progress",
+      "technologies": [
+        {
+          "name": "Angular",
+          "icon": "/assets/icon/angular.png"
+        },
+        {
+          "name": "Spring",
+          "icon": "/assets/icon/spring.svg"
+        },
+        {
+          "name": "Chart.js",
+          "icon": "/assets/icon/chartjs.png"
+        },
+        {
+          "name": "MySQL",
+          "icon": "/assets/icon/mysql.png"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "/assets/icon/tailwind.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/assets/icon/ts.png"
+        },
+        {
+          "name": "Trello",
+          "icon": "/assets/icon/trello.webp"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        },
+        {
+          "name": "Vercel",
+          "icon": "/assets/icon/vercel.png"
+        },
+        {
+          "name": "Railway",
+          "icon": "/assets/icon/railway.png"
+        },
+        {
+          "name": "Figma",
+          "icon": "/assets/icon/figma.png"
+        },
+        {
+          "name": "Docker",
+          "icon": "/assets/icon/docker.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "/assets/icon/postman.svg"
+        }
+      ]
+    }
+  ]
+}

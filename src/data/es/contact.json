@@ -1,1 +1,8 @@
-{ "title": "Contacto", "label_name": "Nombre", "label_email": "Email", "label_message": "Mensaje", "button": "Enviar", "success": "¡Mensaje enviado con éxito!" }
+{
+  "title": "Contacto",
+  "label_name": "Nombre",
+  "label_email": "Email",
+  "label_message": "Mensaje",
+  "button": "Enviar",
+  "success": "¡Mensaje enviado con éxito!"
+}

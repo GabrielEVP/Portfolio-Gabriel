@@ -1,1 +1,125 @@
-{ "sectionTitle": "Work Experience", "jobs": [ { "title": "Full Stack Developer", "company": "Remote", "location": "Bilbao - Spain", "period": "December 2024 - Present", "description": "As an independent Full Stack developer, I design and build a management system for a delivery company, covering features such as delivery tracking, client debt control, cash balance, and payment administration.", "technologiesTitle": "Technologies used:", "technologies": [ { "name": "Vue", "icon": "/assets/icon/vue.png" }, { "name": "Laravel", "icon": "/assets/icon/laravel.png" }, { "name": "Spring", "icon": "/assets/icon/spring.svg" }, { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" }, { "name": "MySQL", "icon": "/assets/icon/mysql.png" }, { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" }, { "name": "TypeScript", "icon": "/assets/icon/ts.png" }, { "name": "Trello", "icon": "/assets/icon/trello.webp" }, { "name": "GitHub", "icon": "/assets/icon/github.png" }, { "name": "Vercel", "icon": "/assets/icon/vercel.png" }, { "name": "Railway", "icon": "/assets/icon/railway.png" }, { "name": "Figma", "icon": "/assets/icon/figma.png" }, { "name": "Docker", "icon": "/assets/icon/docker.png" }, { "name": "Postman", "icon": "/assets/icon/postman.svg" } ] }, { "title": "Senior Programmer - Supervisor", "company": "RK Informatika", "location": "Bilbao - Spain", "period": "January 2022 - December 2024", "description": "As the supervisor of the programming and development department, I led the development team, managed projects, and coordinated communication with clients and other key departments. I was responsible for internal software development and strategic company projects.", "technologiesTitle": "Technologies used:", "technologies": [ { "name": "PHP", "icon": "/assets/icon/php.png" }, { "name": "Java", "icon": "/assets/icon/java.png" }, { "name": "JavaScript", "icon": "/assets/icon/js.png" }, { "name": "HTML", "icon": "/assets/icon/html.png" }, { "name": "CSS", "icon": "/assets/icon/css.png" }, { "name": "Trello", "icon": "/assets/icon/trello.webp" }, { "name": "Figma", "icon": "/assets/icon/figma.png" }, { "name": "MySQL", "icon": "/assets/icon/mysql.png" }, { "name": "JQyery", "icon": "/assets/icon/jquery.webp" }, { "name": "Git", "icon": "/assets/icon/git.png" }, { "name": "Postman", "icon": "/assets/icon/postman.svg" } ] } ] }
+{
+  "sectionTitle": "Work Experience",
+  "jobs": [
+    {
+      "title": "Full Stack Developer",
+      "company": "Remote",
+      "location": "Bilbao - Spain",
+      "period": "December 2024 - Present",
+      "description": "As an independent Full Stack developer, I design and build a management system for a delivery company, covering features such as delivery tracking, client debt control, cash balance, and payment administration.",
+      "technologiesTitle": "Technologies used:",
+      "technologies": [
+        {
+          "name": "Vue",
+          "icon": "/assets/icon/vue.png"
+        },
+        {
+          "name": "Laravel",
+          "icon": "/assets/icon/laravel.png"
+        },
+        {
+          "name": "Spring",
+          "icon": "/assets/icon/spring.svg"
+        },
+        {
+          "name": "Chart.js",
+          "icon": "/assets/icon/chartjs.png"
+        },
+        {
+          "name": "MySQL",
+          "icon": "/assets/icon/mysql.png"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "/assets/icon/tailwind.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/assets/icon/ts.png"
+        },
+        {
+          "name": "Trello",
+          "icon": "/assets/icon/trello.webp"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        },
+        {
+          "name": "Vercel",
+          "icon": "/assets/icon/vercel.png"
+        },
+        {
+          "name": "Railway",
+          "icon": "/assets/icon/railway.png"
+        },
+        {
+          "name": "Figma",
+          "icon": "/assets/icon/figma.png"
+        },
+        {
+          "name": "Docker",
+          "icon": "/assets/icon/docker.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "/assets/icon/postman.svg"
+        }
+      ]
+    },
+    {
+      "title": "Senior Programmer - Supervisor",
+      "company": "RK Informatika",
+      "location": "Bilbao - Spain",
+      "period": "January 2022 - December 2024",
+      "description": "As the supervisor of the programming and development department, I led the development team, managed projects, and coordinated communication with clients and other key departments. I was responsible for internal software development and strategic company projects.",
+      "technologiesTitle": "Technologies used:",
+      "technologies": [
+        {
+          "name": "PHP",
+          "icon": "/assets/icon/php.png"
+        },
+        {
+          "name": "Java",
+          "icon": "/assets/icon/java.png"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "/assets/icon/js.png"
+        },
+        {
+          "name": "HTML",
+          "icon": "/assets/icon/html.png"
+        },
+        {
+          "name": "CSS",
+          "icon": "/assets/icon/css.png"
+        },
+        {
+          "name": "Trello",
+          "icon": "/assets/icon/trello.webp"
+        },
+        {
+          "name": "Figma",
+          "icon": "/assets/icon/figma.png"
+        },
+        {
+          "name": "MySQL",
+          "icon": "/assets/icon/mysql.png"
+        },
+        {
+          "name": "JQyery",
+          "icon": "/assets/icon/jquery.webp"
+        },
+        {
+          "name": "Git",
+          "icon": "/assets/icon/git.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "/assets/icon/postman.svg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,10 @@
-{ "name": "Gabriel Vargas", "title": "Developer", "subtitle": "Full Stack", "description": "Specialized in building Web Applications with clean code and scalable architectures", "cvButton": { "label": "View CV", "url": "/assets/pdf/Gabriel.pdf" } }
+{
+  "name": "Gabriel Vargas",
+  "title": "Developer",
+  "subtitle": "Full Stack",
+  "description": "Specialized in building Web Applications with clean code and scalable architectures",
+  "cvButton": {
+    "label": "View CV",
+    "url": "/assets/pdf/Gabriel.pdf"
+  }
+}

@@ -1,1 +1,148 @@
-{ "sectionTitle": "Programas", "technologiesLabel": "Tecnologías:", "demoLabel": "Demo", "statusLabels": { "completed": "Terminado", "in-progress": "En progreso" }, "programs": [ { "title": "Yeti Express", "period": "Mayo 2025 - Junio 2025", "description": "Yeti Express es un sistema de gestión de entregas desarrollado para optimizar la logística y mejorar la eficiencia en la distribución de pedidos. La plataforma incluye funcionalidades como entregas a crédito o contado, registro de pagos y un módulo detallado para el conteo de caja, lo que permite un control integral del proceso logístico.", "demoLink": "https://yeti-express-app.vercel.app/", "imagesText": "Imágenes", "images": [ "/assets/images/yeti-express/yeti1.png", "/assets/images/yeti-express/yeti2.png", "/assets/images/yeti-express/yeti3.png", "/assets/images/yeti-express/yeti4.png", "/assets/images/yeti-express/yeti5.png", "/assets/images/yeti-express/yeti6.png", "/assets/images/yeti-express/yeti7.png", "/assets/images/yeti-express/yeti8.png", "/assets/images/yeti-express/yeti9.png", "/assets/images/yeti-express/yeti10.png" ], "status": "completed", "technologies": [ { "name": "Vue", "icon": "/assets/icon/vue.png" }, { "name": "Laravel", "icon": "/assets/icon/laravel.png" }, { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" }, { "name": "MySQL", "icon": "/assets/icon/mysql.png" }, { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" }, { "name": "TypeScript", "icon": "/assets/icon/ts.png" }, { "name": "Trello", "icon": "/assets/icon/trello.webp" }, { "name": "GitHub", "icon": "/assets/icon/github.png" }, { "name": "Vercel", "icon": "/assets/icon/vercel.png" }, { "name": "Railway", "icon": "/assets/icon/railway.png" }, { "name": "Figma", "icon": "/assets/icon/figma.png" }, { "name": "Docker", "icon": "/assets/icon/docker.png" }, { "name": "Postman", "icon": "/assets/icon/postman.svg" } ] }, { "title": "Gava", "period": "Agosto 2025 - Actualmente", "description": "Gava será un sistema de facturación y gestión de clientes diseñado para simplificar la administración de pequeñas empresas. Permitirá crear y enviar facturas, gestionar clientes y realizar un seguimiento detallado de los pagos. Además, incorporará un módulo para la distribución precisa de pedidos por almacenes, brindando un control más eficiente del inventario y la logística.", "demoLink": "", "imagesText": "", "images": [], "status": "in-progress", "technologies": [ { "name": "Angular", "icon": "/assets/icon/angular.png" }, { "name": "Spring", "icon": "/assets/icon/spring.svg" }, { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" }, { "name": "MySQL", "icon": "/assets/icon/mysql.png" }, { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" }, { "name": "TypeScript", "icon": "/assets/icon/ts.png" }, { "name": "Trello", "icon": "/assets/icon/trello.webp" }, { "name": "GitHub", "icon": "/assets/icon/github.png" }, { "name": "Vercel", "icon": "/assets/icon/vercel.png" }, { "name": "Railway", "icon": "/assets/icon/railway.png" }, { "name": "Figma", "icon": "/assets/icon/figma.png" }, { "name": "Docker", "icon": "/assets/icon/docker.png" }, { "name": "Postman", "icon": "/assets/icon/postman.svg" } ] } ] }
+{
+  "sectionTitle": "Programas",
+  "technologiesLabel": "Tecnologías:",
+  "demoLabel": "Demo",
+  "statusLabels": {
+    "completed": "Terminado",
+    "in-progress": "En progreso"
+  },
+  "programs": [
+    {
+      "title": "Yeti Express",
+      "period": "Mayo 2025 - Junio 2025",
+      "description": "Yeti Express es un sistema de gestión de entregas desarrollado para optimizar la logística y mejorar la eficiencia en la distribución de pedidos. La plataforma incluye funcionalidades como entregas a crédito o contado, registro de pagos y un módulo detallado para el conteo de caja, lo que permite un control integral del proceso logístico.",
+      "demoLink": "https://yeti-express-app.vercel.app/",
+      "imagesText": "Imágenes",
+      "images": [
+        "/assets/images/yeti-express/yeti1.png",
+        "/assets/images/yeti-express/yeti2.png",
+        "/assets/images/yeti-express/yeti3.png",
+        "/assets/images/yeti-express/yeti4.png",
+        "/assets/images/yeti-express/yeti5.png",
+        "/assets/images/yeti-express/yeti6.png",
+        "/assets/images/yeti-express/yeti7.png",
+        "/assets/images/yeti-express/yeti8.png",
+        "/assets/images/yeti-express/yeti9.png",
+        "/assets/images/yeti-express/yeti10.png"
+      ],
+      "status": "completed",
+      "technologies": [
+        {
+          "name": "Vue",
+          "icon": "/assets/icon/vue.png"
+        },
+        {
+          "name": "Laravel",
+          "icon": "/assets/icon/laravel.png"
+        },
+        {
+          "name": "Chart.js",
+          "icon": "/assets/icon/chartjs.png"
+        },
+        {
+          "name": "MySQL",
+          "icon": "/assets/icon/mysql.png"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "/assets/icon/tailwind.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/assets/icon/ts.png"
+        },
+        {
+          "name": "Trello",
+          "icon": "/assets/icon/trello.webp"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        },
+        {
+          "name": "Vercel",
+          "icon": "/assets/icon/vercel.png"
+        },
+        {
+          "name": "Railway",
+          "icon": "/assets/icon/railway.png"
+        },
+        {
+          "name": "Figma",
+          "icon": "/assets/icon/figma.png"
+        },
+        {
+          "name": "Docker",
+          "icon": "/assets/icon/docker.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "/assets/icon/postman.svg"
+        }
+      ]
+    },
+    {
+      "title": "Gava",
+      "period": "Agosto 2025 - Actualmente",
+      "description": "Gava será un sistema de facturación y gestión de clientes diseñado para simplificar la administración de pequeñas empresas. Permitirá crear y enviar facturas, gestionar clientes y realizar un seguimiento detallado de los pagos. Además, incorporará un módulo para la distribución precisa de pedidos por almacenes, brindando un control más eficiente del inventario y la logística.",
+      "demoLink": "",
+      "imagesText": "",
+      "images": [],
+      "status": "in-progress",
+      "technologies": [
+        {
+          "name": "Angular",
+          "icon": "/assets/icon/angular.png"
+        },
+        {
+          "name": "Spring",
+          "icon": "/assets/icon/spring.svg"
+        },
+        {
+          "name": "Chart.js",
+          "icon": "/assets/icon/chartjs.png"
+        },
+        {
+          "name": "MySQL",
+          "icon": "/assets/icon/mysql.png"
+        },
+        {
+          "name": "Tailwind",
+          "icon": "/assets/icon/tailwind.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/assets/icon/ts.png"
+        },
+        {
+          "name": "Trello",
+          "icon": "/assets/icon/trello.webp"
+        },
+        {
+          "name": "GitHub",
+          "icon": "/assets/icon/github.png"
+        },
+        {
+          "name": "Vercel",
+          "icon": "/assets/icon/vercel.png"
+        },
+        {
+          "name": "Railway",
+          "icon": "/assets/icon/railway.png"
+        },
+        {
+          "name": "Figma",
+          "icon": "/assets/icon/figma.png"
+        },
+        {
+          "name": "Docker",
+          "icon": "/assets/icon/docker.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "/assets/icon/postman.svg"
+        }
+      ]
+    }
+  ]
+}
