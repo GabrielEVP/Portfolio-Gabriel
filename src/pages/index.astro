@@ -9,10 +9,14 @@ import Programs from "../components/programs.astro";
 import Project from "../components/proyect.astro";
 import Contact from "../components/contact.astro";
 import Footer from "../components/footer.astro";
-const lang = "es";
+
+export const prerender = false;
+
+const urlParams = new URLSearchParams(Astro.url.search);
+const lang = urlParams.get("lang") === "en" ? "en" : "es";
 ---
 
-<html lang="es" id="html-root">
+<html lang={lang} id="html-root">
    <head>
       <meta charset="utf-8" />
       <link rel="icon" type="image/svg+xml" href="Logo.png" />
@@ -24,62 +28,14 @@ const lang = "es";
       <title>Gabriel Vargas</title>
    </head>
    <body>
-      <div id="content-es">
-         <Navbar lang="es" />
-         <Header lang="es" />
-         <About lang="es" />
-         <Work lang="es" />
-         <Education lang="es" />
-         <Programs lang="es" />
-         <Project lang="es" />
-         <Contact lang="es" />
-         <Footer lang="es" />
-      </div>
-      <div id="content-en" style="display: none;">
-         <Navbar lang="en" />
-         <Header lang="en" />
-         <About lang="en" />
-         <Work lang="en" />
-         <Education lang="en" />
-         <Programs lang="en" />
-         <Project lang="en" />
-         <Contact lang="en" />
-         <Footer lang="en" />
-      </div>
-
-      <script>
-         function switchLanguage() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const lang = urlParams.get("lang") || "es";
-
-            const esContent = document.getElementById("content-es");
-            const enContent = document.getElementById("content-en");
-            const htmlRoot = document.getElementById("html-root");
-
-            if (!esContent || !enContent || !htmlRoot) return;
-
-            if (lang === "en") {
-               esContent.style.display = "none";
-               enContent.style.display = "block";
-               htmlRoot.setAttribute("lang", "en");
-            } else {
-               esContent.style.display = "block";
-               enContent.style.display = "none";
-               htmlRoot.setAttribute("lang", "es");
-            }
-         }
-
-         document.addEventListener("DOMContentLoaded", switchLanguage);
-
-         window.addEventListener("popstate", switchLanguage);
-
-         let currentUrl = window.location.href;
-         setInterval(() => {
-            if (window.location.href !== currentUrl) {
-               currentUrl = window.location.href;
-               switchLanguage();
-            }
-         }, 100);
-      </script>
+      <Navbar lang={lang} />
+      <Header lang={lang} />
+      <About lang={lang} />
+      <Work lang={lang} />
+      <Education lang={lang} />
+      <Programs lang={lang} />
+      <Project lang={lang} />
+      <Contact lang={lang} />
+      <Footer lang={lang} />
    </body>
 </html>

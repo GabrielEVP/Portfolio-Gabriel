@@ -11,6 +11,5 @@ export async function loadSectionData<T = any>(section: string, lang: Lang): Pro
 }
 
 export function buildLangUrl(currentUrl: URL, code: Lang): string {
-   const baseUrl = currentUrl.origin + currentUrl.pathname;
-   return `${baseUrl}?lang=${code}`;
+   return `?lang=${code}`;
 }
