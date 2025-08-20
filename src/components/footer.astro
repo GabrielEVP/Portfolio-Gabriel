@@ -1,5 +1,7 @@
 ---
-import footerData from "../data/footer.json";
+import { loadSectionData } from "../utils/i18n";
+const { lang } = Astro.props;
+const footerData = await loadSectionData("footer", lang);
 ---
 
 <footer class="bg-neutral-50 py-8 animate-fade-scroll">

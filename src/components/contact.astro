@@ -1,5 +1,7 @@
 ---
-import contactData from "../data/contact.json";
+import { loadSectionData } from "../utils/i18n";
+const { lang } = Astro.props;
+const contactData = await loadSectionData("contact", lang);
 ---
 
 <section id="contact" class="min-h-screen bg-neutral-50 py-16 flex items-center animate-fade-scroll">

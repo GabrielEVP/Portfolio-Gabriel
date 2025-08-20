@@ -1,5 +1,7 @@
 ---
-import educationData from "../data/education.json";
+import { loadSectionData } from "../utils/i18n";
+const { lang } = Astro.props;
+const educationData = await loadSectionData("education", lang);
 ---
 
 <section id="education" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
@@ -17,7 +19,7 @@ import educationData from "../data/education.json";
             </h3>
             <div class="flex flex-col gap-10">
                {
-                  educationData.higherDegrees.map((item) => (
+                  educationData.higherDegrees.map((item: any) => (
                      <div class="bg-white rounded-xl border border-gray-200 p-10 transition-shadow duration-300 w-full">
                         <h4 class="text-center text-2xl font-semibold text-gray-900 mb-2 border-b pb-2 tracking-wide">{item.title}</h4>
                         <div class="flex items-center justify-center text-gray-600 mb-2 gap-2">
@@ -29,7 +31,7 @@ import educationData from "../data/education.json";
                         <div class="text-center">
                            <p class="text-gray-800 font-medium mb-4">{item.technologiesTitle}</p>
                            <div class="grid grid-cols-4 gap-4 justify-center">
-                              {item.technologies.map((tech) => (
+                              {item.technologies.map((tech: any) => (
                                  <div class="flex flex-col items-center">
                                     <img src={tech.icon} alt={tech.name} class="w-8 h-8 object-contain" />
                                     <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
@@ -62,7 +64,7 @@ import educationData from "../data/education.json";
             </h3>
             <div class="flex flex-col gap-10 w-full max-w-xl">
                {
-                  educationData.courses.map((item) => (
+                  educationData.courses.map((item: any) => (
                      <div class="relative bg-white rounded-xl border border-gray-200 p-10 transition-shadow duration-300 w-full mx-auto">
                         <div class="absolute inset-0 pointer-events-none rounded-xl" style="background: linear-gradient(135deg, #f8f6f1 0%, #fff 100%); opacity: 0.5;" />
                         <div class="relative">
@@ -77,7 +79,7 @@ import educationData from "../data/education.json";
                            <div class="text-center mt-6">
                               <p class="text-gray-800 font-medium mb-3">{item.technologiesTitle}</p>
                               <div class="flex justify-center gap-4 flex-wrap">
-                                 {item.technologies.map((tech) => (
+                                 {item.technologies.map((tech: any) => (
                                     <div class="flex flex-col items-center">
                                        <div class="w-10 h-10 flex items-center justify-center border border-gray-200 rounded-full bg-white">
                                           <img src={tech.icon} alt={tech.name} class="w-6 h-6 object-contain" />
