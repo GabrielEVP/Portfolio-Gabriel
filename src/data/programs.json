@@ -1,18 +1,18 @@
 {
-  "sectionTitle": "Programs",
-  "technologiesLabel": "Technologies:",
+  "sectionTitle": "Programas",
+  "technologiesLabel": "Tecnologías:",
   "demoLabel": "Demo",
   "statusLabels": {
-    "completed": "Completed",
-    "in-progress": "In progress"
+    "completed": "Terminado",
+    "in-progress": "En progreso"
   },
   "programs": [
     {
       "title": "Yeti Express",
-      "period": "May 2025 - June 2025",
-      "description": "Yeti Express is a delivery management system developed to optimize logistics and improve efficiency in order distribution. The platform includes features such as credit or cash deliveries, payment logging, and a detailed cash balance module, enabling full control of the logistics process.",
+      "period": "Mayo 2025 - Junio 2025",
+      "description": "Yeti Express es un sistema de gestión de entregas desarrollado para optimizar la logística y mejorar la eficiencia en la distribución de pedidos. La plataforma incluye funcionalidades como entregas a crédito o contado, registro de pagos y un módulo detallado para el conteo de caja, lo que permite un control integral del proceso logístico.",
       "demoLink": "https://yeti-express-app.vercel.app/",
-      "imagesText": "Images",
+      "imagesText": "Imágenes",
       "images": [
         "/assets/images/yeti-express/yeti1.png",
         "/assets/images/yeti-express/yeti2.png",

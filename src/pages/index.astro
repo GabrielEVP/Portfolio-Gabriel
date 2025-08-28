@@ -11,12 +11,9 @@ import Contact from "../components/contact.astro";
 import Footer from "../components/footer.astro";
 
 export const prerender = false;
-
-const urlParams = new URLSearchParams(Astro.url.search);
-const lang = urlParams.get("lang") === "en" ? "en" : "es";
 ---
 
-<html lang={lang} id="html-root">
+<html lang="es" id="html-root">
    <head>
       <meta charset="utf-8" />
       <link rel="icon" type="image/svg+xml" href="Logo.png" />
@@ -28,14 +25,14 @@ const lang = urlParams.get("lang") === "en" ? "en" : "es";
       <title>Gabriel Vargas</title>
    </head>
    <body>
-      <Navbar lang={lang} />
-      <Header lang={lang} />
-      <About lang={lang} />
-      <Work lang={lang} />
-      <Education lang={lang} />
-      <Programs lang={lang} />
-      <Project lang={lang} />
-      <Contact lang={lang} />
-      <Footer lang={lang} />
+      <Navbar />
+      <Header />
+      <About />
+      <Work />
+      <Education />
+      <Programs />
+      <Project />
+      <Contact />
+      <Footer />
    </body>
 </html>

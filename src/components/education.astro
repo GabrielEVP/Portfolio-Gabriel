@@ -1,8 +1,4 @@
----
-import { loadSectionData } from "../utils/i18n";
-const { lang } = Astro.props;
-const educationData = await loadSectionData("education", lang);
----
+---import educationData from "../data/education.json";---
 
 <section id="education" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
    <div class="container mx-auto px-4">

@@ -3,33 +3,33 @@
   "logoAlt": "logo",
   "navLinks": [
     {
-      "name": "About",
+      "name": "Sobre mí",
       "href": "#about"
     },
     {
-      "name": "Experience",
+      "name": "Experiencia",
       "href": "#experience"
     },
     {
-      "name": "Education",
+      "name": "Educación",
       "href": "#education"
     },
     {
-      "name": "Programs",
+      "name": "Programas",
       "href": "#programs"
     },
     {
-      "name": "Projects",
+      "name": "Proyectos",
       "href": "#projects"
     },
     {
-      "name": "Contact",
+      "name": "Contacto",
       "href": "#contact"
     }
   ],
-  "openMenuLabel": "Open menu",
-  "closeMenuLabel": "Close menu",
-  "languageSwitcherLabel": "Language",
+  "openMenuLabel": "Abrir menú",
+  "closeMenuLabel": "Cerrar menú",
+  "languageSwitcherLabel": "Idioma",
   "languages": [
     {
       "code": "es",

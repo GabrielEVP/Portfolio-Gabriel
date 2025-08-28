@@ -1,8 +1,4 @@
----
-import { loadSectionData } from "../utils/i18n";
-const { lang } = Astro.props;
-const projectData = await loadSectionData("proyect", lang);
----
+---import projectData from "../data/proyect.json";---
 
 <section id="projects" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

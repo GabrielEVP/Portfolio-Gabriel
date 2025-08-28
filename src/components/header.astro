@@ -1,8 +1,4 @@
----
-import { loadSectionData } from "../utils/i18n";
-const { lang } = Astro.props;
-const headerData = await loadSectionData("header", lang);
----
+---import headerData from "../data/header.json";---
 
 <header id="header" class="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden">
    <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 animate-fadein">

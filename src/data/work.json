@@ -1,13 +1,13 @@
 {
-  "sectionTitle": "Work Experience",
+  "sectionTitle": "Experiencia Laboral",
   "jobs": [
     {
-      "title": "Full Stack Developer",
-      "company": "Remote",
-      "location": "Bilbao - Spain",
-      "period": "December 2024 - Present",
-      "description": "As an independent Full Stack developer, I design and build a management system for a delivery company, covering features such as delivery tracking, client debt control, cash balance, and payment administration.",
-      "technologiesTitle": "Technologies used:",
+      "title": "Desarrollador Full Stack",
+      "company": "Remoto",
+      "location": "Bilbao - España",
+      "period": "Diciembre 2024 - Actualmente",
+      "description": "Como desarrollador Full Stack por cuenta propia, diseño y desarrollo un sistema de gestión para una empresa de entregas, abarcando funcionalidades como la gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.",
+      "technologiesTitle": "Tecnologías utilizadas:",
       "technologies": [
         {
           "name": "Vue",
@@ -64,12 +64,12 @@
       ]
     },
     {
-      "title": "Senior Programmer - Supervisor",
+      "title": "Programador Senior - Supervisor",
       "company": "RK Informatika",
-      "location": "Bilbao - Spain",
-      "period": "January 2022 - December 2024",
-      "description": "As the supervisor of the programming and development department, I led the development team, managed projects, and coordinated communication with clients and other key departments. I was responsible for internal software development and strategic company projects.",
-      "technologiesTitle": "Technologies used:",
+      "location": "Bilbao - España",
+      "period": "Enero 2022 - Diciembre 2024",
+      "description": "Como supervisor del departamento de programación y desarrollo, lideré al equipo de programadores, gestioné proyectos y coordiné la comunicación con clientes y otros departamentos clave. Fui responsable del desarrollo de software interno y de proyectos estratégicos para la empresa.",
+      "technologiesTitle": "Tecnologías utilizadas:",
       "technologies": [
         {
           "name": "PHP",

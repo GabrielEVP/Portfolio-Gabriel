@@ -1,8 +1,4 @@
----
-import { loadSectionData, buildLangUrl } from "../utils/i18n";
-const { lang } = Astro.props;
-const navData = await loadSectionData("navbar", lang);
----
+---import navData from "../data/navbar.json";---
 
 <nav id="navbar" class="bg-neutral-50 fixed top-0 w-full z-50 transition-all duration-300">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,15 +17,7 @@ const navData = await loadSectionData("navbar", lang);
                   </a>
                ))
             }
-            <div class="flex items-center gap-2">
-               {
-                  navData.languages.map((l: any) => (
-                     <a href={buildLangUrl(Astro.url, l.code)} class={`text-xs px-2 py-1 rounded ${l.code === lang ? "bg-black text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}>
-                        {l.label}
-                     </a>
-                  ))
-               }
-            </div>
+            
          </div>
          <div class="md:hidden">
             <button
@@ -57,15 +45,7 @@ const navData = await loadSectionData("navbar", lang);
                </a>
             ))
          }
-         <div class="flex items-center gap-4 mt-6">
-            {
-               navData.languages.map((l: any) => (
-                  <a href={buildLangUrl(Astro.url, l.code)} class={`text-sm px-3 py-1 rounded-full ${l.code === lang ? "bg-black text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}>
-                     {l.label}
-                  </a>
-               ))
-            }
-         </div>
+         
       </div>
    </div>
 </nav>

@@ -1,9 +1,5 @@
----
-import { loadSectionData } from "../utils/i18n";
-const { lang } = Astro.props;
-const workData = await loadSectionData("work", lang);
-const { sectionTitle, jobs } = workData;
----
+---import workData from "../data/work.json";
+const { sectionTitle, jobs } = workData;---
 
 <section id="experience" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
    <div class="container mx-auto px-4">
