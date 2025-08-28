@@ -3,5 +3,6 @@
   "label_name": "Nombre Completo",
   "label_email": "Correo Electrónico",
   "label_message": "Tu Mensaje",
-  "button": "Enviar Mensaje"
+  "button": "Enviar Mensaje",
+  "success": "¡Mensaje enviado exitosamente!"
 }

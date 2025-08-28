@@ -29,28 +29,6 @@
       ]
     },
     {
-      "title": "Portfolio",
-      "category": "Web",
-      "period": "Julio 2025",
-      "description": "Este proyecto es mi portfolio web personal, creado en Julio de 2025. Busqué un diseño minimalista para que la experiencia sea clara y agradable, enfocándome en mostrar mi trabajo de forma directa y eficiente.",
-      "image": "/assets/images/portfolio/portfolio.png",
-      "internalLink": "/proyectos/portfolio",
-      "technologies": [
-        {
-          "name": "Astro",
-          "icon": "/assets/icon/astro.png"
-        },
-        {
-          "name": "Tailwind",
-          "icon": "/assets/icon/tailwind.png"
-        },
-        {
-          "name": "GitHub",
-          "icon": "/assets/icon/github.png"
-        }
-      ]
-    },
-    {
       "title": "Naves",
       "category": "Videogame",
       "period": "Marzo 2022",

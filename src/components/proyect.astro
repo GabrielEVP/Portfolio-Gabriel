@@ -3,7 +3,7 @@ import projectData from "../data/proyect.json";
 const { sectionTitle, projects } = projectData;
 ---
 
-<section data-aos="fade-down" id="projects" class="min-h-screen py-16 animate-fade-scroll" style="background-color: #1a191d;">
+<section data-aos="fade-down" id="projects" class="min-h-screen py-16 animate-fade-scroll">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
          <h2 class="text-4xl lg:text-5xl font-light text-white mb-6 tracking-wide">
@@ -11,7 +11,6 @@ const { sectionTitle, projects } = projectData;
          </h2>
          <div class="w-24 h-1 bg-white mx-auto rounded-full"></div>
       </div>
-
       <div class="grid gap-8 grid-cols-1 lg:grid-cols-2">
          {
             projects.map((project, idx) => (

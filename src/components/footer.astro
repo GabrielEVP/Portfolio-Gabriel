@@ -2,12 +2,12 @@
 import footerData from "../data/footer.json";
 ---
 
-<footer class="py-16" style="background-color: #1a191d;">
+<footer class="py-16">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-scroll">
          <div class="text-center md:text-left">
             <div class="flex items-center justify-center md:justify-start mb-6">
-               <div class="w-12 h-12 rounded-xl flex items-center justify-center mr-4 shadow-lg" style="background-color: #2a2831;">
+               <div class="w-12 h-12 rounded-xl flex items-center justify-center mr-4 shadow-lg" style="background-color: #fff;">
                   <img src={footerData.logo} alt={footerData.logoAlt} class="w-8 h-8" />
                </div>
                <h3 class="text-2xl font-semibold text-white tracking-wide">{footerData.name}</h3>
@@ -16,13 +16,19 @@ import footerData from "../data/footer.json";
                {footerData.description}
             </p>
          </div>
-
          <div class="text-center md:text-right">
             <h4 class="text-xl font-semibold text-white mb-6 tracking-wide">{footerData.connectTitle}</h4>
             <div class="flex justify-center md:justify-end space-x-4 mb-6">
                {
                   footerData.socialLinks.map((social: any) => (
-                     <a href={social.href} class="w-12 h-12 rounded-xl flex items-center justify-center text-gray-300 hover:text-white transition-all duration-200 shadow-lg hover:scale-105" style="background-color: #2a2831;" aria-label={social.name} target="_blank" rel="noopener noreferrer">
+                     <a
+                        href={social.href}
+                        class="w-12 h-12 rounded-xl flex items-center justify-center text-gray-300 hover:text-white transition-all duration-200 shadow-lg hover:scale-105"
+                        style="background-color: #2a2831;"
+                        aria-label={social.name}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                            <path d={social.icon} />
                         </svg>
@@ -35,7 +41,6 @@ import footerData from "../data/footer.json";
             </p>
          </div>
       </div>
-
       <div class="mt-10 pt-8 border-t border-gray-600 text-center">
          <p class="text-gray-400 font-light tracking-wide text-lg">
             {footerData.copyright}
