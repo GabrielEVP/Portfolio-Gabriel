@@ -11,7 +11,7 @@ export const prerender = true;
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Yeti Express - Proyecto</title>
       <meta name="description" content="Sistema completo para gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos." />
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="icon" type="image/svg+xml" href="../Logo.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet" />
@@ -19,28 +19,30 @@ export const prerender = true;
    <body style="background-color: #1a191d;">
       <button
          onclick="window.location.href='/'"
-         class="fixed top-6 left-6 z-50 text-white border border-white rounded-full px-6 py-3 font-medium hover:bg-white hover:text-gray-900 transition-all duration-200 flex items-center gap-2"
+         class="fixed top-4 left-4 sm:top-6 sm:left-6 z-50 text-white border border-white rounded-full px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-medium hover:bg-white hover:text-gray-900 transition-all duration-200 flex items-center gap-1 sm:gap-2"
       >
-         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+         <svg width="16" height="16" class="sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
          </svg>
-         Volver
+         <span class="hidden sm:inline">Volver</span>
       </button>
 
-      <main class="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+      <main class="min-h-screen py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
          <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-light text-white mb-8 tracking-wide" style="text-shadow: 0 0 30px rgba(255,255,255,0.3), 0 0 60px rgba(255,255,255,0.1);">Yeti Express</h1>
-            <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed font-light tracking-wide">
+            <h1 class="text-3xl sm:text-5xl md:text-7xl font-light text-white mb-6 sm:mb-8 tracking-wide" style="text-shadow: 0 0 30px rgba(255,255,255,0.3), 0 0 60px rgba(255,255,255,0.1);">
+               Yeti Express
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed font-light tracking-wide px-4 sm:px-0">
                Sistema completo para gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.
             </p>
-            <div class="flex items-center justify-center gap-4 mb-16">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12 sm:mb-16 px-4 max-w-md md:max-w-none mx-auto">
                <a
                   href="https://yeti-express-app.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition"
+                  class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-white text-white rounded-full text-sm md:text-base font-medium hover:bg-white hover:text-gray-900 transition"
                >
-                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:w-5 md:h-5">
                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z"></path>
                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                      ></path>
@@ -51,9 +53,9 @@ export const prerender = true;
                   href="https://github.com/GabrielEVP/yeti-express-app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-8 py-3 border border-gray-400 text-gray-400 rounded-full font-medium hover:bg-gray-400 hover:text-gray-900 transition"
+                  class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-400 text-gray-400 rounded-full text-sm md:text-base font-medium hover:bg-gray-400 hover:text-gray-900 transition"
                >
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                  <svg fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 md:w-5 md:h-5">
                      <path
                         d="M12 0c-6.63 0-12 5.37-12 12 0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.003-.404 1.018.005 2.046.138 3.006.404 2.289-1.552 3.295-1.23 3.295-1.23.653 1.649.242 2.873.119 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.587 8.2-6.086 8.2-11.384 0-6.63-5.373-12-12-12z"
                      ></path>
@@ -64,9 +66,9 @@ export const prerender = true;
                   href="https://github.com/GabrielEVP/yeti-express-api"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-8 py-3 border border-gray-400 text-gray-400 rounded-full font-medium hover:bg-gray-400 hover:text-gray-900 transition"
+                  class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-400 text-gray-400 rounded-full text-sm md:text-base font-medium hover:bg-gray-400 hover:text-gray-900 transition"
                >
-                  <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                  <svg fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 md:w-5 md:h-5">
                      <path
                         d="M12 0c-6.63 0-12 5.37-12 12 0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.003-.404 1.018.005 2.046.138 3.006.404 2.289-1.552 3.295-1.23 3.295-1.23.653 1.649.242 2.873.119 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.587 8.2-6.086 8.2-11.384 0-6.63-5.373-12-12-12z"
                      ></path>
@@ -74,36 +76,36 @@ export const prerender = true;
                   GitHub Backend
                </a>
             </div>
-            <div class="space-y-8">
+            <div class="space-y-6 sm:space-y-8 px-2 sm:px-0">
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti1.png" alt="Yeti Express Screenshot 1" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti1.png" alt="Yeti Express Screenshot 1" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti2.png" alt="Yeti Express Screenshot 2" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti2.png" alt="Yeti Express Screenshot 2" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti3.png" alt="Yeti Express Screenshot 3" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti3.png" alt="Yeti Express Screenshot 3" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti4.png" alt="Yeti Express Screenshot 4" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti4.png" alt="Yeti Express Screenshot 4" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti5.png" alt="Yeti Express Screenshot 5" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti5.png" alt="Yeti Express Screenshot 5" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti6.png" alt="Yeti Express Screenshot 6" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti6.png" alt="Yeti Express Screenshot 6" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti7.png" alt="Yeti Express Screenshot 7" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti7.png" alt="Yeti Express Screenshot 7" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti8.png" alt="Yeti Express Screenshot 8" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti8.png" alt="Yeti Express Screenshot 8" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti9.png" alt="Yeti Express Screenshot 9" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti9.png" alt="Yeti Express Screenshot 9" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
                <div class="flex justify-center">
-                  <img src="/assets/images/yeti-express/yeti10.png" alt="Yeti Express Screenshot 10" class="w-full max-w-4xl h-auto" />
+                  <img src="/assets/images/yeti-express/yeti10.png" alt="Yeti Express Screenshot 10" class="w-full max-w-full sm:max-w-4xl h-auto rounded-lg" />
                </div>
             </div>
          </div>
