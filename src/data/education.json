@@ -1,7 +1,6 @@
 {
   "sectionTitle": "Educación",
   "higherDegreesTitle": "Grados",
-  "coursesTitle": "Cursos",
   "higherDegrees": [
     {
       "title": "Desarrollo de Aplicaciones Web",
@@ -61,72 +60,6 @@
       ],
       "certificateText": "Ver Certificado",
       "certificateLink": "/assets/pdf/certificate/desarrollo-web.pdf"
-    }
-  ],
-  "courses": [
-    {
-      "title": "Vue",
-      "company": "Platzi",
-      "location": "Online",
-      "period": "2025",
-      "certificateText": "Ver Certificado",
-      "certificateLink": "/assets/pdf/certificate/vue.pdf",
-      "technologiesTitle": "Tecnologías:",
-      "technologies": [
-        {
-          "name": "Vue",
-          "icon": "/assets/icon/vue.png"
-        }
-      ]
-    },
-    {
-      "title": "TypeScript",
-      "company": "Platzi",
-      "location": "Online",
-      "period": "2025",
-      "certificateText": "Ver Certificado",
-      "certificateLink": "/assets/pdf/certificate/typescript.pdf",
-      "technologiesTitle": "Tecnologías:",
-      "technologies": [
-        {
-          "name": "TypeScript",
-          "icon": "/assets/icon/ts.png"
-        }
-      ]
-    },
-    {
-      "title": "Laravel Development",
-      "company": "Mastermind",
-      "location": "Online",
-      "period": "2024",
-      "certificateText": "",
-      "certificateLink": "",
-      "technologiesTitle": "Tecnologías:",
-      "technologies": [
-        {
-          "name": "Laravel",
-          "icon": "/assets/icon/laravel.png"
-        }
-      ]
-    },
-    {
-      "title": "Backend Framework",
-      "company": "Mastermind",
-      "location": "Online",
-      "period": "2024",
-      "certificateText": "",
-      "certificateLink": "",
-      "technologiesTitle": "Tecnologías:",
-      "technologies": [
-        {
-          "name": "Laravel",
-          "icon": "/assets/icon/laravel.png"
-        },
-        {
-          "name": "PHP",
-          "icon": "/assets/icon/php.png"
-        }
-      ]
     }
   ]
 }
