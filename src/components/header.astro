@@ -46,12 +46,12 @@ const socialIcons = {
       <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up font-light tracking-wide">
          {description}
       </p>
-      <div class="flex items-center justify-center gap-4 mb-8 animate-fade-in-up-delay">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-8 animate-fade-in-up-delay max-w-md md:max-w-none mx-auto">
          <a
             target="_blank"
             rel="noopener noreferrer"
             href={cvButton.url}
-            class="inline-flex items-center gap-2 px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition"
+            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition"
          >
             <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
@@ -59,7 +59,7 @@ const socialIcons = {
             </svg>
             {cvButton.label}
          </a>
-         <a href={contactButton.url} class="inline-flex items-center gap-2 px-8 py-3 border border-gray-400 text-gray-400 rounded-full font-medium hover:bg-gray-400 hover:text-gray-900 transition">
+         <a href={contactButton.url} class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 border border-gray-400 text-gray-400 rounded-full font-medium hover:bg-gray-400 hover:text-gray-900 transition">
             <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
