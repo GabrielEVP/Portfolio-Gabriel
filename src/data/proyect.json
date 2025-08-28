@@ -4,7 +4,36 @@
   "githubLabel": "GitHub",
   "projects": [
     {
+      "title": "Sistema de Gestión de Entregas",
+      "category": "Web",
+      "period": "Diciembre 2024 - Actualmente",
+      "description": "Sistema completo para gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.",
+      "githubLink": "",
+      "demoLink": "",
+      "imagesText": "",
+      "images": [],
+      "technologies": [
+        {
+          "name": "Vue",
+          "icon": "/assets/icon/vue.png"
+        },
+        {
+          "name": "Laravel",
+          "icon": "/assets/icon/laravel.png"
+        },
+        {
+          "name": "Chart.js",
+          "icon": "/assets/icon/chartjs.png"
+        },
+        {
+          "name": "MySQL",
+          "icon": "/assets/icon/mysql.png"
+        }
+      ]
+    },
+    {
       "title": "Portfolio Web",
+      "category": "Web",
       "period": "Julio 2025",
       "description": "Este proyecto es mi portfolio web personal, creado en Julio de 2025. Busqué un diseño minimalista para que la experiencia sea clara y agradable, enfocándome en mostrar mi trabajo de forma directa y eficiente. Utilicé Astro para optimizar el rendimiento y Tailwind CSS para construir una interfaz limpia y moderna.",
       "githubLink": "https://github.com/GabrielEVP/Portfolio-Gabriel",
@@ -27,26 +56,8 @@
       ]
     },
     {
-      "title": "Automatización de Código",
-      "period": "Abril 2022",
-      "description": "Desarrollé esta herramienta para ahorrar tiempo durante un examen, automatizando tareas repetitivas como la creación de clases con sus getters y setters, todo directamente desde la terminal. Fue tan útil que el profesor nos pidió compartirla con toda la clase para que todos pudieran aprovecharla. Esta experiencia me enseñó la importancia de crear soluciones prácticas que optimicen el trabajo y ahorren tiempo.",
-      "githubLink": "https://github.com/GabrielEVP/Automatizacion-de-Codigo",
-      "demoLink": "",
-      "imagesText": "",
-      "images": [],
-      "technologies": [
-        {
-          "name": "Java",
-          "icon": "/assets/icon/java.png"
-        },
-        {
-          "name": "GitHub",
-          "icon": "/assets/icon/github.png"
-        }
-      ]
-    },
-    {
       "title": "Naves Game",
+      "category": "Videogame",
       "period": "Marzo 2022",
       "description": "Este es mi proyecto favorito y le tengo mucho cariño. Gracias a él comencé a programar mucho mejor, pasando de ser un alumno bastante malo a uno de los mejores del curso. Además, incluso los profesores quedaron sorprendidos y no sabían cómo había logrado hacerlo. Fue un antes y un después en mi aprendizaje, desarrollando todo desde cero con Java y JFrame, gestionando manualmente gráficos y colisiones.",
       "githubLink": "https://github.com/GabrielEVP/Naves-Game",

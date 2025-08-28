@@ -2,75 +2,48 @@
 import workData from "../data/work.json";
 ---
 
-<section id="experience" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
+<section id="experience" class="min-h-screen py-16 animate-fade-scroll" style="background-color: #1a191d;">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-         <h2 class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide">
+         <h2 class="text-4xl lg:text-5xl font-light text-white mb-6 tracking-wide">
             {workData.sectionTitle}
          </h2>
-         <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
+         <div class="w-24 h-1 bg-white mx-auto rounded-full"></div>
       </div>
 
       <div class="space-y-8">
          {
             workData.jobs.map((job, index) => (
-               <div class="bg-white border border-gray-200 rounded-2xl p-16">
+               <div class="rounded-2xl p-16 shadow-2xl" style="background-color: #1f1e22; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);">
                   <div class="flex items-center gap-4 mb-6">
-                     <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                        <svg class="w-6 h-6 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                     <div
+                        class="w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
+                        style="background-color: #2a2831; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);"
+                     >
+                        <svg class="w-6 h-6 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4Z" />
                            <path d="M0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                      </div>
                      <div class="flex-1">
-                        <h3 class="text-2xl font-semibold text-gray-900 tracking-wide">{job.title}</h3>
-                        <p class="text-base text-gray-600">
+                        <h3 class="text-2xl font-semibold text-white tracking-wide">{job.title}</h3>
+                        <p class="text-base text-gray-400">
                            {job.company} - {job.location}
                         </p>
                      </div>
-                     <time class="text-sm text-gray-500 italic">{job.period}</time>
+                     <time class="text-lg text-gray-300 font-medium">{job.period}</time>
                   </div>
-                  <p class="text-gray-700 text-base mb-6">{job.description}</p>
-                  <div class="space-y-6">
-                     {job.technologies.frontend && job.technologies.frontend.length > 0 && (
-                        <div>
-                           <p class="text-gray-800 font-medium mb-2 text-sm">Frontend:</p>
-                           <div class="grid grid-cols-4 gap-3">
-                              {job.technologies.frontend.map((tech) => (
-                                 <div class="flex flex-col items-center">
-                                    <img src={tech.icon} alt={tech.name} class="w-8 h-8 object-contain" />
-                                    <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
-                                 </div>
-                              ))}
+                  <p class="text-gray-300 text-base mb-6">{job.description}</p>
+                  <div>
+                     <p class="text-gray-200 font-medium mb-4 text-sm">Tecnologías utilizadas:</p>
+                     <div class="flex flex-wrap gap-3">
+                        {[...(job.technologies.frontend || []), ...(job.technologies.backend || []), ...(job.technologies.tools || [])].map((tech) => (
+                           <div class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-600 shadow-sm" style="background-color: #2a2831;">
+                              <img src={tech.icon} alt={tech.name} class="w-5 h-5 object-contain" />
+                              <span class="text-sm text-gray-300">{tech.name}</span>
                            </div>
-                        </div>
-                     )}
-                     {job.technologies.backend && job.technologies.backend.length > 0 && (
-                        <div>
-                           <p class="text-gray-800 font-medium mb-2 text-sm">Backend:</p>
-                           <div class="grid grid-cols-4 gap-3">
-                              {job.technologies.backend.map((tech) => (
-                                 <div class="flex flex-col items-center">
-                                    <img src={tech.icon} alt={tech.name} class="w-8 h-8 object-contain" />
-                                    <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
-                                 </div>
-                              ))}
-                           </div>
-                        </div>
-                     )}
-                     {job.technologies.tools && job.technologies.tools.length > 0 && (
-                        <div>
-                           <p class="text-gray-800 font-medium mb-2 text-sm">Herramientas:</p>
-                           <div class="grid grid-cols-4 gap-3">
-                              {job.technologies.tools.map((tech) => (
-                                 <div class="flex flex-col items-center">
-                                    <img src={tech.icon} alt={tech.name} class="w-8 h-8 object-contain" />
-                                    <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
-                                 </div>
-                              ))}
-                           </div>
-                        </div>
-                     )}
+                        ))}
+                     </div>
                   </div>
                </div>
             ))

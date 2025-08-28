@@ -2,16 +2,16 @@
 import aboutData from "../data/about.json";
 ---
 
-<section id="about" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
+<section id="about" class="min-h-screen py-16 animate-fade-scroll" style="background-color: #1a191d;">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-         <h2 class="text-4xl lg:text-5xl font-light text-gray-900 mb-6 tracking-wide">
+         <h2 class="text-4xl lg:text-5xl font-light text-white mb-6 tracking-wide">
             {aboutData.title}
          </h2>
-         <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
+         <div class="w-24 h-1 bg-white mx-auto rounded-full"></div>
       </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-16">
+      <div class="rounded-2xl p-16 shadow-2xl" style="background-color: #1f1e22; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);">
          <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
             <div class="lg:col-span-2 flex justify-center">
                <div class="relative rounded-lg overflow-hidden shadow-lg">
@@ -19,7 +19,7 @@ import aboutData from "../data/about.json";
                </div>
             </div>
             <div class="lg:col-span-3 space-y-4">
-               {aboutData.description.map((paragraph) => <p class="text-lg text-gray-700 leading-relaxed">{paragraph}</p>)}
+               {aboutData.description.map((paragraph) => <p class="text-lg text-gray-300 leading-relaxed">{paragraph}</p>)}
             </div>
          </div>
       </div>

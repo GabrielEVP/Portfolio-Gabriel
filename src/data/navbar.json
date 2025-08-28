@@ -3,6 +3,10 @@
   "logoAlt": "logo",
   "navLinks": [
     {
+      "name": "Inicio",
+      "href": "#header"
+    },
+    {
       "name": "Sobre mí",
       "href": "#about"
     },
@@ -13,10 +17,6 @@
     {
       "name": "Educación",
       "href": "#education"
-    },
-    {
-      "name": "Programas",
-      "href": "#programs"
     },
     {
       "name": "Proyectos",
