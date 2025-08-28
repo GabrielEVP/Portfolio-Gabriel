@@ -1,0 +1,25 @@
+---
+import skillsData from "../data/skills.json";
+---
+
+<section id="skills" class="min-h-screen bg-neutral-50 py-20 animate-fade-scroll">
+   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-20">
+         <h2 class="text-4xl lg:text-5xl font-light text-gray-900 mb-8 tracking-widest uppercase">
+            {skillsData.sectionTitle}
+         </h2>
+         <div class="w-32 h-px bg-gray-800 mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+         {skillsData.skills.map((skill) => (
+            <div class="flex flex-col items-center group/skill transition-all duration-300 hover:transform hover:-translate-y-1">
+               <div class="w-16 h-16 mb-4 transition-all duration-300 flex items-center justify-center bg-white rounded-full shadow-sm border border-gray-100 group-hover/skill:shadow-md">
+                  <img src={skill.icon} alt={skill.name} class="w-10 h-10 object-contain" />
+               </div>
+               <span class="text-xs font-light text-gray-600 text-center tracking-wide uppercase">{skill.name}</span>
+            </div>
+         ))}
+      </div>
+   </div>
+</section>

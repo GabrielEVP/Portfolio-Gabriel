@@ -1,10 +1,11 @@
 {
-  "image": "Gabriel.jpg",
-  "alt": "Gabriel Vargas - Desarrollador Full Stack",
+  "image": "/Gabriel.jpg",
+  "alt": "Gabriel Vargas, Desarrollador Full Stack",
   "title": "Sobre Mí",
-  "intro": "Hola Soy Gabriel Vargas",
-  "studies": "Durante mis estudios, fui uno de los alumnos mejor valorados del curso. Esta experiencia me permitió desarrollar habilidades técnicas y de liderazgo, con proyectos destacados como simulaciones de aplicaciones bancarias, tiendas de bicicletas y un juego de naves, los cuales me ayudaron a fortalecer mi capacidad para resolver problemas y crear soluciones efectivas.",
-  "experience": "En mi experiencia actual como programador Full Stack por cuenta ajena, he tenido la oportunidad de aprender y crecer profesionalmente asumiendo un rol con un alto nivel de responsabilidad. Tuve a mi cargo el desarrollo completo, desde cero, de un sistema de gestión de deliveries para un cliente, y actualmente me encuentro trabajando en una nueva aplicación para otro proyecto en curso.",
-  "passion": "La programación es mi pasión, y creo firmemente que es una habilidad esencial en el mundo actual. La tecnología está en constante evolución, y disfruto de la oportunidad de aprender y adaptarme continuamente. Además, pienso que los conocimientos en programación nos permiten transformar ideas en realidad y automatizar procesos para mejorar la vida de todos.",
-  "goal": "Mi objetivo es seguir creciendo profesionalmente en el ámbito del desarrollo, formando parte de una empresa en la que pueda aplicar mis conocimientos y desarrollarme aún más, con un compromiso de crecimiento continuo tanto a nivel personal como profesional."
+  "description": [
+    "¡Hola! Soy Gabriel Vargas, un programador Full Stack apasionado por la tecnología y el desarrollo de soluciones web eficientes y escalables.",
+    "Durante mis estudios, destaqué por mi capacidad de liderazgo y resolución de problemas, desarrollando proyectos como simulaciones bancarias y un juego de naves que sentaron las bases de mi experiencia técnica.",
+    "Actualmente, como desarrollador, he asumido la responsabilidad de crear sistemas complejos desde cero, como una aplicación de gestión de deliveries, y participo activamente en el desarrollo de nuevos proyectos.",
+    "Mi objetivo es seguir creciendo en un entorno profesional dinámico, aportando mi pasión por el código limpio y mi compromiso con el aprendizaje continuo para transformar ideas en realidades digitales."
+  ]
 }

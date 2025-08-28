@@ -1,58 +1,59 @@
----import educationData from "../data/education.json";---
+---
+import educationData from "../data/education.json";
+---
 
-<section id="education" class="min-h-screen bg-neutral-50 py-16 animate-fade-scroll">
-   <div class="container mx-auto px-4">
-      <div class="text-center mb-24">
-         <h2 class="text-4xl lg:text-5xl font-light text-black mb-6 tracking-wide">
+<section id="education" class="min-h-screen bg-neutral-50 py-20 animate-fade-scroll flex items-center justify-center">
+   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="text-center mb-16">
+         <h2 class="text-4xl lg:text-5xl font-light text-gray-900 mb-8 tracking-widest uppercase">
             {educationData.sectionTitle}
          </h2>
-         <div class="w-24 h-1 bg-black mx-auto rounded-full"></div>
+         <div class="w-32 h-px bg-gray-800 mx-auto"></div>
       </div>
+
       <div class="flex justify-center">
-         <div class="w-full max-w-2xl">
-            <h3 class="text-center text-3xl font-semibold text-gray-800 mb-10 tracking-wide">
-               {educationData.higherDegreesTitle}
-            </h3>
-            <div class="flex flex-col gap-10">
-               {
-                  educationData.higherDegrees.map((item: any) => (
-                     <div class="bg-white rounded-xl border border-gray-200 p-10 transition-shadow duration-300 w-full">
-                        <h4 class="text-center text-2xl font-semibold text-gray-900 mb-2 border-b pb-2 tracking-wide">{item.title}</h4>
-                        <div class="flex items-center justify-center text-gray-600 mb-2 gap-2">
-                           <span class="text-sm font-medium">{item.company}</span>
-                           <span class="mx-1">·</span>
-                           <span class="text-sm">{item.location}</span>
-                        </div>
-                        <p class="text-gray-500 text-sm italic mb-4 text-center">{item.period}</p>
-                        <div class="text-center">
-                           <p class="text-gray-800 font-medium mb-4">{item.technologiesTitle}</p>
-                           <div class="grid grid-cols-4 gap-4 justify-center">
-                              {item.technologies.map((tech: any) => (
-                                 <div class="flex flex-col items-center">
-                                    <img src={tech.icon} alt={tech.name} class="w-8 h-8 object-contain" />
-                                    <span class="text-xs text-gray-600 mt-1">{tech.name}</span>
-                                 </div>
-                              ))}
-                           </div>
-                           {item.certificateLink && (
-                              <div class="mt-8 text-center">
-                                 <a
-                                    target="_blank"
-                                    href={item.certificateLink}
-                                    class="inline-flex items-center px-8 py-3 border border-gray-400 bg-white text-black hover:bg-gray-100 hover:text-black transition-all duration-300 group rounded-full shadow-none tracking-widest text-sm uppercase"
-                                 >
-                                    <span>{item.certificateText}</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                 </a>
-                              </div>
-                           )}
-                        </div>
+         <div class="bg-white border border-gray-200 rounded-3xl p-12 flex flex-col justify-center items-center text-center shadow-sm hover:shadow-md transition-all duration-300">
+            {
+               educationData.higherDegrees.map((degree, index) => (
+                  <div class="mb-8 last:mb-0">
+                     <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                           <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4Z" />
+                           <path d="M0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
                      </div>
-                  ))
-               }
-            </div>
+
+                     <h3 class="text-lg font-light text-gray-900 tracking-wide uppercase mb-2">{degree.title}</h3>
+                     <p class="text-sm text-gray-600 mb-2">{degree.company}</p>
+                     <p class="text-xs text-gray-500 italic mb-4">{degree.period}</p>
+
+                     <div class="grid grid-cols-4 gap-4 justify-items-center mb-6">
+                        {degree.technologies.map((tech) => (
+                           <div class="flex flex-col items-center">
+                              <img src={tech.icon} alt={tech.name} class="w-10 h-10 object-contain mb-1" />
+                              <span class="text-xs text-gray-600 text-center font-light">{tech.name}</span>
+                           </div>
+                        ))}
+                     </div>
+
+                     {degree.certificateLink && (
+                        <a
+                           href={degree.certificateLink}
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 px-6 py-3 border border-black text-black rounded-full font-medium text-sm hover:bg-gray-100 transition tracking-wide uppercase"
+                        >
+                           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                           </svg>
+                           Ver Certificado
+                        </a>
+                     )}
+
+                     {index < educationData.higherDegrees.length - 1 && <div class="w-16 h-px bg-gray-300 mx-auto mt-6" />}
+                  </div>
+               ))
+            }
          </div>
       </div>
    </div>

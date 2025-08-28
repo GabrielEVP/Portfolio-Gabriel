@@ -1,10 +1,24 @@
 {
   "name": "Gabriel Vargas",
-  "title": "Desarrollador",
-  "subtitle": "Full Stack",
-  "description": "Especializado en crear Aplicaciones Web con código limpio y arquitecturas escalables",
+  "title": "Desarrollador Full-Stack",
+  "subtitle": "Especialista en Experiencias Web",
+  "description": "Apasionado por construir aplicaciones web intuitivas y de alto rendimiento, convirtiendo ideas complejas en realidades digitales.",
   "cvButton": {
-    "label": "Ver CV",
+    "label": "Descargar CV",
     "url": "/assets/pdf/Gabriel.pdf"
-  }
+  },
+  "contactButton": {
+    "label": "Hablemos",
+    "url": "#contact"
+  },
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/YOUR_USERNAME"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/YOUR_USERNAME"
+    }
+  ]
 }

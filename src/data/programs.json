@@ -1,31 +1,20 @@
 {
-  "sectionTitle": "Programas",
-  "technologiesLabel": "Tecnologías:",
-  "demoLabel": "Demo",
+  "sectionTitle": "Programas y Proyectos",
+  "demoLabel": "Ver Demo",
   "statusLabels": {
-    "completed": "Terminado",
-    "in-progress": "En progreso"
+    "completed": "Completado",
+    "in-progress": "En Progreso"
   },
+  "technologiesLabel": "Tecnologías:",
   "programs": [
     {
-      "title": "Yeti Express",
-      "period": "Mayo 2025 - Junio 2025",
-      "description": "Yeti Express es un sistema de gestión de entregas desarrollado para optimizar la logística y mejorar la eficiencia en la distribución de pedidos. La plataforma incluye funcionalidades como entregas a crédito o contado, registro de pagos y un módulo detallado para el conteo de caja, lo que permite un control integral del proceso logístico.",
-      "demoLink": "https://yeti-express-app.vercel.app/",
-      "imagesText": "Imágenes",
-      "images": [
-        "/assets/images/yeti-express/yeti1.png",
-        "/assets/images/yeti-express/yeti2.png",
-        "/assets/images/yeti-express/yeti3.png",
-        "/assets/images/yeti-express/yeti4.png",
-        "/assets/images/yeti-express/yeti5.png",
-        "/assets/images/yeti-express/yeti6.png",
-        "/assets/images/yeti-express/yeti7.png",
-        "/assets/images/yeti-express/yeti8.png",
-        "/assets/images/yeti-express/yeti9.png",
-        "/assets/images/yeti-express/yeti10.png"
-      ],
-      "status": "completed",
+      "title": "Sistema de Gestión de Entregas",
+      "period": "Diciembre 2024 - Actualmente",
+      "description": "Sistema completo para gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.",
+      "status": "in-progress",
+      "demoLink": null,
+      "images": [],
+      "imagesText": "Ver Capturas",
       "technologies": [
         {
           "name": "Vue",
@@ -42,42 +31,29 @@
         {
           "name": "MySQL",
           "icon": "/assets/icon/mysql.png"
-        },
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Personal",
+      "period": "2024",
+      "description": "Portafolio personal desarrollado con Astro, showcasing proyectos y experiencia profesional con diseño moderno y responsivo.",
+      "status": "completed",
+      "demoLink": "https://portfolio-gabriel.vercel.app",
+      "images": [],
+      "imagesText": "Ver Capturas",
+      "technologies": [
         {
-          "name": "Tailwind",
-          "icon": "/assets/icon/tailwind.png"
+          "name": "Astro",
+          "icon": "/assets/icon/astro.png"
         },
         {
           "name": "TypeScript",
           "icon": "/assets/icon/ts.png"
         },
         {
-          "name": "Trello",
-          "icon": "/assets/icon/trello.webp"
-        },
-        {
-          "name": "GitHub",
-          "icon": "/assets/icon/github.png"
-        },
-        {
-          "name": "Vercel",
-          "icon": "/assets/icon/vercel.png"
-        },
-        {
-          "name": "Railway",
-          "icon": "/assets/icon/railway.png"
-        },
-        {
-          "name": "Figma",
-          "icon": "/assets/icon/figma.png"
-        },
-        {
-          "name": "Docker",
-          "icon": "/assets/icon/docker.png"
-        },
-        {
-          "name": "Postman",
-          "icon": "/assets/icon/postman.svg"
+          "name": "Tailwind",
+          "icon": "/assets/icon/tailwind.png"
         }
       ]
     }
