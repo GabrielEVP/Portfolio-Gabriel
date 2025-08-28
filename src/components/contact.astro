@@ -2,7 +2,7 @@
 import contactData from "../data/contact.json";
 ---
 
-<section id="contact" class="min-h-screen py-16 flex items-center animate-fade-scroll" style="background-color: #1a191d;">
+<section data-aos="fade-down" id="contact" class="min-h-screen py-16 flex items-center animate-fade-scroll" style="background-color: #1a191d;">
    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <div class="text-center mb-12">
          <h2 class="text-4xl lg:text-5xl font-light text-white mb-6 tracking-wide">
@@ -49,7 +49,11 @@ import contactData from "../data/contact.json";
                class="w-full border border-gray-600 text-white rounded-xl px-5 py-4 text-base focus:outline-none focus:border-white focus:ring-2 focus:ring-white/20 transition-all duration-200 resize-none"
                style="background-color: #2a2831;"></textarea>
          </div>
-         <button type="submit" class="w-full text-white rounded-xl px-6 py-4 font-semibold uppercase tracking-widest text-lg hover:bg-gray-700 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105" style="background-color: #2a2831;">
+         <button
+            type="submit"
+            class="w-full text-white rounded-xl px-6 py-4 font-semibold uppercase tracking-widest text-lg hover:bg-gray-700 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+            style="background-color: #2a2831;"
+         >
             {contactData.button}
          </button>
          <div id="success-message" class="hidden text-green-400 text-center mt-4 font-medium text-lg">

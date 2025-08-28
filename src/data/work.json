@@ -1,59 +1,42 @@
 {
-  "sectionTitle": "Experiencia Laboral",
+  "sectionTitle": "Experiencia",
   "jobs": [
     {
-      "title": "Desarrollador Full Stack",
-      "company": "Remoto",
-      "location": "Bilbao - España",
-      "period": "Diciembre 2024 - Actualmente",
-      "description": "Como desarrollador Full Stack por cuenta propia, diseño y desarrollo un sistema de gestión para una empresa de entregas, abarcando funcionalidades como la gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.",
-      "technologies": {
-        "frontend": [
-          { "name": "Vue", "icon": "/assets/icon/vue.png" },
-          { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" },
-          { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" },
-          { "name": "TypeScript", "icon": "/assets/icon/ts.png" }
-        ],
-        "backend": [
-          { "name": "Laravel", "icon": "/assets/icon/laravel.png" },
-          { "name": "MySQL", "icon": "/assets/icon/mysql.png" }
-        ],
-        "tools": [
-          { "name": "Trello", "icon": "/assets/icon/trello.webp" },
-          { "name": "GitHub", "icon": "/assets/icon/github.png" },
-          { "name": "Vercel", "icon": "/assets/icon/vercel.png" },
-          { "name": "Railway", "icon": "/assets/icon/railway.png" },
-          { "name": "Figma", "icon": "/assets/icon/figma.png" },
-          { "name": "Docker", "icon": "/assets/icon/docker.png" },
-          { "name": "Postman", "icon": "/assets/icon/postman.svg" }
-        ]
-      }
+      "title": "Desarrollador Freelance",
+      "company": "Full Stack",
+      "location": "Remoto",
+      "period": "Enero 2025 - Agosto 2025",
+      "description": "Lideré la transformación digital del cliente con un sistema integral de gestión de pedidos, pagos y balances que optimizó la eficiencia operativa y el control financiero. Automatizamos pedidos vía chatbot con IA en WhatsApp, incorporamos controles de acceso con auditoría y diseñé una interfaz intuitiva que facilitó la rápida adopción, generando mayor productividad y un retorno de inversión acelerado.",
+      "companyIcon": "",
+      "technologies": [
+        { "name": "Laravel", "icon": "/assets/icon/laravel.png" },
+        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "Vue", "icon": "/assets/icon/vue.png" },
+        { "name": "TypeScript", "icon": "/assets/icon/ts.png" },
+        { "name": "Tailwind", "icon": "/assets/icon/tailwind.png" },
+        { "name": "Docker", "icon": "/assets/icon/docker.png" },
+        { "name": "Figma", "icon": "/assets/icon/figma.png" },
+        { "name": "Postman", "icon": "/assets/icon/postman.svg" }
+      ]
     },
     {
-      "title": "Programador Senior - Supervisor",
-      "company": "RK Informatika",
-      "location": "Bilbao - España",
-      "period": "Enero 2022 - Diciembre 2024",
-      "description": "Como supervisor del departamento de programación y desarrollo, lideré al equipo de programadores, gestioné proyectos y coordiné la comunicación con clientes y otros departamentos clave. Fui responsable del desarrollo de software interno y de proyectos estratégicos para la empresa.",
-      "technologies": {
-        "frontend": [
-          { "name": "JavaScript", "icon": "/assets/icon/js.png" },
-          { "name": "HTML", "icon": "/assets/icon/html.png" },
-          { "name": "CSS", "icon": "/assets/icon/css.png" }
-        ],
-        "backend": [
-          { "name": "PHP", "icon": "/assets/icon/php.png" },
-          { "name": "Java", "icon": "/assets/icon/java.png" },
-          { "name": "MySQL", "icon": "/assets/icon/mysql.png" }
-        ],
-        "tools": [
-          { "name": "Trello", "icon": "/assets/icon/trello.webp" },
-          { "name": "Figma", "icon": "/assets/icon/figma.png" },
-          { "name": "Docker", "icon": "/assets/icon/docker.png" },
-          { "name": "Git", "icon": "/assets/icon/git.png" },
-          { "name": "Postman", "icon": "/assets/icon/postman.svg" }
-        ]
-      }
+      "title": "Jefe de departamento - Programador Senior",
+      "company": "RK Solutions",
+      "location": "Gernika - España",
+      "period": "Julio 2022 - Diciembre 2024",
+      "description": "Dirigí un equipo de programadores supervisando el ciclo completo de desarrollo de software, desde la definición de arquitectura hasta la entrega de soluciones estratégicas. Lideré la evolución del sistema de facturación La Manzana, incorporando módulos de facturación, gestión de tareas, soporte multi-idioma y TPV, lo que incrementó la productividad y abrió el negocio a clientes internacionales. Diseñé soluciones a medida como un sistema de control de horas para fábrica, gestión avanzada de almacenes para zapaterías y plataformas para ETT, optimizando la eficiencia y el control de procesos. Además, implementé APIs y TPV con hardware especializado, mejorando la experiencia de venta y ampliando las capacidades de integración tecnológica.",
+      "companyIcon": "/assets/work/Rk.jpg",
+      "technologies": [
+        { "name": "PHP", "icon": "/assets/icon/php.png" },
+        { "name": "Java", "icon": "/assets/icon/java.png" },
+        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "JavaScript", "icon": "/assets/icon/js.png" },
+        { "name": "CSS", "icon": "/assets/icon/css.png" },
+        { "name": "HTML", "icon": "/assets/icon/html.png" },
+        { "name": "Docker", "icon": "/assets/icon/docker.png" },
+        { "name": "Figma", "icon": "/assets/icon/figma.png" },
+        { "name": "Postman", "icon": "/assets/icon/postman.svg" }
+      ]
     }
   ]
 }

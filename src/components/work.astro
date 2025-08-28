@@ -2,7 +2,7 @@
 import workData from "../data/work.json";
 ---
 
-<section id="experience" class="min-h-screen py-16 animate-fade-scroll" style="background-color: #1a191d;">
+<section data-aos="fade-down" id="experience" class="min-h-screen py-16 animate-fade-scroll" style="background-color: #1a191d;">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
          <h2 class="text-4xl lg:text-5xl font-light text-white mb-6 tracking-wide">
@@ -14,33 +14,39 @@ import workData from "../data/work.json";
       <div class="space-y-8">
          {
             workData.jobs.map((job, index) => (
-               <div class="rounded-2xl p-16 shadow-2xl" style="background-color: #1f1e22; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);">
-                  <div class="flex items-center gap-4 mb-6">
-                     <div
-                        class="w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
-                        style="background-color: #2a2831; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);"
-                     >
-                        <svg class="w-6 h-6 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                           <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4Z" />
-                           <path d="M0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                     </div>
-                     <div class="flex-1">
-                        <h3 class="text-2xl font-semibold text-white tracking-wide">{job.title}</h3>
-                        <p class="text-base text-gray-400">
-                           {job.company} - {job.location}
-                        </p>
+               <div class="rounded-2xl p-6 sm:p-8 lg:p-16 shadow-2xl" style="background-color: #1f1e22; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);">
+                  <div class="flex flex-col lg:flex-row lg:items-center gap-4 mb-6">
+                     <div class="flex items-center gap-4 flex-1">
+                        <div
+                           class="w-12 h-12 rounded-full flex items-center justify-center shadow-lg overflow-hidden flex-shrink-0"
+                           style="background-color: #2a2831; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);"
+                        >
+                           {job.companyIcon ? (
+                              <img src={job.companyIcon} alt={job.company} class="w-full h-full object-cover" />
+                           ) : (
+                              <svg class="w-6 h-6 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4Z" />
+                                 <path d="M0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                              </svg>
+                           )}
+                        </div>
+                        <div>
+                           <h3 class="text-xl sm:text-2xl font-semibold text-white tracking-wide">{job.title}</h3>
+                           <p class="text-base text-gray-400">
+                              {job.company} - {job.location}
+                           </p>
+                        </div>
                      </div>
                      <time class="text-lg text-gray-300 font-medium">{job.period}</time>
                   </div>
-                  <p class="text-gray-300 text-base mb-6">{job.description}</p>
+                  <p class="text-gray-300 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">{job.description}</p>
                   <div>
-                     <p class="text-gray-200 font-medium mb-4 text-sm">Tecnologías utilizadas:</p>
-                     <div class="flex flex-wrap gap-3">
-                        {[...(job.technologies.frontend || []), ...(job.technologies.backend || []), ...(job.technologies.tools || [])].map((tech) => (
-                           <div class="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-600 shadow-sm" style="background-color: #2a2831;">
-                              <img src={tech.icon} alt={tech.name} class="w-5 h-5 object-contain" />
-                              <span class="text-sm text-gray-300">{tech.name}</span>
+                     <p class="text-gray-200 font-medium mb-3 sm:mb-4 text-sm">Tecnologías utilizadas:</p>
+                     <div class="flex flex-wrap gap-2 sm:gap-3">
+                        {job.technologies.map((tech) => (
+                           <div class="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-gray-600 shadow-sm" style="background-color: #2a2831;">
+                              <img src={tech.icon} alt={tech.name} class="w-4 h-4 sm:w-5 sm:h-5 object-contain flex-shrink-0" />
+                              <span class="text-xs sm:text-sm text-gray-300 whitespace-nowrap">{tech.name}</span>
                            </div>
                         ))}
                      </div>

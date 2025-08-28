@@ -2,13 +2,12 @@
 import "../css/main.css";
 import Navbar from "../components/navbar.astro";
 import Header from "../components/header.astro";
-import Skills from "../components/skills.astro";
-import About from "../components/about.astro";
-import Education from "../components/education.astro";
 import Work from "../components/work.astro";
 import Project from "../components/proyect.astro";
+import Skills from "../components/skills.astro";
 import Contact from "../components/contact.astro";
 import Footer from "../components/footer.astro";
+import "aos/dist/aos.css";
 
 export const prerender = false;
 ---
@@ -27,12 +26,13 @@ export const prerender = false;
    <body>
       <Navbar />
       <Header />
-      <Skills />
-      <About />
       <Work />
-      <Education />
       <Project />
+      <Skills />
       <Contact />
       <Footer />
+      <script>
+         import "../scripts/aos-init.ts";
+      </script>
    </body>
 </html>

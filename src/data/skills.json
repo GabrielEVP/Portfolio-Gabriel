@@ -1,5 +1,5 @@
 {
-  "sectionTitle": "Habilidades",
+  "sectionTitle": "Conocimientos",
   "skills": [
     { "name": "PHP", "icon": "/assets/icon/php.png" },
     { "name": "Laravel", "icon": "/assets/icon/laravel.png" },
@@ -9,17 +9,10 @@
     { "name": "JavaScript", "icon": "/assets/icon/js.png" },
     { "name": "TypeScript", "icon": "/assets/icon/ts.png" },
     { "name": "Vue.js", "icon": "/assets/icon/vue.png" },
-    { "name": "Angular", "icon": "/assets/icon/angular.png" },
     { "name": "Astro", "icon": "/assets/icon/astro.png" },
     { "name": "Tailwind CSS", "icon": "/assets/icon/tailwind.png" },
-    { "name": "Chart.js", "icon": "/assets/icon/chartjs.png" },
     { "name": "Docker", "icon": "/assets/icon/docker.png" },
-    { "name": "Vercel", "icon": "/assets/icon/vercel.png" },
-    { "name": "Railway", "icon": "/assets/icon/railway.png" },
-    { "name": "Bash", "icon": "/assets/icon/bash.png" },
-    { "name": "GitHub", "icon": "/assets/icon/github.png" },
     { "name": "Postman", "icon": "/assets/icon/postman.svg" },
-    { "name": "Figma", "icon": "/assets/icon/figma.png" },
-    { "name": "Trello", "icon": "/assets/icon/trello.webp" }
+    { "name": "Figma", "icon": "/assets/icon/figma.png" }
   ]
 }

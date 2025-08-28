@@ -3,7 +3,7 @@ import projectData from "../data/proyect.json";
 const { sectionTitle, projects } = projectData;
 ---
 
-<section id="projects" class="min-h-screen py-16 animate-fade-scroll" style="background-color: #1a191d;">
+<section data-aos="fade-down" id="projects" class="min-h-screen py-16 animate-fade-scroll" style="background-color: #1a191d;">
    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
          <h2 class="text-4xl lg:text-5xl font-light text-white mb-6 tracking-wide">
@@ -15,40 +15,19 @@ const { sectionTitle, projects } = projectData;
       <div class="grid gap-8 grid-cols-1 lg:grid-cols-2">
          {
             projects.map((project, idx) => (
-               <div
-                  class="rounded-2xl overflow-hidden shadow-2xl group cursor-pointer transition-transform duration-300 hover:scale-105"
+               <a
+                  href={project.internalLink}
+                  class="rounded-2xl overflow-hidden shadow-2xl group cursor-pointer transition-transform duration-300 hover:scale-105 block"
                   style="background-color: #1f1e22; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);"
                >
                   <div class="relative">
-                     <img src={project.images[0]} alt={project.title} class="w-full h-80 object-cover object-center" />
-                     <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <div class="flex gap-4 justify-center">
-                           {project.demoLink && (
-                              <a
-                                 href={project.demoLink}
-                                 target="_blank"
-                                 rel="noopener noreferrer"
-                                 class="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-full font-medium text-sm hover:bg-gray-100 transition"
-                              >
-                                 <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                 </svg>
-                                 Ver Demo
-                              </a>
-                           )}
-                           {project.githubLink && (
-                              <a
-                                 href={project.githubLink}
-                                 target="_blank"
-                                 rel="noopener noreferrer"
-                                 class="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-full font-medium text-sm hover:bg-gray-700 transition"
-                              >
-                                 <svg fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4">
-                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                                 </svg>
-                                 Código
-                              </a>
-                           )}
+                     <img src={project.image} alt={project.title} class="w-full h-80 object-cover object-center" />
+                     <div class="absolute inset-0 bg-black bg-opacity-10 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-full font-medium text-sm">
+                           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                           </svg>
+                           Ir al enlace
                         </div>
                      </div>
                   </div>
@@ -56,7 +35,7 @@ const { sectionTitle, projects } = projectData;
                      <h3 class="text-lg font-semibold text-white mb-2">{project.title}</h3>
                      <p class="text-gray-400 text-sm">{project.category}</p>
                   </div>
-               </div>
+               </a>
             ))
          }
       </div>

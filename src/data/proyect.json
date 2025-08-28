@@ -1,17 +1,14 @@
 {
   "sectionTitle": "Proyectos",
   "technologiesLabel": "Tecnologías:",
-  "githubLabel": "GitHub",
   "projects": [
     {
-      "title": "Sistema de Gestión de Entregas",
-      "category": "Web",
+      "title": "Yeti Express",
+      "category": "Programa Web",
       "period": "Diciembre 2024 - Actualmente",
       "description": "Sistema completo para gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.",
-      "githubLink": "",
-      "demoLink": "",
-      "imagesText": "",
-      "images": [],
+      "image": "/assets/images/yeti-express/yeti.png",
+      "internalLink": "/proyectos/yeti-express",
       "technologies": [
         {
           "name": "Vue",
@@ -32,14 +29,12 @@
       ]
     },
     {
-      "title": "Portfolio Web",
+      "title": "Portfolio",
       "category": "Web",
       "period": "Julio 2025",
-      "description": "Este proyecto es mi portfolio web personal, creado en Julio de 2025. Busqué un diseño minimalista para que la experiencia sea clara y agradable, enfocándome en mostrar mi trabajo de forma directa y eficiente. Utilicé Astro para optimizar el rendimiento y Tailwind CSS para construir una interfaz limpia y moderna.",
-      "githubLink": "https://github.com/GabrielEVP/Portfolio-Gabriel",
-      "demoLink": "",
-      "imagesText": "",
-      "images": [],
+      "description": "Este proyecto es mi portfolio web personal, creado en Julio de 2025. Busqué un diseño minimalista para que la experiencia sea clara y agradable, enfocándome en mostrar mi trabajo de forma directa y eficiente.",
+      "image": "/assets/images/portfolio/portfolio.png",
+      "internalLink": "/proyectos/portfolio",
       "technologies": [
         {
           "name": "Astro",
@@ -56,17 +51,12 @@
       ]
     },
     {
-      "title": "Naves Game",
+      "title": "Naves",
       "category": "Videogame",
       "period": "Marzo 2022",
-      "description": "Este es mi proyecto favorito y le tengo mucho cariño. Gracias a él comencé a programar mucho mejor, pasando de ser un alumno bastante malo a uno de los mejores del curso. Además, incluso los profesores quedaron sorprendidos y no sabían cómo había logrado hacerlo. Fue un antes y un después en mi aprendizaje, desarrollando todo desde cero con Java y JFrame, gestionando manualmente gráficos y colisiones.",
-      "githubLink": "https://github.com/GabrielEVP/Naves-Game",
-      "demoLink": "",
-      "imagesText": "Imágenes",
-      "images": [
-        "/assets/images/nave-game/nave1.jpg",
-        "/assets/images/nave-game/nave2.jpg"
-      ],
+      "description": "Este es mi proyecto favorito y le tengo mucho cariño. Gracias a él comencé a programar mucho mejor, pasando de ser un alumno bastante malo a uno de los mejores del curso.",
+      "image": "/assets/images/nave-game/nave.png",
+      "internalLink": "/proyectos/naves",
       "technologies": [
         {
           "name": "Java",

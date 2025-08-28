@@ -11,7 +11,11 @@
   "dependencies": {
     "@astrojs/vercel": "^8.2.6",
     "@tailwindcss/vite": "^4.1.11",
+    "aos": "^2.3.4",
     "astro": "^5.12.1",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7"
   }
 }

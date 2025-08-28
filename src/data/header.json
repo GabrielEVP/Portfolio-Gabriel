@@ -8,17 +8,17 @@
     "url": "/assets/pdf/Gabriel.pdf"
   },
   "contactButton": {
-    "label": "Hablemos",
+    "label": "Contacto",
     "url": "#contact"
   },
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/YOUR_USERNAME"
+      "url": "https://github.com/GabrielEVP"
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/YOUR_USERNAME"
+      "url": "https://www.linkedin.com/in/gabriel-enrique-vargas-648048202/"
     }
   ]
 }

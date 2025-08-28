@@ -2,21 +2,8 @@
 
 @layer base {
     html {
+        background: #1a191d;
         font-family: 'Gideon Roman', cursive;
     }
 }
 
-@layer utilities {
-    .animate-fade-scroll {
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeInScroll 0.8s ease-out forwards;
-    }
-}
-
-@keyframes fadeInScroll {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
