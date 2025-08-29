@@ -1,6 +1,6 @@
 ---
 import projectData from "../data/proyect.json";
-const { sectionTitle, projects } = projectData;
+const { sectionTitle, viewProjectText, projects } = projectData;
 ---
 
 <section data-aos="fade-down" id="projects" class="min-h-screen py-16 animate-fade-scroll">
@@ -16,23 +16,23 @@ const { sectionTitle, projects } = projectData;
             projects.map((project, idx) => (
                <a
                   href={project.internalLink}
-                  class="rounded-2xl overflow-hidden shadow-2xl group cursor-pointer transition-transform duration-300 hover:scale-105 block"
+                  class="rounded-2xl overflow-hidden shadow-2xl group cursor-pointer block"
                   style="background-color: #1f1e22; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);"
                >
-                  <div class="relative">
-                     <img src={project.image} alt={project.title} class="w-full h-80 object-cover object-center" />
-                     <div class="absolute inset-0 bg-black bg-opacity-10 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-center justify-center">
-                        <div class="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-full font-medium text-sm">
-                           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                           </svg>
-                           Ir al enlace
-                        </div>
-                     </div>
+                  <div class="relative overflow-hidden">
+                     <img src={project.image} alt={project.title} class="w-full h-80 object-cover object-center transition-transform duration-300 group-hover:scale-110" />
                   </div>
                   <div class="p-6">
                      <h3 class="text-lg font-semibold text-white mb-2">{project.title}</h3>
-                     <p class="text-gray-400 text-sm">{project.category}</p>
+                     <div class="flex items-center justify-between text-gray-400 text-sm">
+                        <span>{project.category}</span>
+                        <div class="flex items-center gap-2 text-white opacity-0 transform translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                           <span>{viewProjectText}</span>
+                           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                           </svg>
+                        </div>
+                     </div>
                   </div>
                </a>
             ))

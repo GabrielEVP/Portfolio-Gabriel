@@ -20,16 +20,5 @@
     }
   ],
   "openMenuLabel": "Abrir menú",
-  "closeMenuLabel": "Cerrar menú",
-  "languageSwitcherLabel": "Idioma",
-  "languages": [
-    {
-      "code": "es",
-      "label": "ES"
-    },
-    {
-      "code": "en",
-      "label": "EN"
-    }
-  ]
+  "closeMenuLabel": "Cerrar menú"
 }
