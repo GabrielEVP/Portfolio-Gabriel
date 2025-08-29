@@ -1,50 +1,11 @@
 {
   "sectionTitle": "Proyectos",
-  "technologiesLabel": "Tecnologías:",
   "projects": [
     {
       "title": "Yeti Express",
       "category": "Programa Web",
-      "period": "Diciembre 2024 - Actualmente",
-      "description": "Sistema completo para gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.",
       "image": "/assets/images/yeti-express/yeti.png",
-      "internalLink": "/proyectos/yeti-express",
-      "technologies": [
-        {
-          "name": "Vue",
-          "icon": "/assets/icon/vue.png"
-        },
-        {
-          "name": "Laravel",
-          "icon": "/assets/icon/laravel.png"
-        },
-        {
-          "name": "Chart.js",
-          "icon": "/assets/icon/chartjs.png"
-        },
-        {
-          "name": "MySQL",
-          "icon": "/assets/icon/mysql.png"
-        }
-      ]
-    },
-    {
-      "title": "Naves",
-      "category": "Videogame",
-      "period": "Marzo 2022",
-      "description": "Este es mi proyecto favorito y le tengo mucho cariño. Gracias a él comencé a programar mucho mejor, pasando de ser un alumno bastante malo a uno de los mejores del curso.",
-      "image": "/assets/images/nave-game/nave.png",
-      "internalLink": "/proyectos/naves",
-      "technologies": [
-        {
-          "name": "Java",
-          "icon": "/assets/icon/java.png"
-        },
-        {
-          "name": "GitHub",
-          "icon": "/assets/icon/github.png"
-        }
-      ]
+      "internalLink": "/proyects/yeti-express"
     }
   ]
 }
