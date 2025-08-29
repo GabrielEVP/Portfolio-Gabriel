@@ -12,67 +12,59 @@ const socialIcons = {
 ---
 
 <header id="header" class="min-h-screen w-full flex items-center justify-center relative overflow-hidden">
+   <!-- Elementos geométricos flotantes -->
    <div class="absolute inset-0 pointer-events-none">
-      <div class="particle particle-1"></div>
-      <div class="particle particle-2"></div>
-      <div class="particle particle-3"></div>
-      <div class="particle particle-4"></div>
-      <div class="particle particle-5"></div>
-      <div class="star star-1"></div>
-      <div class="star star-2"></div>
-      <div class="star star-3"></div>
-      <div class="star star-4"></div>
-      <div class="star star-5"></div>
-      <div class="star star-6"></div>
-      <div class="star star-7"></div>
-      <div class="star star-8"></div>
-      <div class="star star-9"></div>
-      <div class="star star-10"></div>
-      <div class="light-orb"></div>
+      <div class="geometric-shape shape-1"></div>
+      <div class="geometric-shape shape-2"></div>
+      <div class="geometric-shape shape-3"></div>
+      <div class="geometric-shape shape-4"></div>
+      <div class="geometric-shape shape-5"></div>
+      <div class="geometric-orb"></div>
    </div>
 
-   <div class="text-center max-w-5xl mx-auto px-4 z-10 relative">
-      <div class="mb-8 animate-slide-down">
-         <h2 class="text-3xl md:text-4xl font-light text-gray-100 tracking-wide">
-            {title}
-            <span class="block text-xl md:text-2xl font-normal text-white mt-2">{subtitle}</span>
-         </h2>
-      </div>
-      <div class="relative mb-8">
-         <h1 class="text-5xl md:text-7xl font-light text-white my-6 tracking-wide animate-scale-in" style="text-shadow: 0 0 30px rgba(255,255,255,0.3), 0 0 60px rgba(255,255,255,0.1);">
+   <!-- Animación de carga -->
+   <div class="loading-animation">
+      <div class="loader"></div>
+   </div>
+
+   <div class="text-center max-w-4xl mx-auto px-4 z-10 relative opacity-0 animate-fade-in-delayed">
+      <div class="mb-12">
+         <h1 class="text-6xl md:text-8xl font-light text-white mb-6 tracking-wider uppercase animate-slide-up">
             {name}
          </h1>
+         <div class="w-24 h-px bg-white mx-auto mb-8 animate-expand"></div>
+         <p class="text-lg md:text-xl text-gray-300 font-light tracking-wide uppercase letter-spacing-wider animate-fade-in-up">
+            {title} • {subtitle}
+         </p>
       </div>
-      <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up font-light tracking-wide">
-         {description}
-      </p>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-8 animate-fade-in-up-delay max-w-md md:max-w-none mx-auto">
+
+      <div class="mb-12 animate-fade-in-up-delay">
+         <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
+            {description}
+         </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 max-w-md md:max-w-none mx-auto animate-fade-in-up-delay-2">
          <a
             target="_blank"
             rel="noopener noreferrer"
             href={cvButton.url}
-            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition"
+            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 border border-white text-white rounded-none font-light text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
          >
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-               ></path>
-            </svg>
             {cvButton.label}
          </a>
          <a
             href={contactButton.url}
-            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 border border-gray-400 text-gray-400 rounded-full font-medium hover:bg-gray-400 hover:text-gray-900 transition"
+            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black rounded-none font-light text-sm uppercase tracking-wider hover:bg-gray-200 transition-all duration-300"
          >
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-            </svg>
             {contactButton.label}
          </a>
       </div>
-      <div class="flex justify-center items-center gap-6 animate-fade-in-up-delay-2">
+
+      <div class="flex justify-center items-center gap-8 animate-fade-in-up-delay-3">
          {
             socials.map((social) => (
-               <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name} class="text-gray-400 hover:text-white transition-colors">
+               <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name} class="text-gray-400 hover:text-white transition-colors duration-300">
                   <Fragment set:html={socialIcons[social.name as keyof typeof socialIcons]} />
                </a>
             ))
@@ -82,10 +74,95 @@ const socialIcons = {
 </header>
 
 <style>
-   @keyframes slide-down {
+   .letter-spacing-wider {
+      letter-spacing: 0.2em;
+   }
+
+   /* Animación de carga */
+   .loading-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1a191d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      animation: fadeOut 3s ease-in-out 2s forwards;
+   }
+
+   .loader {
+      width: 60px;
+      height: 60px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-top: 2px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+   }
+
+   @keyframes spin {
+      0% {
+         transform: rotate(0deg);
+      }
+      100% {
+         transform: rotate(360deg);
+      }
+   }
+
+   @keyframes fadeOut {
+      0% {
+         opacity: 1;
+      }
+      100% {
+         opacity: 0;
+         visibility: hidden;
+      }
+   }
+
+   /* Animaciones de entrada */
+   .animate-fade-in-delayed {
+      animation: fadeInDelayed 1s ease-out 2.5s forwards;
+   }
+
+   .animate-slide-up {
+      animation: slideUp 1s ease-out 3s forwards;
+   }
+
+   .animate-expand {
+      animation: expand 0.8s ease-out 3.5s forwards;
+   }
+
+   .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out 4s forwards;
+   }
+
+   .animate-fade-in-up-delay {
+      animation: fadeInUp 0.8s ease-out 4.3s forwards;
+   }
+
+   .animate-fade-in-up-delay-2 {
+      animation: fadeInUp 0.8s ease-out 4.6s forwards;
+   }
+
+   .animate-fade-in-up-delay-3 {
+      animation: fadeInUp 0.8s ease-out 4.9s forwards;
+   }
+
+   @keyframes fadeInDelayed {
       0% {
          opacity: 0;
-         transform: translateY(-50px);
+      }
+      100% {
+         opacity: 1;
+      }
+   }
+
+   @keyframes slideUp {
+      0% {
+         opacity: 0;
+         transform: translateY(50px);
       }
       100% {
          opacity: 1;
@@ -93,18 +170,18 @@ const socialIcons = {
       }
    }
 
-   @keyframes scale-in {
+   @keyframes expand {
       0% {
+         width: 0;
          opacity: 0;
-         transform: scale(0.5);
       }
       100% {
+         width: 96px;
          opacity: 1;
-         transform: scale(1);
       }
    }
 
-   @keyframes fade-in-up {
+   @keyframes fadeInUp {
       0% {
          opacity: 0;
          transform: translateY(30px);
@@ -115,194 +192,140 @@ const socialIcons = {
       }
    }
 
-   @keyframes glow {
-      0%,
-      100% {
-         opacity: 0.6;
-      }
-      50% {
-         opacity: 0.9;
-      }
-   }
-
-   @keyframes twinkle {
-      0%,
-      100% {
-         opacity: 0.3;
-         transform: scale(1);
-      }
-      50% {
-         opacity: 1;
-         transform: scale(1.2);
-      }
-   }
-
-   .animate-slide-down {
-      animation: slide-down 1s ease-out;
-   }
-   .animate-scale-in {
-      animation: scale-in 1.2s ease-out;
-   }
-   .animate-fade-in-up {
-      animation: fade-in-up 1s ease-out 0.5s both;
-   }
-   .animate-fade-in-up-delay {
-      animation: fade-in-up 1s ease-out 1s both;
-   }
-   .animate-fade-in-up-delay-2 {
-      animation: fade-in-up 1s ease-out 1.5s both;
-   }
-   .animate-glow {
-      animation: glow 3s ease-in-out infinite;
-   }
-
-   /* Partículas */
-   .particle {
+   /* Elementos geométricos flotantes */
+   .geometric-shape {
       position: absolute;
-      width: 4px;
-      height: 4px;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
-      border-radius: 50%;
-      animation: float-particle 8s ease-in-out infinite;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
    }
 
-   .particle-1 {
+   .shape-1 {
+      width: 120px;
+      height: 80px;
       top: 20%;
       left: 10%;
-      animation-delay: 0s;
+      transform: rotate(15deg);
+      animation: float1 6s ease-in-out infinite;
    }
-   .particle-2 {
-      top: 60%;
-      left: 20%;
-      animation-delay: 2s;
-   }
-   .particle-3 {
-      top: 30%;
+
+   .shape-2 {
+      width: 100px;
+      height: 100px;
+      top: 15%;
       right: 15%;
-      animation-delay: 4s;
+      transform: rotate(-20deg);
+      animation: float2 8s ease-in-out infinite;
    }
-   .particle-4 {
-      bottom: 40%;
-      left: 15%;
-      animation-delay: 6s;
+
+   .shape-3 {
+      width: 80px;
+      height: 60px;
+      bottom: 30%;
+      left: 20%;
+      transform: rotate(45deg);
+      animation: float3 7s ease-in-out infinite;
    }
-   .particle-5 {
+
+   .shape-4 {
+      width: 150px;
+      height: 40px;
       bottom: 20%;
-      right: 20%;
-      animation-delay: 1s;
-   }
-
-   @keyframes float-particle {
-      0%,
-      100% {
-         transform: translateY(0px);
-         opacity: 0.3;
-      }
-      50% {
-         transform: translateY(-30px);
-         opacity: 1;
-      }
-   }
-
-   .light-orb {
-      position: absolute;
-      top: 25%;
       right: 25%;
+      transform: rotate(-30deg);
+      animation: float4 9s ease-in-out infinite;
+   }
+
+   .shape-5 {
+      width: 60px;
+      height: 60px;
+      top: 60%;
+      left: 50%;
+      transform: rotate(60deg);
+      animation: float5 5s ease-in-out infinite;
+   }
+
+   .geometric-orb {
+      position: absolute;
       width: 200px;
       height: 200px;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 40%, transparent 70%);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
       border-radius: 50%;
-      filter: blur(20px);
-      animation: pulse-light 4s ease-in-out infinite;
+      top: 30%;
+      right: 20%;
+      animation: pulse 4s ease-in-out infinite;
    }
 
-   @keyframes pulse-light {
+   @keyframes float1 {
       0%,
       100% {
-         transform: scale(1);
-         opacity: 0.3;
+         transform: rotate(15deg) translateY(0px);
       }
       50% {
-         transform: scale(1.2);
-         opacity: 0.6;
+         transform: rotate(15deg) translateY(-20px);
       }
    }
 
-   .star {
-      position: absolute;
-      background: white;
-      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-      animation: twinkle 3s ease-in-out infinite;
+   @keyframes float2 {
+      0%,
+      100% {
+         transform: rotate(-20deg) translateY(0px);
+      }
+      50% {
+         transform: rotate(-20deg) translateY(-30px);
+      }
    }
 
-   .star-1 {
-      width: 8px;
-      height: 8px;
-      top: 15%;
-      left: 15%;
-      animation-delay: 0s;
+   @keyframes float3 {
+      0%,
+      100% {
+         transform: rotate(45deg) translateY(0px);
+      }
+      50% {
+         transform: rotate(45deg) translateY(-15px);
+      }
    }
-   .star-2 {
-      width: 6px;
-      height: 6px;
-      top: 25%;
-      left: 80%;
-      animation-delay: 0.5s;
+
+   @keyframes float4 {
+      0%,
+      100% {
+         transform: rotate(-30deg) translateY(0px);
+      }
+      50% {
+         transform: rotate(-30deg) translateY(-25px);
+      }
    }
-   .star-3 {
-      width: 10px;
-      height: 10px;
-      top: 40%;
-      left: 10%;
-      animation-delay: 1s;
+
+   @keyframes float5 {
+      0%,
+      100% {
+         transform: rotate(60deg) translateY(0px);
+      }
+      50% {
+         transform: rotate(60deg) translateY(-18px);
+      }
    }
-   .star-4 {
-      width: 4px;
-      height: 4px;
-      top: 60%;
-      left: 85%;
-      animation-delay: 1.5s;
+
+   @keyframes pulse {
+      0%,
+      100% {
+         opacity: 0.3;
+         transform: scale(1);
+      }
+      50% {
+         opacity: 0.6;
+         transform: scale(1.1);
+      }
    }
-   .star-5 {
-      width: 7px;
-      height: 7px;
-      top: 70%;
-      left: 20%;
-      animation-delay: 2s;
-   }
-   .star-6 {
-      width: 5px;
-      height: 5px;
-      top: 80%;
-      left: 75%;
-      animation-delay: 2.5s;
-   }
-   .star-7 {
-      width: 9px;
-      height: 9px;
-      top: 35%;
-      left: 60%;
-      animation-delay: 0.8s;
-   }
-   .star-8 {
-      width: 6px;
-      height: 6px;
-      top: 50%;
-      left: 30%;
-      animation-delay: 1.8s;
-   }
-   .star-9 {
-      width: 8px;
-      height: 8px;
-      top: 20%;
-      left: 45%;
-      animation-delay: 1.2s;
-   }
-   .star-10 {
-      width: 4px;
-      height: 4px;
-      top: 85%;
-      left: 50%;
-      animation-delay: 2.2s;
+
+   /* Responsividad */
+   @media (max-width: 768px) {
+      .geometric-shape {
+         display: none;
+      }
+      .geometric-orb {
+         width: 100px;
+         height: 100px;
+      }
    }
 </style>
