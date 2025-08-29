@@ -1,5 +1,6 @@
 ---
 import "../../css/main.css";
+import Cursor from "../../components/cursor.astro";
 
 export const prerender = true;
 ---
@@ -17,6 +18,7 @@ export const prerender = true;
       <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet" />
    </head>
    <body style="background-color: #1a191d;">
+      <Cursor />
       <button
          onclick="window.location.href='/'"
          class="fixed top-4 left-4 sm:top-6 sm:left-6 z-50 text-white border border-white rounded-full px-3 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-medium hover:bg-white hover:text-gray-900 transition-all duration-200 flex items-center gap-1 sm:gap-2"
@@ -32,9 +34,23 @@ export const prerender = true;
             <h1 class="text-3xl sm:text-5xl md:text-7xl font-light text-white mb-6 sm:mb-8 tracking-wide" style="text-shadow: 0 0 30px rgba(255,255,255,0.3), 0 0 60px rgba(255,255,255,0.1);">
                Yeti Express
             </h1>
-            <p class="text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed font-light tracking-wide px-4 sm:px-0">
-               Sistema completo para gestión de repartos, control de deudas de clientes, balance de caja y administración de pagos.
-            </p>
+
+            <div class="max-w-4xl mx-auto mb-8 sm:mb-12 space-y-6 px-4 sm:px-0 text-left">
+               <p class="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed font-light tracking-wide">
+                  Yeti Express es una solución integral de gestión diseñada para optimizar cada operación de la empresa. Permite generar y controlar pedidos de forma ágil, gestionar gastos y ventas
+                  con precisión, y administrar roles de empleados para garantizar seguridad y trazabilidad.
+               </p>
+
+               <p class="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed font-light tracking-wide">
+                  Su sistema de reportes avanzados ofrece información clara y estructurada sobre movimientos de repartidores, desempeño de empleados y deudas de clientes, facilitando decisiones
+                  estratégicas basadas en datos reales.
+               </p>
+
+               <p class="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed font-light tracking-wide">
+                  Con Yeti Express, la empresa no solo mejora su eficiencia operativa, sino que obtiene visibilidad total de su actividad, consolidando un control profesional y confiable que impulsa
+                  su crecimiento sostenido.
+               </p>
+            </div>
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12 sm:mb-16 px-4 max-w-md md:max-w-none mx-auto">
                <a
                   href="https://yeti-express-app.vercel.app/"

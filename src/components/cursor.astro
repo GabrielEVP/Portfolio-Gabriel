@@ -1,0 +1,139 @@
+---
+
+---
+
+<div class="custom-cursor" id="customCursor"></div>
+
+<style>
+   /* Cursor personalizado global */
+   body {
+      cursor: none;
+   }
+
+   .custom-cursor {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 10000;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition:
+         width 0.15s ease,
+         height 0.15s ease,
+         background 0.15s ease;
+      will-change: transform;
+   }
+
+   .custom-cursor.visible {
+      opacity: 1;
+   }
+
+   .custom-cursor.hover {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.5);
+      border: 2px solid white;
+   }
+</style>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      const cursor = document.getElementById("customCursor");
+
+      if (!cursor) return;
+
+      let isVisible = false;
+
+      // Movimiento directo sin lag
+      function updateCursorPosition(e: MouseEvent) {
+         if (!cursor) return;
+         cursor.style.transform = `translate3d(${e.clientX - 10}px, ${e.clientY - 10}px, 0)`;
+
+         if (!isVisible) {
+            cursor.style.opacity = "1";
+            isVisible = true;
+         }
+      }
+
+      // Usar transform3d para mejor rendimiento
+      document.addEventListener("mousemove", updateCursorPosition, { passive: true });
+
+      // Función simple para detectar hover
+      function isHoverElement(element: EventTarget | Element | null): boolean {
+         if (!element || !("tagName" in element)) return false;
+
+         const htmlElement = element as Element;
+         const tagName = htmlElement.tagName?.toLowerCase();
+
+         // Elementos básicos interactivos
+         if (tagName === "a" || tagName === "button" || tagName === "input" || tagName === "textarea" || tagName === "select") {
+            return true;
+         }
+
+         // Elementos con role button
+         if (htmlElement.hasAttribute && htmlElement.hasAttribute("role") && htmlElement.getAttribute("role") === "button") {
+            return true;
+         }
+
+         // Tarjetas de proyectos y elementos con cursor pointer
+         if (htmlElement.classList && (htmlElement.classList.contains("cursor-pointer") || htmlElement.classList.contains("group") || (htmlElement as HTMLElement).style?.cursor === "pointer")) {
+            return true;
+         }
+
+         // Verificar si es un elemento clickeable dentro de una tarjeta
+         const parent = htmlElement.closest && htmlElement.closest('a, button, [role="button"], .cursor-pointer, .group');
+         return !!parent;
+      }
+
+      // Delegación de eventos para mejor rendimiento
+      document.addEventListener(
+         "mouseover",
+         function (e) {
+            const target = e.target;
+            if (!target || !cursor) return;
+
+            if (isHoverElement(target)) {
+               cursor.classList.add("hover");
+            }
+         },
+         { passive: true }
+      );
+
+      document.addEventListener(
+         "mouseout",
+         function (e) {
+            const target = e.target;
+            if (!target || !cursor) return;
+
+            if (isHoverElement(target)) {
+               cursor.classList.remove("hover");
+            }
+         },
+         { passive: true }
+      );
+
+      // Ocultar/mostrar cursor
+      document.addEventListener(
+         "mouseleave",
+         function () {
+            if (!cursor) return;
+            cursor.style.opacity = "0";
+            isVisible = false;
+         },
+         { passive: true }
+      );
+
+      document.addEventListener(
+         "mouseenter",
+         function () {
+            if (!cursor) return;
+            cursor.style.opacity = "1";
+            isVisible = true;
+         },
+         { passive: true }
+      );
+   });
+</script>
