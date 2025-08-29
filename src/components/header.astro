@@ -23,45 +23,45 @@ const socialIcons = {
    <div class="loading-animation">
       <div class="loader"></div>
    </div>
-   <div class="text-center max-w-4xl mx-auto px-4 z-10 relative opacity-100">
-      <div class="mb-12">
-         <h1 class="text-6xl md:text-8xl font-light text-white mb-6 tracking-wider uppercase">
+   <div class="text-center max-w-4xl mx-auto px-6 sm:px-4 z-10 relative opacity-100">
+      <div class="mb-8 sm:mb-12">
+         <h1 class="text-4xl sm:text-6xl md:text-8xl font-light text-white mb-4 sm:mb-6 tracking-wider uppercase">
             {name}
          </h1>
-         <div class="w-24 h-px bg-white mx-auto mb-8"></div>
-         <p class="text-lg md:text-xl text-gray-300 font-light tracking-wide uppercase letter-spacing-wider">
+         <div class="w-16 sm:w-24 h-px bg-white mx-auto mb-6 sm:mb-8"></div>
+         <p class="text-base sm:text-lg md:text-xl text-gray-300 font-light tracking-wide uppercase letter-spacing-wider px-2">
             {title} • {subtitle}
          </p>
       </div>
 
-      <div class="mb-12">
-         <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
+      <div class="mb-8 sm:mb-12">
+         <p class="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed font-light px-2">
             {description}
          </p>
       </div>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 max-w-md md:max-w-none mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 max-w-sm sm:max-w-md md:max-w-none mx-auto px-2">
          <a
             target="_blank"
             rel="noopener noreferrer"
             href={cvButton.url}
-            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 border border-white text-white font-light text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border border-white text-white font-light text-xs sm:text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
             style="border-radius: 5px;"
          >
             {cvButton.label}
          </a>
          <a
             href={contactButton.url}
-            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black font-light text-sm uppercase tracking-wider hover:bg-gray-200 transition-all duration-300"
+            class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-light text-xs sm:text-sm uppercase tracking-wider hover:bg-gray-200 transition-all duration-300"
             style="border-radius: 5px;"
          >
             {contactButton.label}
          </a>
       </div>
 
-      <div class="flex justify-center items-center gap-8">
+      <div class="flex justify-center items-center gap-6 sm:gap-8 px-2">
          {
             socials.map((social) => (
-               <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name} class="text-gray-400 hover:text-white transition-colors duration-300">
+               <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name} class="text-gray-400 hover:text-white transition-colors duration-300 p-1">
                   <Fragment set:html={socialIcons[social.name as keyof typeof socialIcons]} />
                </a>
             ))
@@ -117,7 +117,6 @@ const socialIcons = {
       }
    }
 
-   /* Animaciones de entrada */
    .animate-fade-in-delayed {
       animation: fadeInDelayed 0.8s ease-out 1s forwards;
    }
@@ -188,7 +187,6 @@ const socialIcons = {
       }
    }
 
-   /* Elementos geométricos flotantes */
    .geometric-shape {
       position: absolute;
       background: rgba(255, 255, 255, 0.1);
@@ -314,7 +312,6 @@ const socialIcons = {
       }
    }
 
-   /* Responsividad */
    @media (max-width: 768px) {
       .geometric-shape {
          display: none;
@@ -322,6 +319,20 @@ const socialIcons = {
       .geometric-orb {
          width: 100px;
          height: 100px;
+      }
+
+      .letter-spacing-wider {
+         letter-spacing: 0.1em;
+      }
+
+      h1 {
+         line-height: 1.2;
+      }
+   }
+
+   @media (max-width: 480px) {
+      .letter-spacing-wider {
+         letter-spacing: 0.05em;
       }
    }
 </style>

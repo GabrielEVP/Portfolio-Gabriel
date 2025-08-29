@@ -5,7 +5,6 @@
 <div class="custom-cursor" id="customCursor"></div>
 
 <style>
-   /* Cursor personalizado global */
    body {
       cursor: none;
    }
@@ -47,7 +46,6 @@
 
       let isVisible = false;
 
-      // Movimiento directo sin lag
       function updateCursorPosition(e: MouseEvent) {
          if (!cursor) return;
          cursor.style.transform = `translate3d(${e.clientX - 10}px, ${e.clientY - 10}px, 0)`;
@@ -58,37 +56,30 @@
          }
       }
 
-      // Usar transform3d para mejor rendimiento
       document.addEventListener("mousemove", updateCursorPosition, { passive: true });
 
-      // Función simple para detectar hover
       function isHoverElement(element: EventTarget | Element | null): boolean {
          if (!element || !("tagName" in element)) return false;
 
          const htmlElement = element as Element;
          const tagName = htmlElement.tagName?.toLowerCase();
 
-         // Elementos básicos interactivos
          if (tagName === "a" || tagName === "button" || tagName === "input" || tagName === "textarea" || tagName === "select") {
             return true;
          }
 
-         // Elementos con role button
          if (htmlElement.hasAttribute && htmlElement.hasAttribute("role") && htmlElement.getAttribute("role") === "button") {
             return true;
          }
 
-         // Tarjetas de proyectos y elementos con cursor pointer
          if (htmlElement.classList && (htmlElement.classList.contains("cursor-pointer") || htmlElement.classList.contains("group") || (htmlElement as HTMLElement).style?.cursor === "pointer")) {
             return true;
          }
 
-         // Verificar si es un elemento clickeable dentro de una tarjeta
          const parent = htmlElement.closest && htmlElement.closest('a, button, [role="button"], .cursor-pointer, .group');
          return !!parent;
       }
 
-      // Delegación de eventos para mejor rendimiento
       document.addEventListener(
          "mouseover",
          function (e) {
@@ -115,7 +106,6 @@
          { passive: true }
       );
 
-      // Ocultar/mostrar cursor
       document.addEventListener(
          "mouseleave",
          function () {
