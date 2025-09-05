@@ -20,11 +20,30 @@
       ]
     },
     {
-      "title": "Jefe de departamento de Desarrollo",
+      "title": "Jefe de equipo",
       "company": "RK Solutions",
       "location": "Gernika - España",
-      "period": "Julio 2022 - Diciembre 2024",
+      "period": "Diciembre 2022 - Diciembre 2024",
       "description": "Dirigí un equipo de programadores supervisando el ciclo completo de desarrollo de software, desde la definición de arquitectura hasta la entrega de soluciones estratégicas. Lideré la evolución del sistema de facturación La Manzana, incorporando módulos de facturación, gestión de tareas, soporte multi-idioma y TPV, lo que incrementó la productividad y abrió el negocio a clientes internacionales. Diseñé soluciones a medida como un sistema de control de horas para fábrica, gestión avanzada de almacenes para zapaterías y plataformas para ETT, optimizando la eficiencia y el control de procesos. Además, implementé APIs y TPV con hardware especializado, mejorando la experiencia de venta y ampliando las capacidades de integración tecnológica.",
+      "companyIcon": "/assets/work/Rk.jpg",
+      "technologies": [
+        { "name": "PHP", "icon": "/assets/icon/php.png" },
+        { "name": "Java", "icon": "/assets/icon/java.png" },
+        { "name": "MySQL", "icon": "/assets/icon/mysql.png" },
+        { "name": "JavaScript", "icon": "/assets/icon/js.png" },
+        { "name": "CSS", "icon": "/assets/icon/css.png" },
+        { "name": "HTML", "icon": "/assets/icon/html.png" },
+        { "name": "Docker", "icon": "/assets/icon/docker.png" },
+        { "name": "Figma", "icon": "/assets/icon/figma.png" },
+        { "name": "Postman", "icon": "/assets/icon/postman.svg" }
+      ]
+    },
+    {
+      "title": "Desarrollador full stack",
+      "company": "RK Solutions",
+      "location": "Gernika - España",
+      "period": "Julio 2022 - Diciembre 2022",
+      "description": "Durante mi experiencia participé en el desarrollo y mantenimiento de software de facturación, aplicando buenas prácticas de programación y control de versiones, así como colaborando en la mejora de módulos y funcionalidades existentes. Entre mis logros destaca la implementación de una interfaz TPV que facilitó la gestión de ventas y cobros en tiendas y bares, el desarrollo de un sistema multi-idioma que amplió el alcance hacia clientes internacionales y la refactorización del código junto con la estandarización de flujos de desarrollo, lo que mejoró significativamente la estabilidad y el mantenimiento del sistema.",
       "companyIcon": "/assets/work/Rk.jpg",
       "technologies": [
         { "name": "PHP", "icon": "/assets/icon/php.png" },
